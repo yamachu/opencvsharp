@@ -1,0 +1,3584 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class InputArray
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class InputArray
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.InputArray">
+  
+  
+  <h1 id="OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray" class="text-break">Class InputArray
+  </h1>
+  <div class="markdown level0 summary"><p>Proxy data type for passing Mat's and vector&lt;&gt;'s as input parameters</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="OpenCvSharp.DisposableObject.html">DisposableObject</a></div>
+    <div class="level2"><a class="xref" href="OpenCvSharp.DisposableCvObject.html">DisposableCvObject</a></div>
+    <div class="level3"><span class="xref">InputArray</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="OpenCvSharp.ICvPtrHolder.html">ICvPtrHolder</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_ptr">DisposableCvObject.ptr</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_CvPtr">DisposableCvObject.CvPtr</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_DataHandle">DisposableObject.DataHandle</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsDisposed">DisposableObject.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsEnabledDispose">DisposableObject.IsEnabledDispose</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemory">DisposableObject.AllocatedMemory</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemorySize">DisposableObject.AllocatedMemorySize</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose">DisposableObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocGCHandle_System_Object_">DisposableObject.AllocGCHandle(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocMemory_System_Int32_">DisposableObject.AllocMemory(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_NotifyMemoryPressure_System_Int64_">DisposableObject.NotifyMemoryPressure(Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_ThrowIfDisposed">DisposableObject.ThrowIfDisposed()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCvSharp.html">OpenCvSharp</a></h6>
+  <h6><strong>Assembly</strong>: OpenCvSharp.dll</h6>
+  <h5 id="OpenCvSharp_InputArray_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class InputArray : DisposableCvObject, IDisposable, ICvPtrHolder</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_KIND_MASK.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.KIND_MASK%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L32">View Source</a>
+  </span>
+  <h4 id="OpenCvSharp_InputArray_KIND_MASK" data-uid="OpenCvSharp.InputArray.KIND_MASK">KIND_MASK</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int KIND_MASK = 1073676288</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_KIND_SHIFT.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.KIND_SHIFT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L31">View Source</a>
+  </span>
+  <h4 id="OpenCvSharp_InputArray_KIND_SHIFT" data-uid="OpenCvSharp.InputArray.KIND_SHIFT">KIND_SHIFT</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int KIND_SHIFT = 16</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Channels_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Channels(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L927">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Channels_" data-uid="OpenCvSharp.InputArray.Channels*"></a>
+  <h4 id="OpenCvSharp_InputArray_Channels_System_Int32_" data-uid="OpenCvSharp.InputArray.Channels(System.Int32)">Channels(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Channels(int i = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Cols_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Cols(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L809">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Cols_" data-uid="OpenCvSharp.InputArray.Cols*"></a>
+  <h4 id="OpenCvSharp_InputArray_Cols_System_Int32_" data-uid="OpenCvSharp.InputArray.Cols(System.Int32)">Cols(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Cols(int i = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_CopyTo_OpenCvSharp_OutputArray_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.CopyTo(OpenCvSharp.OutputArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L982">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_CopyTo_" data-uid="OpenCvSharp.InputArray.CopyTo*"></a>
+  <h4 id="OpenCvSharp_InputArray_CopyTo_OpenCvSharp_OutputArray_" data-uid="OpenCvSharp.InputArray.CopyTo(OpenCvSharp.OutputArray)">CopyTo(OutputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(OutputArray arr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+        <td><span class="parametername">arr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_CopyTo_OpenCvSharp_OutputArray_OpenCvSharp_InputArray_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.CopyTo(OpenCvSharp.OutputArray%2COpenCvSharp.InputArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L1001">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_CopyTo_" data-uid="OpenCvSharp.InputArray.CopyTo*"></a>
+  <h4 id="OpenCvSharp_InputArray_CopyTo_OpenCvSharp_OutputArray_OpenCvSharp_InputArray_" data-uid="OpenCvSharp.InputArray.CopyTo(OpenCvSharp.OutputArray,OpenCvSharp.InputArray)">CopyTo(OutputArray, InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(OutputArray arr, InputArray mask)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+        <td><span class="parametername">arr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td><span class="parametername">mask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Create_OpenCvSharp_IVec_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Create(OpenCvSharp.IVec)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L441">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Create_" data-uid="OpenCvSharp.InputArray.Create*"></a>
+  <h4 id="OpenCvSharp_InputArray_Create_OpenCvSharp_IVec_" data-uid="OpenCvSharp.InputArray.Create(OpenCvSharp.IVec)">Create(IVec)</h4>
+  <div class="markdown level1 summary"><p>Creates a proxy class of the specified Vec*b</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputArray Create(IVec vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.IVec.html">IVec</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Create_OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Create(OpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L286">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Create_" data-uid="OpenCvSharp.InputArray.Create*"></a>
+  <h4 id="OpenCvSharp_InputArray_Create_OpenCvSharp_Mat_" data-uid="OpenCvSharp.InputArray.Create(OpenCvSharp.Mat)">Create(Mat)</h4>
+  <div class="markdown level1 summary"><p>Creates a proxy class of the specified Mat</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputArray Create(Mat mat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+        <td><span class="parametername">mat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Create_OpenCvSharp_MatExpr_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Create(OpenCvSharp.MatExpr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L296">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Create_" data-uid="OpenCvSharp.InputArray.Create*"></a>
+  <h4 id="OpenCvSharp_InputArray_Create_OpenCvSharp_MatExpr_" data-uid="OpenCvSharp.InputArray.Create(OpenCvSharp.MatExpr)">Create(MatExpr)</h4>
+  <div class="markdown level1 summary"><p>Creates a proxy class of the specified MatExpr</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputArray Create(MatExpr expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.MatExpr.html">MatExpr</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Create_OpenCvSharp_Scalar_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Create(OpenCvSharp.Scalar)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L306">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Create_" data-uid="OpenCvSharp.InputArray.Create*"></a>
+  <h4 id="OpenCvSharp_InputArray_Create_OpenCvSharp_Scalar_" data-uid="OpenCvSharp.InputArray.Create(OpenCvSharp.Scalar)">Create(Scalar)</h4>
+  <div class="markdown level1 summary"><p>Creates a proxy class of the specified Scalar</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputArray Create(Scalar val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Scalar.html">Scalar</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Create_System_Collections_Generic_IEnumerable_OpenCvSharp_Mat__.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Create(System.Collections.Generic.IEnumerable%7BOpenCvSharp.Mat%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L338">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Create_" data-uid="OpenCvSharp.InputArray.Create*"></a>
+  <h4 id="OpenCvSharp_InputArray_Create_System_Collections_Generic_IEnumerable_OpenCvSharp_Mat__" data-uid="OpenCvSharp.InputArray.Create(System.Collections.Generic.IEnumerable{OpenCvSharp.Mat})">Create(IEnumerable&lt;Mat&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a proxy class of the specified array of Mat</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputArray Create(IEnumerable&lt;Mat&gt; matVector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="OpenCvSharp.Mat.html">Mat</a>&gt;</td>
+        <td><span class="parametername">matVector</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Create_System_Double_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Create(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L316">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Create_" data-uid="OpenCvSharp.InputArray.Create*"></a>
+  <h4 id="OpenCvSharp_InputArray_Create_System_Double_" data-uid="OpenCvSharp.InputArray.Create(System.Double)">Create(Double)</h4>
+  <div class="markdown level1 summary"><p>Creates a proxy class of the specified double</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputArray Create(double val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Create__1___0___.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Create%60%601(%60%600%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L377">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Create_" data-uid="OpenCvSharp.InputArray.Create*"></a>
+  <h4 id="OpenCvSharp_InputArray_Create__1___0___" data-uid="OpenCvSharp.InputArray.Create``1(``0[])">Create&lt;T&gt;(T[])</h4>
+  <div class="markdown level1 summary"><p>Creates a proxy class of the specified list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputArray Create&lt;T&gt;(T[] array)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>Array object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Create__1___0___OpenCvSharp_MatType_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Create%60%601(%60%600%5B%5D%2COpenCvSharp.MatType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L390">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Create_" data-uid="OpenCvSharp.InputArray.Create*"></a>
+  <h4 id="OpenCvSharp_InputArray_Create__1___0___OpenCvSharp_MatType_" data-uid="OpenCvSharp.InputArray.Create``1(``0[],OpenCvSharp.MatType)">Create&lt;T&gt;(T[], MatType)</h4>
+  <div class="markdown level1 summary"><p>Creates a proxy class of the specified list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputArray Create&lt;T&gt;(T[] array, MatType type)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>Array object</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.MatType.html">MatType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Matrix depth and channels for converting array to cv::Mat</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Create__1___0_0__0___.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Create%60%601(%60%600%5B0%3A%2C0%3A%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L408">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Create_" data-uid="OpenCvSharp.InputArray.Create*"></a>
+  <h4 id="OpenCvSharp_InputArray_Create__1___0_0__0___" data-uid="OpenCvSharp.InputArray.Create``1(``0[0:,0:])">Create&lt;T&gt;(T[,])</h4>
+  <div class="markdown level1 summary"><p>Creates a proxy class of the specified list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputArray Create&lt;T&gt;(T[, ] array)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[,]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>Array object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Create__1___0_0__0___OpenCvSharp_MatType_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Create%60%601(%60%600%5B0%3A%2C0%3A%5D%2COpenCvSharp.MatType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L421">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Create_" data-uid="OpenCvSharp.InputArray.Create*"></a>
+  <h4 id="OpenCvSharp_InputArray_Create__1___0_0__0___OpenCvSharp_MatType_" data-uid="OpenCvSharp.InputArray.Create``1(``0[0:,0:],OpenCvSharp.MatType)">Create&lt;T&gt;(T[,], MatType)</h4>
+  <div class="markdown level1 summary"><p>Creates a proxy class of the specified list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputArray Create&lt;T&gt;(T[, ] array, MatType type)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[,]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>Array object</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.MatType.html">MatType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Matrix depth and channels for converting array to cv::Mat</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Create__1_System_Collections_Generic_IEnumerable___0__.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Create%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L348">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Create_" data-uid="OpenCvSharp.InputArray.Create*"></a>
+  <h4 id="OpenCvSharp_InputArray_Create__1_System_Collections_Generic_IEnumerable___0__" data-uid="OpenCvSharp.InputArray.Create``1(System.Collections.Generic.IEnumerable{``0})">Create&lt;T&gt;(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a proxy class of the specified list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputArray Create&lt;T&gt;(IEnumerable&lt;T&gt; enumerable)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">enumerable</span></td>
+        <td><p>Array object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Create__1_System_Collections_Generic_IEnumerable___0__OpenCvSharp_MatType_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Create%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2COpenCvSharp.MatType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L363">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Create_" data-uid="OpenCvSharp.InputArray.Create*"></a>
+  <h4 id="OpenCvSharp_InputArray_Create__1_System_Collections_Generic_IEnumerable___0__OpenCvSharp_MatType_" data-uid="OpenCvSharp.InputArray.Create``1(System.Collections.Generic.IEnumerable{``0},OpenCvSharp.MatType)">Create&lt;T&gt;(IEnumerable&lt;T&gt;, MatType)</h4>
+  <div class="markdown level1 summary"><p>Creates a proxy class of the specified list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputArray Create&lt;T&gt;(IEnumerable&lt;T&gt; enumerable, MatType type)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="parametername">enumerable</span></td>
+        <td><p>Array object</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.MatType.html">MatType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Matrix depth and channels for converting array to cv::Mat</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Depth_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Depth(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L913">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Depth_" data-uid="OpenCvSharp.InputArray.Depth*"></a>
+  <h4 id="OpenCvSharp_InputArray_Depth_System_Int32_" data-uid="OpenCvSharp.InputArray.Depth(System.Int32)">Depth(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Depth(int i = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Dims_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Dims(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L795">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Dims_" data-uid="OpenCvSharp.InputArray.Dims*"></a>
+  <h4 id="OpenCvSharp_InputArray_Dims_System_Int32_" data-uid="OpenCvSharp.InputArray.Dims(System.Int32)">Dims(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Dims(int i = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_DisposeManaged.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.DisposeManaged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L242">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_DisposeManaged_" data-uid="OpenCvSharp.InputArray.DisposeManaged*"></a>
+  <h4 id="OpenCvSharp_InputArray_DisposeManaged" data-uid="OpenCvSharp.InputArray.DisposeManaged">DisposeManaged()</h4>
+  <div class="markdown level1 summary"><p>Releases managed resources</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DisposeManaged()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_DisposeManaged">DisposableObject.DisposeManaged()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_DisposeUnmanaged.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.DisposeUnmanaged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L252">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_DisposeUnmanaged_" data-uid="OpenCvSharp.InputArray.DisposeUnmanaged*"></a>
+  <h4 id="OpenCvSharp_InputArray_DisposeUnmanaged" data-uid="OpenCvSharp.InputArray.DisposeUnmanaged">DisposeUnmanaged()</h4>
+  <div class="markdown level1 summary"><p>Releases unmanaged resources</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DisposeUnmanaged()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_DisposeUnmanaged">DisposableCvObject.DisposeUnmanaged()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Empty.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Empty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L969">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Empty_" data-uid="OpenCvSharp.InputArray.Empty*"></a>
+  <h4 id="OpenCvSharp_InputArray_Empty" data-uid="OpenCvSharp.InputArray.Empty">Empty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Empty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_GetFlags.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.GetFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L743">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_GetFlags_" data-uid="OpenCvSharp.InputArray.GetFlags*"></a>
+  <h4 id="OpenCvSharp_InputArray_GetFlags" data-uid="OpenCvSharp.InputArray.GetFlags">GetFlags()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetFlags()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_GetMat_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.GetMat(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L716">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_GetMat_" data-uid="OpenCvSharp.InputArray.GetMat*"></a>
+  <h4 id="OpenCvSharp_InputArray_GetMat_System_Int32_" data-uid="OpenCvSharp.InputArray.GetMat(System.Int32)">GetMat(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mat GetMat(int i = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_GetMatVector.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.GetMatVector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L729">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_GetMatVector_" data-uid="OpenCvSharp.InputArray.GetMatVector*"></a>
+  <h4 id="OpenCvSharp_InputArray_GetMatVector" data-uid="OpenCvSharp.InputArray.GetMatVector">GetMatVector()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mat[] GetMatVector()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_GetObj.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.GetObj%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L756">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_GetObj_" data-uid="OpenCvSharp.InputArray.GetObj*"></a>
+  <h4 id="OpenCvSharp_InputArray_GetObj" data-uid="OpenCvSharp.InputArray.GetObj">GetObj()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr GetObj()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_GetSz.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.GetSz%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L769">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_GetSz_" data-uid="OpenCvSharp.InputArray.GetSz*"></a>
+  <h4 id="OpenCvSharp_InputArray_GetSz" data-uid="OpenCvSharp.InputArray.GetSz">GetSz()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Size GetSz()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Size.html">Size</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_IsContinuous_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.IsContinuous(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L941">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_IsContinuous_" data-uid="OpenCvSharp.InputArray.IsContinuous*"></a>
+  <h4 id="OpenCvSharp_InputArray_IsContinuous_System_Int32_" data-uid="OpenCvSharp.InputArray.IsContinuous(System.Int32)">IsContinuous(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsContinuous(int i = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_IsGpuMatVector.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.IsGpuMatVector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L1130">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_IsGpuMatVector_" data-uid="OpenCvSharp.InputArray.IsGpuMatVector*"></a>
+  <h4 id="OpenCvSharp_InputArray_IsGpuMatVector" data-uid="OpenCvSharp.InputArray.IsGpuMatVector">IsGpuMatVector()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGpuMatVector()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_IsMat.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.IsMat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L1052">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_IsMat_" data-uid="OpenCvSharp.InputArray.IsMat*"></a>
+  <h4 id="OpenCvSharp_InputArray_IsMat" data-uid="OpenCvSharp.InputArray.IsMat">IsMat()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMat()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_IsMatVector.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.IsMatVector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L1078">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_IsMatVector_" data-uid="OpenCvSharp.InputArray.IsMatVector*"></a>
+  <h4 id="OpenCvSharp_InputArray_IsMatVector" data-uid="OpenCvSharp.InputArray.IsMatVector">IsMatVector()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMatVector()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_IsMatx.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.IsMatx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L1104">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_IsMatx_" data-uid="OpenCvSharp.InputArray.IsMatx*"></a>
+  <h4 id="OpenCvSharp_InputArray_IsMatx" data-uid="OpenCvSharp.InputArray.IsMatx">IsMatx()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMatx()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_IsSubmatrix_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.IsSubmatrix(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L955">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_IsSubmatrix_" data-uid="OpenCvSharp.InputArray.IsSubmatrix*"></a>
+  <h4 id="OpenCvSharp_InputArray_IsSubmatrix_System_Int32_" data-uid="OpenCvSharp.InputArray.IsSubmatrix(System.Int32)">IsSubmatrix(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSubmatrix(int i = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_IsUMat.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.IsUMat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L1065">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_IsUMat_" data-uid="OpenCvSharp.InputArray.IsUMat*"></a>
+  <h4 id="OpenCvSharp_InputArray_IsUMat" data-uid="OpenCvSharp.InputArray.IsUMat">IsUMat()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUMat()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_IsUMatVector.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.IsUMatVector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L1091">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_IsUMatVector_" data-uid="OpenCvSharp.InputArray.IsUMatVector*"></a>
+  <h4 id="OpenCvSharp_InputArray_IsUMatVector" data-uid="OpenCvSharp.InputArray.IsUMatVector">IsUMatVector()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUMatVector()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_IsVector.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.IsVector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L1117">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_IsVector_" data-uid="OpenCvSharp.InputArray.IsVector*"></a>
+  <h4 id="OpenCvSharp_InputArray_IsVector" data-uid="OpenCvSharp.InputArray.IsVector">IsVector()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVector()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Kind.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Kind%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L781">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Kind_" data-uid="OpenCvSharp.InputArray.Kind*"></a>
+  <h4 id="OpenCvSharp_InputArray_Kind" data-uid="OpenCvSharp.InputArray.Kind">Kind()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InOutArrayKind Kind()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InOutArrayKind.html">InOutArrayKind</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Offset_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Offset(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L1025">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Offset_" data-uid="OpenCvSharp.InputArray.Offset*"></a>
+  <h4 id="OpenCvSharp_InputArray_Offset_System_Int32_" data-uid="OpenCvSharp.InputArray.Offset(System.Int32)">Offset(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Offset(int i = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Rows_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Rows(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L823">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Rows_" data-uid="OpenCvSharp.InputArray.Rows*"></a>
+  <h4 id="OpenCvSharp_InputArray_Rows_System_Int32_" data-uid="OpenCvSharp.InputArray.Rows(System.Int32)">Rows(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Rows(int i = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_SameSize_OpenCvSharp_InputArray_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.SameSize(OpenCvSharp.InputArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L867">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_SameSize_" data-uid="OpenCvSharp.InputArray.SameSize*"></a>
+  <h4 id="OpenCvSharp_InputArray_SameSize_OpenCvSharp_InputArray_" data-uid="OpenCvSharp.InputArray.SameSize(OpenCvSharp.InputArray)">SameSize(InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SameSize(InputArray arr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td><span class="parametername">arr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Size_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Size(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L837">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Size_" data-uid="OpenCvSharp.InputArray.Size*"></a>
+  <h4 id="OpenCvSharp_InputArray_Size_System_Int32_" data-uid="OpenCvSharp.InputArray.Size(System.Int32)">Size(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Size Size(int i = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Size.html">Size</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_SizeND_System_Int32___System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.SizeND(System.Int32%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L853">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_SizeND_" data-uid="OpenCvSharp.InputArray.SizeND*"></a>
+  <h4 id="OpenCvSharp_InputArray_SizeND_System_Int32___System_Int32_" data-uid="OpenCvSharp.InputArray.SizeND(System.Int32[],System.Int32)">SizeND(Int32[], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SizeND(int[] sz, int i = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">sz</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Step_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Step(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L1039">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Step_" data-uid="OpenCvSharp.InputArray.Step*"></a>
+  <h4 id="OpenCvSharp_InputArray_Step_System_Int32_" data-uid="OpenCvSharp.InputArray.Step(System.Int32)">Step(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Step(int i = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Total_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Total(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L885">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Total_" data-uid="OpenCvSharp.InputArray.Total*"></a>
+  <h4 id="OpenCvSharp_InputArray_Total_System_Int32_" data-uid="OpenCvSharp.InputArray.Total(System.Int32)">Total(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Total(int i = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_Type_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.Type(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L899">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_Type_" data-uid="OpenCvSharp.InputArray.Type*"></a>
+  <h4 id="OpenCvSharp_InputArray_Type_System_Int32_" data-uid="OpenCvSharp.InputArray.Type(System.Int32)">Type(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Type(int i = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Explicit_OpenCvSharp_Mat____OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Explicit(OpenCvSharp.Mat%5B%5D)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L675">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Explicit_" data-uid="OpenCvSharp.InputArray.op_Explicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Explicit_OpenCvSharp_Mat____OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Explicit(OpenCvSharp.Mat[])~OpenCvSharp.InputArray">Explicit(Mat[] to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator InputArray(Mat[] mats)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a>[]</td>
+        <td><span class="parametername">mats</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Explicit_System_Collections_Generic_List_OpenCvSharp_Mat___OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Explicit(System.Collections.Generic.List%7BOpenCvSharp.Mat%7D)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L665">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Explicit_" data-uid="OpenCvSharp.InputArray.op_Explicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Explicit_System_Collections_Generic_List_OpenCvSharp_Mat___OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Explicit(System.Collections.Generic.List{OpenCvSharp.Mat})~OpenCvSharp.InputArray">Explicit(List&lt;Mat&gt; to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator InputArray(List&lt;Mat&gt; mats)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="OpenCvSharp.Mat.html">Mat</a>&gt;</td>
+        <td><span class="parametername">mats</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Mat__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Mat)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L613">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Mat__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Mat)~OpenCvSharp.InputArray">Implicit(Mat to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Mat mat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+        <td><span class="parametername">mat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_MatExpr__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.MatExpr)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L623">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_MatExpr__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.MatExpr)~OpenCvSharp.InputArray">Implicit(MatExpr to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(MatExpr expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.MatExpr.html">MatExpr</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Scalar__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Scalar)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L633">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Scalar__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Scalar)~OpenCvSharp.InputArray">Implicit(Scalar to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Scalar val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Scalar.html">Scalar</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec2b__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec2b)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L681">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec2b__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec2b)~OpenCvSharp.InputArray">Implicit(Vec2b to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec2b vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec2b.html">Vec2b</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec2d__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec2d)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L701">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec2d__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec2d)~OpenCvSharp.InputArray">Implicit(Vec2d to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec2d vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec2d.html">Vec2d</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec2f__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec2f)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L697">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec2f__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec2f)~OpenCvSharp.InputArray">Implicit(Vec2f to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec2f vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec2f.html">Vec2f</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec2i__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec2i)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L693">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec2i__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec2i)~OpenCvSharp.InputArray">Implicit(Vec2i to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec2i vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec2i.html">Vec2i</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec2s__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec2s)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L685">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec2s__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec2s)~OpenCvSharp.InputArray">Implicit(Vec2s to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec2s vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec2s.html">Vec2s</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec2w__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec2w)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L689">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec2w__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec2w)~OpenCvSharp.InputArray">Implicit(Vec2w to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec2w vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec2w.html">Vec2w</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec3b__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec3b)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L682">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec3b__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec3b)~OpenCvSharp.InputArray">Implicit(Vec3b to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec3b vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec3b.html">Vec3b</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec3d__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec3d)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L702">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec3d__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec3d)~OpenCvSharp.InputArray">Implicit(Vec3d to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec3d vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec3d.html">Vec3d</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec3f__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec3f)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L698">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec3f__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec3f)~OpenCvSharp.InputArray">Implicit(Vec3f to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec3f vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec3f.html">Vec3f</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec3i__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec3i)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L694">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec3i__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec3i)~OpenCvSharp.InputArray">Implicit(Vec3i to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec3i vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec3i.html">Vec3i</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec3s__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec3s)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L686">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec3s__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec3s)~OpenCvSharp.InputArray">Implicit(Vec3s to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec3s vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec3s.html">Vec3s</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec3w__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec3w)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L690">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec3w__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec3w)~OpenCvSharp.InputArray">Implicit(Vec3w to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec3w vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec3w.html">Vec3w</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec4b__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec4b)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L683">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec4b__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec4b)~OpenCvSharp.InputArray">Implicit(Vec4b to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec4b vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec4b.html">Vec4b</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec4d__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec4d)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L703">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec4d__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec4d)~OpenCvSharp.InputArray">Implicit(Vec4d to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec4d vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec4d.html">Vec4d</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec4f__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec4f)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L699">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec4f__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec4f)~OpenCvSharp.InputArray">Implicit(Vec4f to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec4f vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec4f.html">Vec4f</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec4i__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec4i)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L695">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec4i__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec4i)~OpenCvSharp.InputArray">Implicit(Vec4i to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec4i vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec4i.html">Vec4i</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec4s__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec4s)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L687">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec4s__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec4s)~OpenCvSharp.InputArray">Implicit(Vec4s to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec4s vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec4s.html">Vec4s</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec4w__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec4w)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L691">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec4w__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec4w)~OpenCvSharp.InputArray">Implicit(Vec4w to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec4w vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec4w.html">Vec4w</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec6b__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec6b)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L684">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec6b__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec6b)~OpenCvSharp.InputArray">Implicit(Vec6b to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec6b vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec6b.html">Vec6b</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec6d__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec6d)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L704">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec6d__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec6d)~OpenCvSharp.InputArray">Implicit(Vec6d to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec6d vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec6d.html">Vec6d</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec6f__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec6f)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L700">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec6f__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec6f)~OpenCvSharp.InputArray">Implicit(Vec6f to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec6f vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec6f.html">Vec6f</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec6i__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec6i)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L696">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec6i__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec6i)~OpenCvSharp.InputArray">Implicit(Vec6i to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec6i vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec6i.html">Vec6i</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec6s__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec6s)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L688">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec6s__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec6s)~OpenCvSharp.InputArray">Implicit(Vec6s to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec6s vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec6s.html">Vec6s</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec6w__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec6w)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L692">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_OpenCvSharp_Vec6w__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(OpenCvSharp.Vec6w)~OpenCvSharp.InputArray">Implicit(Vec6w to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(Vec6w vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec6w.html">Vec6w</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray_op_Implicit_System_Double__OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray.op_Implicit(System.Double)~OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L643">View Source</a>
+  </span>
+  <a id="OpenCvSharp_InputArray_op_Implicit_" data-uid="OpenCvSharp.InputArray.op_Implicit*"></a>
+  <h4 id="OpenCvSharp_InputArray_op_Implicit_System_Double__OpenCvSharp_InputArray" data-uid="OpenCvSharp.InputArray.op_Implicit(System.Double)~OpenCvSharp.InputArray">Implicit(Double to InputArray)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator InputArray(double val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="OpenCvSharp.ICvPtrHolder.html">ICvPtrHolder</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_InputArray.md&amp;value=---%0Auid%3A%20OpenCvSharp.InputArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/core/InputArray.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

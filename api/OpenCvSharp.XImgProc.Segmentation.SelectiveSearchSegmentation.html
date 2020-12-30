@@ -1,0 +1,665 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SelectiveSearchSegmentation
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SelectiveSearchSegmentation
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation">
+  
+  
+  <h1 id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation" class="text-break">Class SelectiveSearchSegmentation
+  </h1>
+  <div class="markdown level0 summary"><p>Selective search segmentation algorithm.
+The class implements the algorithm described in @cite uijlings2013selective.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="OpenCvSharp.DisposableObject.html">DisposableObject</a></div>
+    <div class="level2"><a class="xref" href="OpenCvSharp.DisposableCvObject.html">DisposableCvObject</a></div>
+    <div class="level3"><a class="xref" href="OpenCvSharp.Algorithm.html">Algorithm</a></div>
+    <div class="level4"><span class="xref">SelectiveSearchSegmentation</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="OpenCvSharp.ICvPtrHolder.html">ICvPtrHolder</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Write_OpenCvSharp_FileStorage_">Algorithm.Write(FileStorage)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Read_OpenCvSharp_FileNode_">Algorithm.Read(FileNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Empty">Algorithm.Empty</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Save_System_String_">Algorithm.Save(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_GetDefaultName">Algorithm.GetDefaultName()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_ptr">DisposableCvObject.ptr</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_DisposeUnmanaged">DisposableCvObject.DisposeUnmanaged()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_CvPtr">DisposableCvObject.CvPtr</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_DataHandle">DisposableObject.DataHandle</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsDisposed">DisposableObject.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsEnabledDispose">DisposableObject.IsEnabledDispose</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemory">DisposableObject.AllocatedMemory</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemorySize">DisposableObject.AllocatedMemorySize</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose">DisposableObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocGCHandle_System_Object_">DisposableObject.AllocGCHandle(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocMemory_System_Int32_">DisposableObject.AllocMemory(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_NotifyMemoryPressure_System_Int64_">DisposableObject.NotifyMemoryPressure(Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_ThrowIfDisposed">DisposableObject.ThrowIfDisposed()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCvSharp.XImgProc.Segmentation.html">OpenCvSharp.XImgProc.Segmentation</a></h6>
+  <h6><strong>Assembly</strong>: OpenCvSharp.dll</h6>
+  <h5 id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SelectiveSearchSegmentation : Algorithm, IDisposable, ICvPtrHolder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation__ctor_System_IntPtr_.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.%23ctor(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/Segmentation/SelectiveSearchSegmentation.cs/#L18">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation__ctor_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.#ctor*"></a>
+  <h4 id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation__ctor_System_IntPtr_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.#ctor(System.IntPtr)">SelectiveSearchSegmentation(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates instance by raw pointer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SelectiveSearchSegmentation(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_AddGraphSegmentation_OpenCvSharp_XImgProc_Segmentation_GraphSegmentation_.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.AddGraphSegmentation(OpenCvSharp.XImgProc.Segmentation.GraphSegmentation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/Segmentation/SelectiveSearchSegmentation.cs/#L137">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_AddGraphSegmentation_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.AddGraphSegmentation*"></a>
+  <h4 id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_AddGraphSegmentation_OpenCvSharp_XImgProc_Segmentation_GraphSegmentation_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.AddGraphSegmentation(OpenCvSharp.XImgProc.Segmentation.GraphSegmentation)">AddGraphSegmentation(GraphSegmentation)</h4>
+  <div class="markdown level1 summary"><p>Add a new graph segmentation in the list of graph segementations to process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddGraphSegmentation(GraphSegmentation g)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.XImgProc.Segmentation.GraphSegmentation.html">GraphSegmentation</a></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>The graph segmentation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_AddImage_OpenCvSharp_InputArray_.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.AddImage(OpenCvSharp.InputArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/Segmentation/SelectiveSearchSegmentation.cs/#L108">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_AddImage_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.AddImage*"></a>
+  <h4 id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_AddImage_OpenCvSharp_InputArray_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.AddImage(OpenCvSharp.InputArray)">AddImage(InputArray)</h4>
+  <div class="markdown level1 summary"><p>Add a new image in the list of images to process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddImage(InputArray img)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td><span class="parametername">img</span></td>
+        <td><p>The image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_AddStrategy_OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentationStrategy_.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.AddStrategy(OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentationStrategy)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/Segmentation/SelectiveSearchSegmentation.cs/#L169">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_AddStrategy_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.AddStrategy*"></a>
+  <h4 id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_AddStrategy_OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentationStrategy_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.AddStrategy(OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentationStrategy)">AddStrategy(SelectiveSearchSegmentationStrategy)</h4>
+  <div class="markdown level1 summary"><p>Add a new strategy in the list of strategy to process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AddStrategy(SelectiveSearchSegmentationStrategy s)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentationStrategy.html">SelectiveSearchSegmentationStrategy</a></td>
+        <td><span class="parametername">s</span></td>
+        <td><p>The strategy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_ClearGraphSegmentations.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.ClearGraphSegmentations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/Segmentation/SelectiveSearchSegmentation.cs/#L157">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_ClearGraphSegmentations_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.ClearGraphSegmentations*"></a>
+  <h4 id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_ClearGraphSegmentations" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.ClearGraphSegmentations">ClearGraphSegmentations()</h4>
+  <div class="markdown level1 summary"><p>Clear the list of graph segmentations to process</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ClearGraphSegmentations()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_ClearImages.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.ClearImages%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/Segmentation/SelectiveSearchSegmentation.cs/#L125">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_ClearImages_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.ClearImages*"></a>
+  <h4 id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_ClearImages" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.ClearImages">ClearImages()</h4>
+  <div class="markdown level1 summary"><p>Clear the list of images to process</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ClearImages()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_ClearStrategies.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.ClearStrategies%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/Segmentation/SelectiveSearchSegmentation.cs/#L188">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_ClearStrategies_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.ClearStrategies*"></a>
+  <h4 id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_ClearStrategies" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.ClearStrategies">ClearStrategies()</h4>
+  <div class="markdown level1 summary"><p>Clear the list of strategy to process;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ClearStrategies()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_Create.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.Create%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/Segmentation/SelectiveSearchSegmentation.cs/#L38">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_Create_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.Create*"></a>
+  <h4 id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_Create" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.Create">Create()</h4>
+  <div class="markdown level1 summary"><p>Create a new SelectiveSearchSegmentation class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SelectiveSearchSegmentation Create()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.html">SelectiveSearchSegmentation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_DisposeManaged.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.DisposeManaged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/Segmentation/SelectiveSearchSegmentation.cs/#L27">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_DisposeManaged_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.DisposeManaged*"></a>
+  <h4 id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_DisposeManaged" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.DisposeManaged">DisposeManaged()</h4>
+  <div class="markdown level1 summary"><p>Releases managed resources</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DisposeManaged()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_DisposeManaged">DisposableObject.DisposeManaged()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_Process_OpenCvSharp_Rect____.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.Process(OpenCvSharp.Rect%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/Segmentation/SelectiveSearchSegmentation.cs/#L200">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_Process_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.Process*"></a>
+  <h4 id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_Process_OpenCvSharp_Rect____" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.Process(OpenCvSharp.Rect[]@)">Process(out Rect[])</h4>
+  <div class="markdown level1 summary"><p>Based on all images, graph segmentations and stragies, computes all possible rects and return them</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Process(out Rect[] rects)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Rect.html">Rect</a>[]</td>
+        <td><span class="parametername">rects</span></td>
+        <td><p>The list of rects. The first ones are more relevents than the lasts ones.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_SetBaseImage_OpenCvSharp_InputArray_.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.SetBaseImage(OpenCvSharp.InputArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/Segmentation/SelectiveSearchSegmentation.cs/#L49">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_SetBaseImage_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.SetBaseImage*"></a>
+  <h4 id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_SetBaseImage_OpenCvSharp_InputArray_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.SetBaseImage(OpenCvSharp.InputArray)">SetBaseImage(InputArray)</h4>
+  <div class="markdown level1 summary"><p>Set a image used by switch* functions to initialize the class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetBaseImage(InputArray img)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td><span class="parametername">img</span></td>
+        <td><p>The image</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_SwitchToSelectiveSearchFast_System_Int32_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.SwitchToSelectiveSearchFast(System.Int32%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/Segmentation/SelectiveSearchSegmentation.cs/#L82">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_SwitchToSelectiveSearchFast_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.SwitchToSelectiveSearchFast*"></a>
+  <h4 id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_SwitchToSelectiveSearchFast_System_Int32_System_Int32_System_Single_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.SwitchToSelectiveSearchFast(System.Int32,System.Int32,System.Single)">SwitchToSelectiveSearchFast(Int32, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Initialize the class with the 'Selective search fast' parameters describled in @cite uijlings2013selective.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SwitchToSelectiveSearchFast(int baseK = 150, int incK = 150, float sigma = 0.8F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">baseK</span></td>
+        <td><p>The k parameter for the first graph segmentation</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">incK</span></td>
+        <td><p>The increment of the k parameter for all graph segmentations</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">sigma</span></td>
+        <td><p>The sigma parameter for the graph segmentation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_SwitchToSelectiveSearchQuality_System_Int32_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.SwitchToSelectiveSearchQuality(System.Int32%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/Segmentation/SelectiveSearchSegmentation.cs/#L96">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_SwitchToSelectiveSearchQuality_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.SwitchToSelectiveSearchQuality*"></a>
+  <h4 id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_SwitchToSelectiveSearchQuality_System_Int32_System_Int32_System_Single_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.SwitchToSelectiveSearchQuality(System.Int32,System.Int32,System.Single)">SwitchToSelectiveSearchQuality(Int32, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Initialize the class with the 'Selective search fast' parameters describled in @cite uijlings2013selective.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SwitchToSelectiveSearchQuality(int baseK = 150, int incK = 150, float sigma = 0.8F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">baseK</span></td>
+        <td><p>The k parameter for the first graph segmentation</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">incK</span></td>
+        <td><p>The increment of the k parameter for all graph segmentations</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">sigma</span></td>
+        <td><p>The sigma parameter for the graph segmentation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_SwitchToSingleStrategy_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.SwitchToSingleStrategy(System.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/Segmentation/SelectiveSearchSegmentation.cs/#L68">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_SwitchToSingleStrategy_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.SwitchToSingleStrategy*"></a>
+  <h4 id="OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation_SwitchToSingleStrategy_System_Int32_System_Single_" data-uid="OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation.SwitchToSingleStrategy(System.Int32,System.Single)">SwitchToSingleStrategy(Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Initialize the class with the 'Single stragegy' parameters describled in @cite uijlings2013selective.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SwitchToSingleStrategy(int k = 200, float sigma = 0.8F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">k</span></td>
+        <td><p>The k parameter for the graph segmentation</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">sigma</span></td>
+        <td><p>The sigma parameter for the graph segmentation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="OpenCvSharp.ICvPtrHolder.html">ICvPtrHolder</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_Segmentation_SelectiveSearchSegmentation.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.Segmentation.SelectiveSearchSegmentation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/Segmentation/SelectiveSearchSegmentation.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

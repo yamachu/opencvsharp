@@ -1,0 +1,818 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EdgeBoxes
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EdgeBoxes
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.XImgProc.EdgeBoxes">
+  
+  
+  <h1 id="OpenCvSharp_XImgProc_EdgeBoxes" data-uid="OpenCvSharp.XImgProc.EdgeBoxes" class="text-break">Class EdgeBoxes
+  </h1>
+  <div class="markdown level0 summary"><p>Class implementing EdgeBoxes algorithm from @cite ZitnickECCV14edgeBoxes</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="OpenCvSharp.DisposableObject.html">DisposableObject</a></div>
+    <div class="level2"><a class="xref" href="OpenCvSharp.DisposableCvObject.html">DisposableCvObject</a></div>
+    <div class="level3"><a class="xref" href="OpenCvSharp.Algorithm.html">Algorithm</a></div>
+    <div class="level4"><span class="xref">EdgeBoxes</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="OpenCvSharp.ICvPtrHolder.html">ICvPtrHolder</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Write_OpenCvSharp_FileStorage_">Algorithm.Write(FileStorage)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Read_OpenCvSharp_FileNode_">Algorithm.Read(FileNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Empty">Algorithm.Empty</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Save_System_String_">Algorithm.Save(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_GetDefaultName">Algorithm.GetDefaultName()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_ptr">DisposableCvObject.ptr</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_DisposeUnmanaged">DisposableCvObject.DisposeUnmanaged()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_CvPtr">DisposableCvObject.CvPtr</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_DataHandle">DisposableObject.DataHandle</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsDisposed">DisposableObject.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsEnabledDispose">DisposableObject.IsEnabledDispose</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemory">DisposableObject.AllocatedMemory</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemorySize">DisposableObject.AllocatedMemorySize</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose">DisposableObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocGCHandle_System_Object_">DisposableObject.AllocGCHandle(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocMemory_System_Int32_">DisposableObject.AllocMemory(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_NotifyMemoryPressure_System_Int64_">DisposableObject.NotifyMemoryPressure(Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_ThrowIfDisposed">DisposableObject.ThrowIfDisposed()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCvSharp.XImgProc.html">OpenCvSharp.XImgProc</a></h6>
+  <h6><strong>Assembly</strong>: OpenCvSharp.dll</h6>
+  <h5 id="OpenCvSharp_XImgProc_EdgeBoxes_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EdgeBoxes : Algorithm, IDisposable, ICvPtrHolder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes__ctor_System_IntPtr_.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes.%23ctor(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L17">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_EdgeBoxes__ctor_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.#ctor*"></a>
+  <h4 id="OpenCvSharp_XImgProc_EdgeBoxes__ctor_System_IntPtr_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.#ctor(System.IntPtr)">EdgeBoxes(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates instance by raw pointer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EdgeBoxes(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes_Alpha.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes.Alpha%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L73">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_EdgeBoxes_Alpha_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.Alpha*"></a>
+  <h4 id="OpenCvSharp_XImgProc_EdgeBoxes_Alpha" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.Alpha">Alpha</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the step size of sliding window search.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float Alpha { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes_Beta.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes.Beta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L95">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_EdgeBoxes_Beta_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.Beta*"></a>
+  <h4 id="OpenCvSharp_XImgProc_EdgeBoxes_Beta" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.Beta">Beta</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the nms threshold for object proposals.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float Beta { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes_ClusterMinMag.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes.ClusterMinMag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L227">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_EdgeBoxes_ClusterMinMag_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.ClusterMinMag*"></a>
+  <h4 id="OpenCvSharp_XImgProc_EdgeBoxes_ClusterMinMag" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.ClusterMinMag">ClusterMinMag</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the cluster min magnitude.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float ClusterMinMag { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes_EdgeMergeThr.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes.EdgeMergeThr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L205">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_EdgeBoxes_EdgeMergeThr_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.EdgeMergeThr*"></a>
+  <h4 id="OpenCvSharp_XImgProc_EdgeBoxes_EdgeMergeThr" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.EdgeMergeThr">EdgeMergeThr</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the edge merge threshold.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float EdgeMergeThr { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes_EdgeMinMag.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes.EdgeMinMag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L183">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_EdgeBoxes_EdgeMinMag_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.EdgeMinMag*"></a>
+  <h4 id="OpenCvSharp_XImgProc_EdgeBoxes_EdgeMinMag" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.EdgeMinMag">EdgeMinMag</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the edge min magnitude.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float EdgeMinMag { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes_Eta.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes.Eta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L117">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_EdgeBoxes_Eta_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.Eta*"></a>
+  <h4 id="OpenCvSharp_XImgProc_EdgeBoxes_Eta" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.Eta">Eta</h4>
+  <div class="markdown level1 summary"><p>Gets or sets adaptation rate for nms threshold.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float Eta { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes_Gamma.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes.Gamma%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L293">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_EdgeBoxes_Gamma_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.Gamma*"></a>
+  <h4 id="OpenCvSharp_XImgProc_EdgeBoxes_Gamma" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.Gamma">Gamma</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the affinity sensitivity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float Gamma { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes_Kappa.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes.Kappa%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L315">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_EdgeBoxes_Kappa_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.Kappa*"></a>
+  <h4 id="OpenCvSharp_XImgProc_EdgeBoxes_Kappa" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.Kappa">Kappa</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the scale sensitivity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float Kappa { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes_MaxAspectRatio.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes.MaxAspectRatio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L249">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_EdgeBoxes_MaxAspectRatio_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.MaxAspectRatio*"></a>
+  <h4 id="OpenCvSharp_XImgProc_EdgeBoxes_MaxAspectRatio" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.MaxAspectRatio">MaxAspectRatio</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the max aspect ratio of boxes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float MaxAspectRatio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes_MaxBoxes.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes.MaxBoxes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L161">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_EdgeBoxes_MaxBoxes_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.MaxBoxes*"></a>
+  <h4 id="OpenCvSharp_XImgProc_EdgeBoxes_MaxBoxes" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.MaxBoxes">MaxBoxes</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the max number of boxes to detect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int MaxBoxes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes_MinBoxArea.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes.MinBoxArea%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L271">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_EdgeBoxes_MinBoxArea_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.MinBoxArea*"></a>
+  <h4 id="OpenCvSharp_XImgProc_EdgeBoxes_MinBoxArea" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.MinBoxArea">MinBoxArea</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the minimum area of boxes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float MinBoxArea { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes_MinScore.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes.MinScore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L139">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_EdgeBoxes_MinScore_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.MinScore*"></a>
+  <h4 id="OpenCvSharp_XImgProc_EdgeBoxes_MinScore" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.MinScore">MinScore</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the min score of boxes to detect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float MinScore { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes_Create_System_Single_System_Single_System_Single_System_Single_System_Int32_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes.Create(System.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Int32%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L49">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_EdgeBoxes_Create_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.Create*"></a>
+  <h4 id="OpenCvSharp_XImgProc_EdgeBoxes_Create_System_Single_System_Single_System_Single_System_Single_System_Int32_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.Create(System.Single,System.Single,System.Single,System.Single,System.Int32,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">Create(Single, Single, Single, Single, Int32, Single, Single, Single, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Creates a EdgeBoxes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EdgeBoxes Create(float alpha = 0.65F, float beta = 0.75F, float eta = 1F, float minScore = 0.01F, int maxBoxes = 10000, float edgeMinMag = 0.1F, float edgeMergeThr = 0.5F, float clusterMinMag = 0.5F, float maxAspectRatio = 3F, float minBoxArea = 1000F, float gamma = 2F, float kappa = 1.5F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">alpha</span></td>
+        <td><p>step size of sliding window search.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">beta</span></td>
+        <td><p>nms threshold for object proposals.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">eta</span></td>
+        <td><p>adaptation rate for nms threshold.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">minScore</span></td>
+        <td><p>min score of boxes to detect.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxBoxes</span></td>
+        <td><p>max number of boxes to detect.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">edgeMinMag</span></td>
+        <td><p>edge min magnitude. Increase to trade off accuracy for speed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">edgeMergeThr</span></td>
+        <td><p>edge merge threshold. Increase to trade off accuracy for speed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">clusterMinMag</span></td>
+        <td><p>cluster min magnitude. Increase to trade off accuracy for speed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">maxAspectRatio</span></td>
+        <td><p>max aspect ratio of boxes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">minBoxArea</span></td>
+        <td><p>minimum area of boxes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">gamma</span></td>
+        <td><p>affinity sensitivity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">kappa</span></td>
+        <td><p>scale sensitivity.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.XImgProc.EdgeBoxes.html">EdgeBoxes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes_DisposeManaged.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes.DisposeManaged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L26">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_EdgeBoxes_DisposeManaged_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.DisposeManaged*"></a>
+  <h4 id="OpenCvSharp_XImgProc_EdgeBoxes_DisposeManaged" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.DisposeManaged">DisposeManaged()</h4>
+  <div class="markdown level1 summary"><p>Releases managed resources</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DisposeManaged()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_DisposeManaged">DisposableObject.DisposeManaged()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes_GetBoundingBoxes_OpenCvSharp_InputArray_OpenCvSharp_InputArray_OpenCvSharp_Rect____.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes.GetBoundingBoxes(OpenCvSharp.InputArray%2COpenCvSharp.InputArray%2COpenCvSharp.Rect%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L340">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_EdgeBoxes_GetBoundingBoxes_" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.GetBoundingBoxes*"></a>
+  <h4 id="OpenCvSharp_XImgProc_EdgeBoxes_GetBoundingBoxes_OpenCvSharp_InputArray_OpenCvSharp_InputArray_OpenCvSharp_Rect____" data-uid="OpenCvSharp.XImgProc.EdgeBoxes.GetBoundingBoxes(OpenCvSharp.InputArray,OpenCvSharp.InputArray,OpenCvSharp.Rect[]@)">GetBoundingBoxes(InputArray, InputArray, out Rect[])</h4>
+  <div class="markdown level1 summary"><p>Returns array containing proposal boxes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GetBoundingBoxes(InputArray edgeMap, InputArray orientationMap, out Rect[] boxes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td><span class="parametername">edgeMap</span></td>
+        <td><p>edge image.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td><span class="parametername">orientationMap</span></td>
+        <td><p>orientation map.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Rect.html">Rect</a>[]</td>
+        <td><span class="parametername">boxes</span></td>
+        <td><p>proposal boxes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="OpenCvSharp.ICvPtrHolder.html">ICvPtrHolder</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_EdgeBoxes.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.EdgeBoxes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/EdgeBoxes.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

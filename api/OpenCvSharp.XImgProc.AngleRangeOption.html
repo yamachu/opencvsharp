@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum AngleRangeOption
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum AngleRangeOption
+   ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.XImgProc.AngleRangeOption">
+  
+  
+  <h1 id="OpenCvSharp_XImgProc_AngleRangeOption" data-uid="OpenCvSharp.XImgProc.AngleRangeOption" class="text-break">Enum AngleRangeOption
+  </h1>
+  <div class="markdown level0 summary"><p>Specifies the part of Hough space to calculate</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCvSharp.XImgProc.html">OpenCvSharp.XImgProc</a></h6>
+  <h6><strong>Assembly</strong>: OpenCvSharp.dll</h6>
+  <h5 id="OpenCvSharp_XImgProc_AngleRangeOption_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum AngleRangeOption</code></pre>
+  </div>
+  <h5 id="OpenCvSharp_XImgProc_AngleRangeOption_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The enum specifies the part of Hough space to calculate.
+Each member specifies primarily direction of lines(horizontal or vertical)
+and the direction of angle changes.
+Direction of angle changes is from multiples of 90 to odd multiples of 45.
+The image considered to be written top-down and left-to-right.
+Angles are started from vertical line and go clockwise.
+Separate quarters and halves are written in orientation they should be in full Hough space.</p>
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="OpenCvSharp_XImgProc_AngleRangeOption_ARO_0_45">ARO_0_45</td>
+        <td><p>Vertical primarily direction and clockwise angle changes</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_XImgProc_AngleRangeOption_ARO_315_0">ARO_315_0</td>
+        <td><p>Vertical primarily direction and counterclockwise angle changes</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_XImgProc_AngleRangeOption_ARO_315_135">ARO_315_135</td>
+        <td><p>Full set of directions</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_XImgProc_AngleRangeOption_ARO_315_45">ARO_315_45</td>
+        <td><p>Vertical primarily direction</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_XImgProc_AngleRangeOption_ARO_45_135">ARO_45_135</td>
+        <td><p>Horizontal primarily direction</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_XImgProc_AngleRangeOption_ARO_45_90">ARO_45_90</td>
+        <td><p>Horizontal primarily direction and counterclockwise angle changes</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_XImgProc_AngleRangeOption_ARO_90_135">ARO_90_135</td>
+        <td><p>Horizontal primarily direction and clockwise angle changes</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_XImgProc_AngleRangeOption_ARO_CTR_HOR">ARO_CTR_HOR</td>
+        <td><p>90 +/- atan(0.5), interval approximately from 64.5 to 116.5 degrees.
+It is used for calculating Fast Hough Transform for images skewed by atan(0.5).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_XImgProc_AngleRangeOption_ARO_CTR_VER">ARO_CTR_VER</td>
+        <td><p>+/- atan(0.5), interval approximately from 333.5(-26.5) to 26.5 degrees
+It is used for calculating Fast Hough Transform for images skewed by atan(0.5).</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/shimat/opencvsharp/new/docfx/apiSpec/new?filename=OpenCvSharp_XImgProc_AngleRangeOption.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.AngleRangeOption%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/shimat/opencvsharp/blob/docfx/src/OpenCvSharp/Modules/ximgproc/Enum/AngleRangeOption.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
