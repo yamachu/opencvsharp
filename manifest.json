@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCvSharp.Algorithm.html",
-          "hash": "8nNl5/qkdciGmi8n9NKuIg=="
+          "hash": "m6TYVk3CoinFpGFXWEuTDQ=="
         }
       },
       "is_incremental": false,
@@ -3477,7 +3477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCvSharp.NativeMethods.html",
-          "hash": "uUcBkeuYNaYPHM6wkewebA=="
+          "hash": "7G/fNBsklLJhkkULhPR6Vw=="
         }
       },
       "is_incremental": false,
@@ -4613,11 +4613,59 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Tracking.Tracker.yml",
+      "source_relative_path": "api/OpenCvSharp.Tracker.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenCvSharp.Tracking.Tracker.html",
-          "hash": "H4Nhg7Rp/JJtuOaDUNeZxA=="
+          "relative_path": "api/OpenCvSharp.Tracker.html",
+          "hash": "RixEbM0dKkY55zPv0hHI8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCvSharp.TrackerGOTURN.Params.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCvSharp.TrackerGOTURN.Params.html",
+          "hash": "it4OGW2lDCsrIkQ7nCkorQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCvSharp.TrackerGOTURN.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCvSharp.TrackerGOTURN.html",
+          "hash": "k7VBlM27RjbmRZKNVfg+6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCvSharp.TrackerMIL.Params.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCvSharp.TrackerMIL.Params.html",
+          "hash": "ufLgR5HWWhAxmfpGjVibbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCvSharp.TrackerMIL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCvSharp.TrackerMIL.html",
+          "hash": "r3QDsCxV9kEgXxaiY9yLIA=="
         }
       },
       "is_incremental": false,
@@ -4641,31 +4689,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCvSharp.Tracking.TrackerCSRT.html",
-          "hash": "0d8ju13Rp2GpSzBwKBW+YQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Tracking.TrackerGOTURN.Params.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Tracking.TrackerGOTURN.Params.html",
-          "hash": "5GAlUTsvYfO+Vy/ZhTfjIQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Tracking.TrackerGOTURN.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Tracking.TrackerGOTURN.html",
-          "hash": "dVKB/0P39spDHJMH4NqORg=="
+          "hash": "YfVbtZ/ATaTUvmn1vjBi2g=="
         }
       },
       "is_incremental": false,
@@ -4689,31 +4713,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCvSharp.Tracking.TrackerKCF.html",
-          "hash": "CJGOxSrm2M39e7bidNx/ng=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Tracking.TrackerMIL.Params.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Tracking.TrackerMIL.Params.html",
-          "hash": "iNhGPicTEKhiRehgMxTSdg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Tracking.TrackerMIL.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Tracking.TrackerMIL.html",
-          "hash": "E95q3EK1FkWffz512QtKOw=="
+          "hash": "5SU0bU8Drxsk5a8bZ7o6yw=="
         }
       },
       "is_incremental": false,
@@ -4737,7 +4737,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCvSharp.Tracking.html",
-          "hash": "e9RatLWkXi7RQ5DabPGSCA=="
+          "hash": "4S3TavP/RwBjMBqa2QzIoA=="
         }
       },
       "is_incremental": false,
@@ -6249,7 +6249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCvSharp.html",
-          "hash": "HmaHcaWRDbMScALy0CFXxA=="
+          "hash": "q4VDUPZeeSoqBJpU1YKQMQ=="
         }
       },
       "is_incremental": false,
@@ -6273,7 +6273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "PO7J4uMZ9Id5BP2KV0o3NA=="
+          "hash": "WoKX/wdjz6zXvCtM6EO2uA=="
         }
       },
       "is_incremental": false,
