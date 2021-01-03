@@ -93,6 +93,34 @@
     <thead>
     <tbody>
       <tr>
+        <td id="OpenCvSharp_XPhoto_InpaintTypes_FSR_BEST">FSR_BEST</td>
+        <td><p>Performs Frequency Selective Reconstruction (FSR).
+One of the two quality profiles BEST and FAST can be chosen, depending on the time available for reconstruction.
+See @cite GenserPCS2018 and @cite SeilerTIP2015 for details.</p>
+<p>The algorithm may be utilized for the following areas of application:</p>
+<ol>
+<li>%Error Concealment (Inpainting).
+The sampling mask indicates the missing pixels of the distorted input
+image to be reconstructed.</li>
+<li>Non-Regular Sampling.
+For more information on how to choose a good sampling mask, please review
+@cite GroscheICIP2018 and @cite GroscheIST2018.</li>
+</ol>
+<p>1-channel grayscale or 3-channel BGR image are accepted.</p>
+<p>Conventional accepted ranges:</p>
+<ul>
+<li>0-255 for CV_8U</li>
+<li>0-65535 for CV_16U</li>
+<li>0-1 for CV_32F/CV_64F.</li>
+</ul>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_XPhoto_InpaintTypes_FSR_FAST">FSR_FAST</td>
+        <td><p>See #INPAINT_FSR_BEST</p>
+</td>
+      </tr>
+      <tr>
         <td id="OpenCvSharp_XPhoto_InpaintTypes_SHIFTMAP">SHIFTMAP</td>
         <td><p>This algorithm searches for dominant correspondences(transformations) of image patches
 and tries to seamlessly fill-in the area to be inpainted using this transformations inpaint</p>
