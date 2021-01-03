@@ -77,6 +77,17 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="OpenCvSharp.Detail.AffineBestOf2NearestMatcher.html">AffineBestOf2NearestMatcher</a></h4>
+      <section><p>Features matcher similar to cv::detail::BestOf2NearestMatcher which
+finds two best matches for each feature and leaves the best one only if the
+ratio between descriptor distances is greater than the threshold match_conf.</p>
+<p>Unlike cv::detail::BestOf2NearestMatcher this matcher uses affine
+transformation (affine transformation estimate will be placed in matches_info).</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.Detail.BestOf2NearestMatcher.html">BestOf2NearestMatcher</a></h4>
+      <section><p>Features matcher which finds two best matches for each feature and leaves the best one only if the
+ratio between descriptor distances is greater than the threshold match_conf</p>
+</section>
       <h4><a class="xref" href="OpenCvSharp.Detail.Blender.html">Blender</a></h4>
       <section></section>
       <h4><a class="xref" href="OpenCvSharp.Detail.BundleAdjusterBase.html">BundleAdjusterBase</a></h4>
@@ -91,9 +102,15 @@
       <h4><a class="xref" href="OpenCvSharp.Detail.FeaturesFinder.html">FeaturesFinder</a></h4>
       <section></section>
       <h4><a class="xref" href="OpenCvSharp.Detail.FeaturesMatcher.html">FeaturesMatcher</a></h4>
-      <section></section>
+      <section><p>Feature matchers base class.</p>
+</section>
       <h4><a class="xref" href="OpenCvSharp.Detail.ImageFeatures.html">ImageFeatures</a></h4>
       <section><p>Structure containing image keypoints and descriptors.</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.Detail.MatchesInfo.html">MatchesInfo</a></h4>
+      <section><p>Structure containing information about matches between two images.</p>
+<p>It's assumed that there is a transformation between those images. Transformation may be
+homography or affine transformation based on selected matcher.</p>
 </section>
       <h4><a class="xref" href="OpenCvSharp.Detail.SeamFinder.html">SeamFinder</a></h4>
       <section></section>
