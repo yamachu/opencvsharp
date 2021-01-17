@@ -2433,7 +2433,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCvSharp.Internal.NativeMethods.html",
-          "hash": "KtS+ofBjBPlpp4hvtA2W+A=="
+          "hash": "eoigy0D8YSjIRia0UHHoIA=="
         }
       },
       "is_incremental": false,
@@ -2445,7 +2445,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCvSharp.Internal.StdString.html",
-          "hash": "FCkd50P3Zc9eV+TiK0IgRw=="
+          "hash": "PfKFGapU9xuoGRb4V1+0UQ=="
         }
       },
       "is_incremental": false,
