@@ -164,7 +164,7 @@
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat__ctor_OpenCvSharp_Size_OpenCvSharp_MatType_OpenCvSharp_Scalar_OpenCvSharp_UMatUsageFlags_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.%23ctor(OpenCvSharp.Size%2COpenCvSharp.MatType%2COpenCvSharp.Scalar%2COpenCvSharp.UMatUsageFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L219">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L227">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat__ctor_" data-uid="OpenCvSharp.UMat.#ctor*"></a>
   <h4 id="OpenCvSharp_UMat__ctor_OpenCvSharp_Size_OpenCvSharp_MatType_OpenCvSharp_Scalar_OpenCvSharp_UMatUsageFlags_" data-uid="OpenCvSharp.UMat.#ctor(OpenCvSharp.Size,OpenCvSharp.MatType,OpenCvSharp.Scalar,OpenCvSharp.UMatUsageFlags)">UMat(Size, MatType, Scalar, UMatUsageFlags)</h4>
@@ -173,7 +173,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UMat(Size size, MatType type, Scalar s, UMatUsageFlags usageFlags = UMatUsageFlags.USAGE_DEFAULT)</code></pre>
+    <pre><code class="lang-csharp hljs">public UMat(Size size, MatType type, Scalar s, UMatUsageFlags usageFlags = UMatUsageFlags.Default)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -209,7 +209,8 @@ To set all the matrix elements to the particular value after the construction, u
       <tr>
         <td><a class="xref" href="OpenCvSharp.UMatUsageFlags.html">UMatUsageFlags</a></td>
         <td><span class="parametername">usageFlags</span></td>
-        <td></td>
+        <td><p>usage flags for allocator</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -218,7 +219,7 @@ To set all the matrix elements to the particular value after the construction, u
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat__ctor_OpenCvSharp_Size_OpenCvSharp_MatType_OpenCvSharp_UMatUsageFlags_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.%23ctor(OpenCvSharp.Size%2COpenCvSharp.MatType%2COpenCvSharp.UMatUsageFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L166">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L170">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat__ctor_" data-uid="OpenCvSharp.UMat.#ctor*"></a>
   <h4 id="OpenCvSharp_UMat__ctor_OpenCvSharp_Size_OpenCvSharp_MatType_OpenCvSharp_UMatUsageFlags_" data-uid="OpenCvSharp.UMat.#ctor(OpenCvSharp.Size,OpenCvSharp.MatType,OpenCvSharp.UMatUsageFlags)">UMat(Size, MatType, UMatUsageFlags)</h4>
@@ -227,7 +228,7 @@ To set all the matrix elements to the particular value after the construction, u
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UMat(Size size, MatType type, UMatUsageFlags usageFlags = UMatUsageFlags.USAGE_DEFAULT)</code></pre>
+    <pre><code class="lang-csharp hljs">public UMat(Size size, MatType type, UMatUsageFlags usageFlags = UMatUsageFlags.Default)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -256,7 +257,8 @@ or MatType.CV_8UC(n), ..., CV_64FC(n) to create multi-channel matrices.</p>
       <tr>
         <td><a class="xref" href="OpenCvSharp.UMatUsageFlags.html">UMatUsageFlags</a></td>
         <td><span class="parametername">usageFlags</span></td>
-        <td></td>
+        <td><p>usage flags for allocator</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -297,7 +299,7 @@ or MatType.CV_8UC(n), ..., CV_64FC(n) to create multi-channel matrices.</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat__ctor_OpenCvSharp_UMat_OpenCvSharp_Range_OpenCvSharp_Range_OpenCvSharp_UMatUsageFlags_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.%23ctor(OpenCvSharp.UMat%2COpenCvSharp.Range%2COpenCvSharp.Range%2COpenCvSharp.UMatUsageFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L251">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L261">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat__ctor_" data-uid="OpenCvSharp.UMat.#ctor*"></a>
   <h4 id="OpenCvSharp_UMat__ctor_OpenCvSharp_UMat_OpenCvSharp_Range_OpenCvSharp_Range_OpenCvSharp_UMatUsageFlags_" data-uid="OpenCvSharp.UMat.#ctor(OpenCvSharp.UMat,OpenCvSharp.Range,OpenCvSharp.Range,OpenCvSharp.UMatUsageFlags)">UMat(UMat, Range, Range, UMatUsageFlags)</h4>
@@ -306,7 +308,7 @@ or MatType.CV_8UC(n), ..., CV_64FC(n) to create multi-channel matrices.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UMat(UMat m, Range rowRange, Range colRange, UMatUsageFlags usageFlags = UMatUsageFlags.USAGE_DEFAULT)</code></pre>
+    <pre><code class="lang-csharp hljs">public UMat(UMat m, Range rowRange, Range colRange, UMatUsageFlags usageFlags = UMatUsageFlags.Default)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -344,7 +346,8 @@ Use Range.All to take all the rows.</p>
       <tr>
         <td><a class="xref" href="OpenCvSharp.UMatUsageFlags.html">UMatUsageFlags</a></td>
         <td><span class="parametername">usageFlags</span></td>
-        <td></td>
+        <td><p>usage flags for allocator</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -353,7 +356,7 @@ Use Range.All to take all the rows.</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat__ctor_OpenCvSharp_UMat_OpenCvSharp_Range___.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.%23ctor(OpenCvSharp.UMat%2COpenCvSharp.Range%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L284">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L294">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat__ctor_" data-uid="OpenCvSharp.UMat.#ctor*"></a>
   <h4 id="OpenCvSharp_UMat__ctor_OpenCvSharp_UMat_OpenCvSharp_Range___" data-uid="OpenCvSharp.UMat.#ctor(OpenCvSharp.UMat,OpenCvSharp.Range[])">UMat(UMat, Range[])</h4>
@@ -397,7 +400,7 @@ If you want to have an independent copy of the sub-array, use Mat.Clone() .</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat__ctor_OpenCvSharp_UMat_OpenCvSharp_Rect_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.%23ctor(OpenCvSharp.UMat%2COpenCvSharp.Rect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L322">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L332">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat__ctor_" data-uid="OpenCvSharp.UMat.#ctor*"></a>
   <h4 id="OpenCvSharp_UMat__ctor_OpenCvSharp_UMat_OpenCvSharp_Rect_" data-uid="OpenCvSharp.UMat.#ctor(OpenCvSharp.UMat,OpenCvSharp.Rect)">UMat(UMat, Rect)</h4>
@@ -450,7 +453,7 @@ If you want to have an independent copy of the sub-array, use Mat.Clone() .</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UMat(UMatUsageFlags usageFlags = UMatUsageFlags.USAGE_DEFAULT)</code></pre>
+    <pre><code class="lang-csharp hljs">public UMat(UMatUsageFlags usageFlags = UMatUsageFlags.Default)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -474,7 +477,7 @@ If you want to have an independent copy of the sub-array, use Mat.Clone() .</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat__ctor_System_Collections_Generic_IEnumerable_System_Int32__OpenCvSharp_MatType_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.%23ctor(System.Collections.Generic.IEnumerable%7BSystem.Int32%7D%2COpenCvSharp.MatType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L348">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L358">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat__ctor_" data-uid="OpenCvSharp.UMat.#ctor*"></a>
   <h4 id="OpenCvSharp_UMat__ctor_System_Collections_Generic_IEnumerable_System_Int32__OpenCvSharp_MatType_" data-uid="OpenCvSharp.UMat.#ctor(System.Collections.Generic.IEnumerable{System.Int32},OpenCvSharp.MatType)">UMat(IEnumerable&lt;Int32&gt;, MatType)</h4>
@@ -515,7 +518,7 @@ or MatType. CV_8UC(n), ..., CV_64FC(n) to create multi-channel matrices.</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat__ctor_System_Collections_Generic_IEnumerable_System_Int32__OpenCvSharp_MatType_OpenCvSharp_Scalar_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.%23ctor(System.Collections.Generic.IEnumerable%7BSystem.Int32%7D%2COpenCvSharp.MatType%2COpenCvSharp.Scalar)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L377">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L387">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat__ctor_" data-uid="OpenCvSharp.UMat.#ctor*"></a>
   <h4 id="OpenCvSharp_UMat__ctor_System_Collections_Generic_IEnumerable_System_Int32__OpenCvSharp_MatType_OpenCvSharp_Scalar_" data-uid="OpenCvSharp.UMat.#ctor(System.Collections.Generic.IEnumerable{System.Int32},OpenCvSharp.MatType,OpenCvSharp.Scalar)">UMat(IEnumerable&lt;Int32&gt;, MatType, Scalar)</h4>
@@ -563,7 +566,7 @@ To set all the matrix elements to the particular value after the construction, u
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat__ctor_System_Int32_System_Int32_OpenCvSharp_MatType_OpenCvSharp_Scalar_OpenCvSharp_UMatUsageFlags_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.%23ctor(System.Int32%2CSystem.Int32%2COpenCvSharp.MatType%2COpenCvSharp.Scalar%2COpenCvSharp.UMatUsageFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L193">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L199">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat__ctor_" data-uid="OpenCvSharp.UMat.#ctor*"></a>
   <h4 id="OpenCvSharp_UMat__ctor_System_Int32_System_Int32_OpenCvSharp_MatType_OpenCvSharp_Scalar_OpenCvSharp_UMatUsageFlags_" data-uid="OpenCvSharp.UMat.#ctor(System.Int32,System.Int32,OpenCvSharp.MatType,OpenCvSharp.Scalar,OpenCvSharp.UMatUsageFlags)">UMat(Int32, Int32, MatType, Scalar, UMatUsageFlags)</h4>
@@ -572,7 +575,7 @@ To set all the matrix elements to the particular value after the construction, u
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UMat(int rows, int cols, MatType type, Scalar s, UMatUsageFlags usageFlags = UMatUsageFlags.USAGE_DEFAULT)</code></pre>
+    <pre><code class="lang-csharp hljs">public UMat(int rows, int cols, MatType type, Scalar s, UMatUsageFlags usageFlags = UMatUsageFlags.Default)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -613,7 +616,8 @@ To set all the matrix elements to the particular value after the construction, u
       <tr>
         <td><a class="xref" href="OpenCvSharp.UMatUsageFlags.html">UMatUsageFlags</a></td>
         <td><span class="parametername">usageFlags</span></td>
-        <td></td>
+        <td><p>usage flags for allocator</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -622,7 +626,7 @@ To set all the matrix elements to the particular value after the construction, u
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat__ctor_System_Int32_System_Int32_OpenCvSharp_MatType_OpenCvSharp_UMatUsageFlags_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.%23ctor(System.Int32%2CSystem.Int32%2COpenCvSharp.MatType%2COpenCvSharp.UMatUsageFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L144">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L146">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat__ctor_" data-uid="OpenCvSharp.UMat.#ctor*"></a>
   <h4 id="OpenCvSharp_UMat__ctor_System_Int32_System_Int32_OpenCvSharp_MatType_OpenCvSharp_UMatUsageFlags_" data-uid="OpenCvSharp.UMat.#ctor(System.Int32,System.Int32,OpenCvSharp.MatType,OpenCvSharp.UMatUsageFlags)">UMat(Int32, Int32, MatType, UMatUsageFlags)</h4>
@@ -631,7 +635,7 @@ To set all the matrix elements to the particular value after the construction, u
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UMat(int rows, int cols, MatType type, UMatUsageFlags usageFlags = UMatUsageFlags.USAGE_DEFAULT)</code></pre>
+    <pre><code class="lang-csharp hljs">public UMat(int rows, int cols, MatType type, UMatUsageFlags usageFlags = UMatUsageFlags.Default)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -665,7 +669,8 @@ or MatType. CV_8UC(n), ..., CV_64FC(n) to create multi-channel matrices.</p>
       <tr>
         <td><a class="xref" href="OpenCvSharp.UMatUsageFlags.html">UMatUsageFlags</a></td>
         <td><span class="parametername">usageFlags</span></td>
-        <td></td>
+        <td><p>usage flags for allocator</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -741,7 +746,7 @@ or MatType. CV_8UC(n), ..., CV_64FC(n) to create multi-channel matrices.</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Cols.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Cols%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1474">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1486">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Cols_" data-uid="OpenCvSharp.UMat.Cols*"></a>
   <h4 id="OpenCvSharp_UMat_Cols" data-uid="OpenCvSharp.UMat.Cols">Cols</h4>
@@ -772,7 +777,7 @@ or MatType. CV_8UC(n), ..., CV_64FC(n) to create multi-channel matrices.</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Dims.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Dims%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1438">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1450">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Dims_" data-uid="OpenCvSharp.UMat.Dims*"></a>
   <h4 id="OpenCvSharp_UMat_Dims" data-uid="OpenCvSharp.UMat.Dims">Dims</h4>
@@ -803,7 +808,7 @@ or MatType. CV_8UC(n), ..., CV_64FC(n) to create multi-channel matrices.</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Flags.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Flags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1423">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1435">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Flags_" data-uid="OpenCvSharp.UMat.Flags*"></a>
   <h4 id="OpenCvSharp_UMat_Flags" data-uid="OpenCvSharp.UMat.Flags">Flags</h4>
@@ -840,7 +845,7 @@ or MatType. CV_8UC(n), ..., CV_64FC(n) to create multi-channel matrices.</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Height.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Height%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1468">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1480">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Height_" data-uid="OpenCvSharp.UMat.Height*"></a>
   <h4 id="OpenCvSharp_UMat_Height" data-uid="OpenCvSharp.UMat.Height">Height</h4>
@@ -871,7 +876,7 @@ or MatType. CV_8UC(n), ..., CV_64FC(n) to create multi-channel matrices.</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Item_OpenCvSharp_Range_OpenCvSharp_Range_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Item(OpenCvSharp.Range%2COpenCvSharp.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L617">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L627">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Item_" data-uid="OpenCvSharp.UMat.Item*"></a>
   <h4 id="OpenCvSharp_UMat_Item_OpenCvSharp_Range_OpenCvSharp_Range_" data-uid="OpenCvSharp.UMat.Item(OpenCvSharp.Range,OpenCvSharp.Range)">Item[Range, Range]</h4>
@@ -928,7 +933,7 @@ The upper boundary is not included. To select all the columns, use Range.All().<
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Item_OpenCvSharp_Range___.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Item(OpenCvSharp.Range%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L667">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L677">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Item_" data-uid="OpenCvSharp.UMat.Item*"></a>
   <h4 id="OpenCvSharp_UMat_Item_OpenCvSharp_Range___" data-uid="OpenCvSharp.UMat.Item(OpenCvSharp.Range[])">Item[Range[]]</h4>
@@ -977,7 +982,7 @@ The upper boundary is not included. To select all the columns, use Range.All().<
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Item_OpenCvSharp_Rect_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Item(OpenCvSharp.Rect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L642">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L652">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Item_" data-uid="OpenCvSharp.UMat.Item*"></a>
   <h4 id="OpenCvSharp_UMat_Item_OpenCvSharp_Rect_" data-uid="OpenCvSharp.UMat.Item(OpenCvSharp.Rect)">Item[Rect]</h4>
@@ -1026,7 +1031,7 @@ The upper boundary is not included. To select all the columns, use Range.All().<
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Item_System_Int32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Item(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L559">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L569">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Item_" data-uid="OpenCvSharp.UMat.Item*"></a>
   <h4 id="OpenCvSharp_UMat_Item_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenCvSharp.UMat.Item(System.Int32,System.Int32,System.Int32,System.Int32)">Item[Int32, Int32, Int32, Int32]</h4>
@@ -1093,7 +1098,7 @@ The upper boundary is not included. To select all the columns, use Range.All().<
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Rows.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Rows%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1453">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1465">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Rows_" data-uid="OpenCvSharp.UMat.Rows*"></a>
   <h4 id="OpenCvSharp_UMat_Rows" data-uid="OpenCvSharp.UMat.Rows">Rows</h4>
@@ -1124,7 +1129,7 @@ The upper boundary is not included. To select all the columns, use Range.All().<
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Width.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Width%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1489">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1501">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Width_" data-uid="OpenCvSharp.UMat.Width*"></a>
   <h4 id="OpenCvSharp_UMat_Width" data-uid="OpenCvSharp.UMat.Width">Width</h4>
@@ -1157,7 +1162,7 @@ The upper boundary is not included. To select all the columns, use Range.All().<
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_AdjustROI_System_Int32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.AdjustROI(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1168">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1179">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_AdjustROI_" data-uid="OpenCvSharp.UMat.AdjustROI*"></a>
   <h4 id="OpenCvSharp_UMat_AdjustROI_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenCvSharp.UMat.AdjustROI(System.Int32,System.Int32,System.Int32,System.Int32)">AdjustROI(Int32, Int32, Int32, Int32)</h4>
@@ -1224,7 +1229,7 @@ The upper boundary is not included. To select all the columns, use Range.All().<
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Alignment_System_Int32_OpenCvSharp_UMatUsageFlags_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Alignment(System.Int32%2COpenCvSharp.UMatUsageFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1592">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1605">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Alignment_" data-uid="OpenCvSharp.UMat.Alignment*"></a>
   <h4 id="OpenCvSharp_UMat_Alignment_System_Int32_OpenCvSharp_UMatUsageFlags_" data-uid="OpenCvSharp.UMat.Alignment(System.Int32,OpenCvSharp.UMatUsageFlags)">Alignment(Int32, UMatUsageFlags)</h4>
@@ -1232,7 +1237,7 @@ The upper boundary is not included. To select all the columns, use Range.All().<
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UMat Alignment(int n = 4, UMatUsageFlags usageFlags = UMatUsageFlags.USAGE_DEFAULT)</code></pre>
+    <pre><code class="lang-csharp hljs">public UMat Alignment(int n = 4, UMatUsageFlags usageFlags = UMatUsageFlags.Default)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1252,7 +1257,8 @@ The upper boundary is not included. To select all the columns, use Range.All().<
       <tr>
         <td><a class="xref" href="OpenCvSharp.UMatUsageFlags.html">UMatUsageFlags</a></td>
         <td><span class="parametername">usageFlags</span></td>
-        <td></td>
+        <td><p>usage flags for allocator</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1276,7 +1282,7 @@ The upper boundary is not included. To select all the columns, use Range.All().<
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_AssignTo_OpenCvSharp_UMat_System_Nullable_OpenCvSharp_MatType__.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.AssignTo(OpenCvSharp.UMat%2CSystem.Nullable%7BOpenCvSharp.MatType%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L937">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L947">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_AssignTo_" data-uid="OpenCvSharp.UMat.AssignTo*"></a>
   <h4 id="OpenCvSharp_UMat_AssignTo_OpenCvSharp_UMat_System_Nullable_OpenCvSharp_MatType__" data-uid="OpenCvSharp.UMat.AssignTo(OpenCvSharp.UMat,System.Nullable{OpenCvSharp.MatType})">AssignTo(UMat, Nullable&lt;MatType&gt;)</h4>
@@ -1313,57 +1319,10 @@ The upper boundary is not included. To select all the columns, use Range.All().<
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Cast__1.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Cast%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1606">View Source</a>
-  </span>
-  <a id="OpenCvSharp_UMat_Cast_" data-uid="OpenCvSharp.UMat.Cast*"></a>
-  <h4 id="OpenCvSharp_UMat_Cast__1" data-uid="OpenCvSharp.UMat.Cast``1">Cast&lt;TUMat&gt;()</h4>
-  <div class="markdown level1 summary"><p>Creates type-specific Mat instance from this.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TUMat Cast&lt;TUMat&gt;()
-    where TUMat : UMat</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TUMat</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">TUMat</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Channels.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Channels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1341">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1353">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Channels_" data-uid="OpenCvSharp.UMat.Channels*"></a>
   <h4 id="OpenCvSharp_UMat_Channels" data-uid="OpenCvSharp.UMat.Channels">Channels()</h4>
@@ -1394,7 +1353,7 @@ The upper boundary is not included. To select all the columns, use Range.All().<
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_CheckVector_System_Int32_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.CheckVector(System.Int32%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1404">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1416">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_CheckVector_" data-uid="OpenCvSharp.UMat.CheckVector*"></a>
   <h4 id="OpenCvSharp_UMat_CheckVector_System_Int32_System_Int32_System_Boolean_" data-uid="OpenCvSharp.UMat.CheckVector(System.Int32,System.Int32,System.Boolean)">CheckVector(Int32, Int32, Boolean)</h4>
@@ -1462,7 +1421,7 @@ Otherwise, it returns the number of elements in the matrix. Note that an element
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Clone.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Clone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L829">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L839">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Clone_" data-uid="OpenCvSharp.UMat.Clone*"></a>
   <h4 id="OpenCvSharp_UMat_Clone" data-uid="OpenCvSharp.UMat.Clone">Clone()</h4>
@@ -1493,7 +1452,7 @@ Otherwise, it returns the number of elements in the matrix. Note that an element
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Clone_OpenCvSharp_Rect_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Clone(OpenCvSharp.Rect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L844">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L854">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Clone_" data-uid="OpenCvSharp.UMat.Clone*"></a>
   <h4 id="OpenCvSharp_UMat_Clone_OpenCvSharp_Rect_" data-uid="OpenCvSharp.UMat.Clone(OpenCvSharp.Rect)">Clone(Rect)</h4>
@@ -1541,7 +1500,7 @@ Otherwise, it returns the number of elements in the matrix. Note that an element
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Col_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Col(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L713">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L723">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Col_" data-uid="OpenCvSharp.UMat.Col*"></a>
   <h4 id="OpenCvSharp_UMat_Col_System_Int32_" data-uid="OpenCvSharp.UMat.Col(System.Int32)">Col(Int32)</h4>
@@ -1590,7 +1549,7 @@ Otherwise, it returns the number of elements in the matrix. Note that an element
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_ColRange_OpenCvSharp_Range_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.ColRange(OpenCvSharp.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L741">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L751">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_ColRange_" data-uid="OpenCvSharp.UMat.ColRange*"></a>
   <h4 id="OpenCvSharp_UMat_ColRange_OpenCvSharp_Range_" data-uid="OpenCvSharp.UMat.ColRange(OpenCvSharp.Range)">ColRange(Range)</h4>
@@ -1638,7 +1597,7 @@ Otherwise, it returns the number of elements in the matrix. Note that an element
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_ColRange_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.ColRange(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L727">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L737">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_ColRange_" data-uid="OpenCvSharp.UMat.ColRange*"></a>
   <h4 id="OpenCvSharp_UMat_ColRange_System_Int32_System_Int32_" data-uid="OpenCvSharp.UMat.ColRange(System.Int32,System.Int32)">ColRange(Int32, Int32)</h4>
@@ -1693,7 +1652,7 @@ Otherwise, it returns the number of elements in the matrix. Note that an element
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_ConvertTo_OpenCvSharp_OutputArray_OpenCvSharp_MatType_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.ConvertTo(OpenCvSharp.OutputArray%2COpenCvSharp.MatType%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L918">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L928">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_ConvertTo_" data-uid="OpenCvSharp.UMat.ConvertTo*"></a>
   <h4 id="OpenCvSharp_UMat_ConvertTo_OpenCvSharp_OutputArray_OpenCvSharp_MatType_System_Double_System_Double_" data-uid="OpenCvSharp.UMat.ConvertTo(OpenCvSharp.OutputArray,OpenCvSharp.MatType,System.Double,System.Double)">ConvertTo(OutputArray, MatType, Double, Double)</h4>
@@ -1746,7 +1705,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_CopyTo_OpenCvSharp_OutputArray_OpenCvSharp_InputArray_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.CopyTo(OpenCvSharp.OutputArray%2COpenCvSharp.InputArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L855">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L865">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_CopyTo_" data-uid="OpenCvSharp.UMat.CopyTo*"></a>
   <h4 id="OpenCvSharp_UMat_CopyTo_OpenCvSharp_OutputArray_OpenCvSharp_InputArray_" data-uid="OpenCvSharp.UMat.CopyTo(OpenCvSharp.OutputArray,OpenCvSharp.InputArray)">CopyTo(OutputArray, InputArray)</h4>
@@ -1786,7 +1745,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_CopyTo_OpenCvSharp_UMat_OpenCvSharp_InputArray_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.CopyTo(OpenCvSharp.UMat%2COpenCvSharp.InputArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L885">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L895">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_CopyTo_" data-uid="OpenCvSharp.UMat.CopyTo*"></a>
   <h4 id="OpenCvSharp_UMat_CopyTo_OpenCvSharp_UMat_OpenCvSharp_InputArray_" data-uid="OpenCvSharp.UMat.CopyTo(OpenCvSharp.UMat,OpenCvSharp.InputArray)">CopyTo(UMat, InputArray)</h4>
@@ -1826,7 +1785,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Create_OpenCvSharp_MatType_System_Int32___.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Create(OpenCvSharp.MatType%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1134">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1144">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Create_" data-uid="OpenCvSharp.UMat.Create*"></a>
   <h4 id="OpenCvSharp_UMat_Create_OpenCvSharp_MatType_System_Int32___" data-uid="OpenCvSharp.UMat.Create(OpenCvSharp.MatType,System.Int32[])">Create(MatType, Int32[])</h4>
@@ -1866,7 +1825,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Create_OpenCvSharp_Size_OpenCvSharp_MatType_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Create(OpenCvSharp.Size%2COpenCvSharp.MatType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1124">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1134">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Create_" data-uid="OpenCvSharp.UMat.Create*"></a>
   <h4 id="OpenCvSharp_UMat_Create_OpenCvSharp_Size_OpenCvSharp_MatType_" data-uid="OpenCvSharp.UMat.Create(OpenCvSharp.Size,OpenCvSharp.MatType)">Create(Size, MatType)</h4>
@@ -1906,7 +1865,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Create_System_Int32_System_Int32_OpenCvSharp_MatType_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Create(System.Int32%2CSystem.Int32%2COpenCvSharp.MatType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1111">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1121">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Create_" data-uid="OpenCvSharp.UMat.Create*"></a>
   <h4 id="OpenCvSharp_UMat_Create_System_Int32_System_Int32_OpenCvSharp_MatType_" data-uid="OpenCvSharp.UMat.Create(System.Int32,System.Int32,OpenCvSharp.MatType)">Create(Int32, Int32, MatType)</h4>
@@ -1952,7 +1911,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Depth.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Depth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1328">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1340">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Depth_" data-uid="OpenCvSharp.UMat.Depth*"></a>
   <h4 id="OpenCvSharp_UMat_Depth" data-uid="OpenCvSharp.UMat.Depth">Depth()</h4>
@@ -1983,7 +1942,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Diag_OpenCvSharp_MatDiagType_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Diag(OpenCvSharp.MatDiagType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L815">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L825">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Diag_" data-uid="OpenCvSharp.UMat.Diag*"></a>
   <h4 id="OpenCvSharp_UMat_Diag_OpenCvSharp_MatDiagType_" data-uid="OpenCvSharp.UMat.Diag(OpenCvSharp.MatDiagType)">Diag(MatDiagType)</h4>
@@ -2032,7 +1991,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Diag_OpenCvSharp_UMat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Diag(OpenCvSharp.UMat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L421">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L431">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Diag_" data-uid="OpenCvSharp.UMat.Diag*"></a>
   <h4 id="OpenCvSharp_UMat_Diag_OpenCvSharp_UMat_" data-uid="OpenCvSharp.UMat.Diag(OpenCvSharp.UMat)">Diag(UMat)</h4>
@@ -2081,7 +2040,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_DisposeUnmanaged.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.DisposeUnmanaged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L404">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L414">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_DisposeUnmanaged_" data-uid="OpenCvSharp.UMat.DisposeUnmanaged*"></a>
   <h4 id="OpenCvSharp_UMat_DisposeUnmanaged" data-uid="OpenCvSharp.UMat.DisposeUnmanaged">DisposeUnmanaged()</h4>
@@ -2099,7 +2058,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Dot_OpenCvSharp_InputArray_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Dot(OpenCvSharp.InputArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1090">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1100">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Dot_" data-uid="OpenCvSharp.UMat.Dot*"></a>
   <h4 id="OpenCvSharp_UMat_Dot_OpenCvSharp_InputArray_" data-uid="OpenCvSharp.UMat.Dot(OpenCvSharp.InputArray)">Dot(InputArray)</h4>
@@ -2148,7 +2107,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_ElemSize.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.ElemSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1289">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1301">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_ElemSize_" data-uid="OpenCvSharp.UMat.ElemSize*"></a>
   <h4 id="OpenCvSharp_UMat_ElemSize" data-uid="OpenCvSharp.UMat.ElemSize">ElemSize()</h4>
@@ -2179,7 +2138,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_ElemSize1.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.ElemSize1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1302">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1314">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_ElemSize1_" data-uid="OpenCvSharp.UMat.ElemSize1*"></a>
   <h4 id="OpenCvSharp_UMat_ElemSize1" data-uid="OpenCvSharp.UMat.ElemSize1">ElemSize1()</h4>
@@ -2210,7 +2169,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Empty.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Empty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1368">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1380">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Empty_" data-uid="OpenCvSharp.UMat.Empty*"></a>
   <h4 id="OpenCvSharp_UMat_Empty" data-uid="OpenCvSharp.UMat.Empty">Empty()</h4>
@@ -2241,7 +2200,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_EmptyClone_OpenCvSharp_UMatUsageFlags_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.EmptyClone(OpenCvSharp.UMatUsageFlags)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1579">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1591">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_EmptyClone_" data-uid="OpenCvSharp.UMat.EmptyClone*"></a>
   <h4 id="OpenCvSharp_UMat_EmptyClone_OpenCvSharp_UMatUsageFlags_" data-uid="OpenCvSharp.UMat.EmptyClone(OpenCvSharp.UMatUsageFlags)">EmptyClone(UMatUsageFlags)</h4>
@@ -2250,7 +2209,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UMat EmptyClone(UMatUsageFlags usageFlags = UMatUsageFlags.USAGE_DEFAULT)</code></pre>
+    <pre><code class="lang-csharp hljs">public UMat EmptyClone(UMatUsageFlags usageFlags = UMatUsageFlags.Default)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2289,7 +2248,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Eye_OpenCvSharp_Size_OpenCvSharp_MatType_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Eye(OpenCvSharp.Size%2COpenCvSharp.MatType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L525">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L535">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Eye_" data-uid="OpenCvSharp.UMat.Eye*"></a>
   <h4 id="OpenCvSharp_UMat_Eye_OpenCvSharp_Size_OpenCvSharp_MatType_" data-uid="OpenCvSharp.UMat.Eye(OpenCvSharp.Size,OpenCvSharp.MatType)">Eye(Size, MatType)</h4>
@@ -2344,7 +2303,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Eye_System_Int32_System_Int32_OpenCvSharp_MatType_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Eye(System.Int32%2CSystem.Int32%2COpenCvSharp.MatType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L537">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L547">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Eye_" data-uid="OpenCvSharp.UMat.Eye*"></a>
   <h4 id="OpenCvSharp_UMat_Eye_System_Int32_System_Int32_OpenCvSharp_MatType_" data-uid="OpenCvSharp.UMat.Eye(System.Int32,System.Int32,OpenCvSharp.MatType)">Eye(Int32, Int32, MatType)</h4>
@@ -2405,7 +2364,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_GetMat_OpenCvSharp_AccessFlag_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.GetMat(OpenCvSharp.AccessFlag)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L700">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L710">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_GetMat_" data-uid="OpenCvSharp.UMat.GetMat*"></a>
   <h4 id="OpenCvSharp_UMat_GetMat_OpenCvSharp_AccessFlag_" data-uid="OpenCvSharp.UMat.GetMat(OpenCvSharp.AccessFlag)">GetMat(AccessFlag)</h4>
@@ -2414,7 +2373,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Mat GetMat(AccessFlag accessflag)</code></pre>
+    <pre><code class="lang-csharp hljs">public Mat GetMat(AccessFlag accessFlags)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2428,7 +2387,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <tbody>
       <tr>
         <td><a class="xref" href="OpenCvSharp.AccessFlag.html">AccessFlag</a></td>
-        <td><span class="parametername">accessflag</span></td>
+        <td><span class="parametername">accessFlags</span></td>
         <td><p>AccessFlag determining the mode in which the data is to be acquired</p>
 </td>
       </tr>
@@ -2454,7 +2413,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Inv_OpenCvSharp_DecompTypes_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Inv(OpenCvSharp.DecompTypes)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1051">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1061">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Inv_" data-uid="OpenCvSharp.UMat.Inv*"></a>
   <h4 id="OpenCvSharp_UMat_Inv_OpenCvSharp_DecompTypes_" data-uid="OpenCvSharp.UMat.Inv(OpenCvSharp.DecompTypes)">Inv(DecompTypes)</h4>
@@ -2503,7 +2462,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_IsContinuous.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.IsContinuous%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1263">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1275">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_IsContinuous_" data-uid="OpenCvSharp.UMat.IsContinuous*"></a>
   <h4 id="OpenCvSharp_UMat_IsContinuous" data-uid="OpenCvSharp.UMat.IsContinuous">IsContinuous()</h4>
@@ -2534,7 +2493,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_IsSubmatrix.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.IsSubmatrix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1276">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1288">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_IsSubmatrix_" data-uid="OpenCvSharp.UMat.IsSubmatrix*"></a>
   <h4 id="OpenCvSharp_UMat_IsSubmatrix" data-uid="OpenCvSharp.UMat.IsSubmatrix">IsSubmatrix()</h4>
@@ -2565,7 +2524,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_LocateROI_OpenCvSharp_Size__OpenCvSharp_Point__.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.LocateROI(OpenCvSharp.Size%40%2COpenCvSharp.Point%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1151">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1161">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_LocateROI_" data-uid="OpenCvSharp.UMat.LocateROI*"></a>
   <h4 id="OpenCvSharp_UMat_LocateROI_OpenCvSharp_Size__OpenCvSharp_Point__" data-uid="OpenCvSharp.UMat.LocateROI(OpenCvSharp.Size@,OpenCvSharp.Point@)">LocateROI(out Size, out Point)</h4>
@@ -2605,7 +2564,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Mul_OpenCvSharp_InputArray_System_Double_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Mul(OpenCvSharp.InputArray%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1069">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1079">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Mul_" data-uid="OpenCvSharp.UMat.Mul*"></a>
   <h4 id="OpenCvSharp_UMat_Mul_OpenCvSharp_InputArray_System_Double_" data-uid="OpenCvSharp.UMat.Mul(OpenCvSharp.InputArray,System.Double)">Mul(InputArray, Double)</h4>
@@ -2658,7 +2617,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Ones_OpenCvSharp_MatType_System_Int32___.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Ones(OpenCvSharp.MatType%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L508">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L518">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Ones_" data-uid="OpenCvSharp.UMat.Ones*"></a>
   <h4 id="OpenCvSharp_UMat_Ones_OpenCvSharp_MatType_System_Int32___" data-uid="OpenCvSharp.UMat.Ones(OpenCvSharp.MatType,System.Int32[])">Ones(MatType, Int32[])</h4>
@@ -2713,7 +2672,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Ones_OpenCvSharp_Size_OpenCvSharp_MatType_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Ones(OpenCvSharp.Size%2COpenCvSharp.MatType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L497">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L507">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Ones_" data-uid="OpenCvSharp.UMat.Ones*"></a>
   <h4 id="OpenCvSharp_UMat_Ones_OpenCvSharp_Size_OpenCvSharp_MatType_" data-uid="OpenCvSharp.UMat.Ones(OpenCvSharp.Size,OpenCvSharp.MatType)">Ones(Size, MatType)</h4>
@@ -2768,7 +2727,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Ones_System_Int32_System_Int32_OpenCvSharp_MatType_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Ones(System.Int32%2CSystem.Int32%2COpenCvSharp.MatType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L483">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L493">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Ones_" data-uid="OpenCvSharp.UMat.Ones*"></a>
   <h4 id="OpenCvSharp_UMat_Ones_System_Int32_System_Int32_OpenCvSharp_MatType_" data-uid="OpenCvSharp.UMat.Ones(System.Int32,System.Int32,OpenCvSharp.MatType)">Ones(Int32, Int32, MatType)</h4>
@@ -2829,7 +2788,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Release.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Release%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L395">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L405">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Release_" data-uid="OpenCvSharp.UMat.Release*"></a>
   <h4 id="OpenCvSharp_UMat_Release" data-uid="OpenCvSharp.UMat.Release">Release()</h4>
@@ -2845,7 +2804,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Reshape_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Reshape(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L998">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1008">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Reshape_" data-uid="OpenCvSharp.UMat.Reshape*"></a>
   <h4 id="OpenCvSharp_UMat_Reshape_System_Int32_System_Int32_" data-uid="OpenCvSharp.UMat.Reshape(System.Int32,System.Int32)">Reshape(Int32, Int32)</h4>
@@ -2900,7 +2859,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Reshape_System_Int32_System_Int32___.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Reshape(System.Int32%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1016">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1026">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Reshape_" data-uid="OpenCvSharp.UMat.Reshape*"></a>
   <h4 id="OpenCvSharp_UMat_Reshape_System_Int32_System_Int32___" data-uid="OpenCvSharp.UMat.Reshape(System.Int32,System.Int32[])">Reshape(Int32, Int32[])</h4>
@@ -2955,7 +2914,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Row_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Row(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L764">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L774">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Row_" data-uid="OpenCvSharp.UMat.Row*"></a>
   <h4 id="OpenCvSharp_UMat_Row_System_Int32_" data-uid="OpenCvSharp.UMat.Row(System.Int32)">Row(Int32)</h4>
@@ -3004,7 +2963,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_RowRange_OpenCvSharp_Range_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.RowRange(OpenCvSharp.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L792">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L802">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_RowRange_" data-uid="OpenCvSharp.UMat.RowRange*"></a>
   <h4 id="OpenCvSharp_UMat_RowRange_OpenCvSharp_Range_" data-uid="OpenCvSharp.UMat.RowRange(OpenCvSharp.Range)">RowRange(Range)</h4>
@@ -3052,7 +3011,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_RowRange_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.RowRange(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L778">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L788">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_RowRange_" data-uid="OpenCvSharp.UMat.RowRange*"></a>
   <h4 id="OpenCvSharp_UMat_RowRange_System_Int32_System_Int32_" data-uid="OpenCvSharp.UMat.RowRange(System.Int32,System.Int32)">RowRange(Int32, Int32)</h4>
@@ -3105,7 +3064,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_SetTo_OpenCvSharp_InputArray_OpenCvSharp_UMat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.SetTo(OpenCvSharp.InputArray%2COpenCvSharp.UMat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L975">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L985">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_SetTo_" data-uid="OpenCvSharp.UMat.SetTo*"></a>
   <h4 id="OpenCvSharp_UMat_SetTo_OpenCvSharp_InputArray_OpenCvSharp_UMat_" data-uid="OpenCvSharp.UMat.SetTo(OpenCvSharp.InputArray,OpenCvSharp.UMat)">SetTo(InputArray, UMat)</h4>
@@ -3158,7 +3117,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_SetTo_OpenCvSharp_Scalar_OpenCvSharp_UMat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.SetTo(OpenCvSharp.Scalar%2COpenCvSharp.UMat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L956">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L966">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_SetTo_" data-uid="OpenCvSharp.UMat.SetTo*"></a>
   <h4 id="OpenCvSharp_UMat_SetTo_OpenCvSharp_Scalar_OpenCvSharp_UMat_" data-uid="OpenCvSharp.UMat.SetTo(OpenCvSharp.Scalar,OpenCvSharp.UMat)">SetTo(Scalar, UMat)</h4>
@@ -3211,7 +3170,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Size.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1495">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1507">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Size_" data-uid="OpenCvSharp.UMat.Size*"></a>
   <h4 id="OpenCvSharp_UMat_Size" data-uid="OpenCvSharp.UMat.Size">Size()</h4>
@@ -3242,7 +3201,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Size_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Size(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1509">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1521">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Size_" data-uid="OpenCvSharp.UMat.Size*"></a>
   <h4 id="OpenCvSharp_UMat_Size_System_Int32_" data-uid="OpenCvSharp.UMat.Size(System.Int32)">Size(Int32)</h4>
@@ -3290,7 +3249,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Step.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Step%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1522">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1534">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Step_" data-uid="OpenCvSharp.UMat.Step*"></a>
   <h4 id="OpenCvSharp_UMat_Step" data-uid="OpenCvSharp.UMat.Step">Step()</h4>
@@ -3321,7 +3280,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Step_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Step(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1536">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1548">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Step_" data-uid="OpenCvSharp.UMat.Step*"></a>
   <h4 id="OpenCvSharp_UMat_Step_System_Int32_" data-uid="OpenCvSharp.UMat.Step(System.Int32)">Step(Int32)</h4>
@@ -3369,7 +3328,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Step1_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Step1(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1355">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1367">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Step1_" data-uid="OpenCvSharp.UMat.Step1*"></a>
   <h4 id="OpenCvSharp_UMat_Step1_System_Int32_" data-uid="OpenCvSharp.UMat.Step1(System.Int32)">Step1(Int32)</h4>
@@ -3417,7 +3376,7 @@ if rtype is negative, the output matrix will have the same type as the input.</p
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_SubMat_OpenCvSharp_Range_OpenCvSharp_Range_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.SubMat(OpenCvSharp.Range%2COpenCvSharp.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1209">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1221">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_SubMat_" data-uid="OpenCvSharp.UMat.SubMat*"></a>
   <h4 id="OpenCvSharp_UMat_SubMat_OpenCvSharp_Range_OpenCvSharp_Range_" data-uid="OpenCvSharp.UMat.SubMat(OpenCvSharp.Range,OpenCvSharp.Range)">SubMat(Range, Range)</h4>
@@ -3474,7 +3433,7 @@ To select all the columns, use Range::all().</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_SubMat_OpenCvSharp_Range___.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.SubMat(OpenCvSharp.Range%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1246">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1258">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_SubMat_" data-uid="OpenCvSharp.UMat.SubMat*"></a>
   <h4 id="OpenCvSharp_UMat_SubMat_OpenCvSharp_Range___" data-uid="OpenCvSharp.UMat.SubMat(OpenCvSharp.Range[])">SubMat(Range[])</h4>
@@ -3523,7 +3482,7 @@ To select all the columns, use Range::all().</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_SubMat_OpenCvSharp_Rect_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.SubMat(OpenCvSharp.Rect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1236">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1248">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_SubMat_" data-uid="OpenCvSharp.UMat.SubMat*"></a>
   <h4 id="OpenCvSharp_UMat_SubMat_OpenCvSharp_Rect_" data-uid="OpenCvSharp.UMat.SubMat(OpenCvSharp.Rect)">SubMat(Rect)</h4>
@@ -3572,7 +3531,7 @@ To select all the columns, use Range::all().</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_SubMat_System_Int32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.SubMat(System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1186">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1198">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_SubMat_" data-uid="OpenCvSharp.UMat.SubMat*"></a>
   <h4 id="OpenCvSharp_UMat_SubMat_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="OpenCvSharp.UMat.SubMat(System.Int32,System.Int32,System.Int32,System.Int32)">SubMat(Int32, Int32, Int32, Int32)</h4>
@@ -3635,7 +3594,7 @@ To select all the columns, use Range::all().</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_T.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.T%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1034">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1044">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_T_" data-uid="OpenCvSharp.UMat.T*"></a>
   <h4 id="OpenCvSharp_UMat_T" data-uid="OpenCvSharp.UMat.T">T()</h4>
@@ -3666,7 +3625,7 @@ To select all the columns, use Range::all().</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_ToString.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1551">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1563">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_ToString_" data-uid="OpenCvSharp.UMat.ToString*"></a>
   <h4 id="OpenCvSharp_UMat_ToString" data-uid="OpenCvSharp.UMat.ToString">ToString()</h4>
@@ -3699,7 +3658,7 @@ To select all the columns, use Range::all().</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Total.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Total%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1381">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1393">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Total_" data-uid="OpenCvSharp.UMat.Total*"></a>
   <h4 id="OpenCvSharp_UMat_Total" data-uid="OpenCvSharp.UMat.Total">Total()</h4>
@@ -3730,7 +3689,7 @@ To select all the columns, use Range::all().</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Type.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1315">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L1327">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Type_" data-uid="OpenCvSharp.UMat.Type*"></a>
   <h4 id="OpenCvSharp_UMat_Type" data-uid="OpenCvSharp.UMat.Type">Type()</h4>
@@ -3761,7 +3720,7 @@ To select all the columns, use Range::all().</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Zeros_OpenCvSharp_MatType_System_Int32___.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Zeros(OpenCvSharp.MatType%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L465">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L475">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Zeros_" data-uid="OpenCvSharp.UMat.Zeros*"></a>
   <h4 id="OpenCvSharp_UMat_Zeros_OpenCvSharp_MatType_System_Int32___" data-uid="OpenCvSharp.UMat.Zeros(OpenCvSharp.MatType,System.Int32[])">Zeros(MatType, Int32[])</h4>
@@ -3815,7 +3774,7 @@ To select all the columns, use Range::all().</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Zeros_OpenCvSharp_Size_OpenCvSharp_MatType_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Zeros(OpenCvSharp.Size%2COpenCvSharp.MatType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L454">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L464">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Zeros_" data-uid="OpenCvSharp.UMat.Zeros*"></a>
   <h4 id="OpenCvSharp_UMat_Zeros_OpenCvSharp_Size_OpenCvSharp_MatType_" data-uid="OpenCvSharp.UMat.Zeros(OpenCvSharp.Size,OpenCvSharp.MatType)">Zeros(Size, MatType)</h4>
@@ -3870,7 +3829,7 @@ To select all the columns, use Range::all().</p>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_UMat_Zeros_System_Int32_System_Int32_OpenCvSharp_MatType_.md&amp;value=---%0Auid%3A%20OpenCvSharp.UMat.Zeros(System.Int32%2CSystem.Int32%2COpenCvSharp.MatType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L440">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Mat/UMat.cs/#L450">View Source</a>
   </span>
   <a id="OpenCvSharp_UMat_Zeros_" data-uid="OpenCvSharp.UMat.Zeros*"></a>
   <h4 id="OpenCvSharp_UMat_Zeros_System_Int32_System_Int32_OpenCvSharp_MatType_" data-uid="OpenCvSharp.UMat.Zeros(System.Int32,System.Int32,OpenCvSharp.MatType)">Zeros(Int32, Int32, MatType)</h4>
