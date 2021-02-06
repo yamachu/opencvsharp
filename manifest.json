@@ -305,162 +305,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Blob.CvBlob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Blob.CvBlob.html",
-          "hash": "6plzrUJ9jA5rimkkbfmAxw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Blob.CvBlobConst.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Blob.CvBlobConst.html",
-          "hash": "YoVIY8QThHOT1xzKSeargw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Blob.CvBlobLib.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Blob.CvBlobLib.html",
-          "hash": "vAOeb/+wfkEmykxmHWTHIA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Blob.CvBlobs.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Blob.CvBlobs.html",
-          "hash": "vQoRLcsyJh+Bybmm+NYY7w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Blob.CvChainCode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Blob.CvChainCode.html",
-          "hash": "VJmXtweGiLukwBu2MnN1Tw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Blob.CvContourChainCode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Blob.CvContourChainCode.html",
-          "hash": "HCveAnLEywGFqv9c8OKJaw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Blob.CvContourPolygon.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Blob.CvContourPolygon.html",
-          "hash": "iCNBW+YS+zb9rCsmznA2cg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Blob.CvTrack.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Blob.CvTrack.html",
-          "hash": "RNY0JwG2Ye+awDTUR2LZBg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Blob.CvTracks.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Blob.CvTracks.html",
-          "hash": "60Vd/ks5/Ndfh3Y4EK6yPw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Blob.LabelData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Blob.LabelData.html",
-          "hash": "G6gjRgwGKxtACeINIyamzg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Blob.RenderBlobsModes.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Blob.RenderBlobsModes.html",
-          "hash": "lj+Zks8nDkF9Lu8h5PIk0g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Blob.RenderTracksModes.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Blob.RenderTracksModes.html",
-          "hash": "6IXxNC3w/t6iJcbPETYjfw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/OpenCvSharp.Blob.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/OpenCvSharp.Blob.html",
-          "hash": "7ZZnL8/JOP9DWw/LlCC4sg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/OpenCvSharp.BorderTypes.yml",
       "output": {
         ".html": {
@@ -6393,7 +6237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "BXMLqw09D8+thDoUuXm6ZA=="
+          "hash": "aWnUbHBbkpZ6Na3ymbhWEw=="
         }
       },
       "is_incremental": false,
@@ -6468,7 +6312,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 531,
+          "total_file_count": 518,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
