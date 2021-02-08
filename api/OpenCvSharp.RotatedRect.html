@@ -76,14 +76,12 @@
   <div class="markdown level0 summary"><p>The class represents rotated (i.e. not up-right) rectangles on a plane.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="OpenCvSharp.RotatedRect.html">RotatedRect</a>&gt;</div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.ValueType.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.ValueType.GetHashCode()</span>
-    </div>
     <div>
       <span class="xref">System.ValueType.ToString()</span>
     </div>
@@ -101,7 +99,7 @@
   <h6><strong>Assembly</strong>: OpenCvSharp.dll</h6>
   <h5 id="OpenCvSharp_RotatedRect_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct RotatedRect</code></pre>
+    <pre><code class="lang-csharp hljs">public struct RotatedRect : IEquatable&lt;RotatedRect&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -275,6 +273,134 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_RotatedRect_Equals_OpenCvSharp_RotatedRect_.md&amp;value=---%0Auid%3A%20OpenCvSharp.RotatedRect.Equals(OpenCvSharp.RotatedRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/RotatedRect.cs/#L83">View Source</a>
+  </span>
+  <a id="OpenCvSharp_RotatedRect_Equals_" data-uid="OpenCvSharp.RotatedRect.Equals*"></a>
+  <h4 id="OpenCvSharp_RotatedRect_Equals_OpenCvSharp_RotatedRect_" data-uid="OpenCvSharp.RotatedRect.Equals(OpenCvSharp.RotatedRect)">Equals(RotatedRect)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(RotatedRect other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.RotatedRect.html">RotatedRect</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_RotatedRect_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OpenCvSharp.RotatedRect.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/RotatedRect.cs/#L88">View Source</a>
+  </span>
+  <a id="OpenCvSharp_RotatedRect_Equals_" data-uid="OpenCvSharp.RotatedRect.Equals*"></a>
+  <h4 id="OpenCvSharp_RotatedRect_Equals_System_Object_" data-uid="OpenCvSharp.RotatedRect.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_RotatedRect_GetHashCode.md&amp;value=---%0Auid%3A%20OpenCvSharp.RotatedRect.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/RotatedRect.cs/#L93">View Source</a>
+  </span>
+  <a id="OpenCvSharp_RotatedRect_GetHashCode_" data-uid="OpenCvSharp.RotatedRect.GetHashCode*"></a>
+  <h4 id="OpenCvSharp_RotatedRect_GetHashCode" data-uid="OpenCvSharp.RotatedRect.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_RotatedRect_Points.md&amp;value=---%0Auid%3A%20OpenCvSharp.RotatedRect.Points%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -304,6 +430,116 @@
       </tr>
     </tbody>
   </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_RotatedRect_op_Equality_OpenCvSharp_RotatedRect_OpenCvSharp_RotatedRect_.md&amp;value=---%0Auid%3A%20OpenCvSharp.RotatedRect.op_Equality(OpenCvSharp.RotatedRect%2COpenCvSharp.RotatedRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/RotatedRect.cs/#L108">View Source</a>
+  </span>
+  <a id="OpenCvSharp_RotatedRect_op_Equality_" data-uid="OpenCvSharp.RotatedRect.op_Equality*"></a>
+  <h4 id="OpenCvSharp_RotatedRect_op_Equality_OpenCvSharp_RotatedRect_OpenCvSharp_RotatedRect_" data-uid="OpenCvSharp.RotatedRect.op_Equality(OpenCvSharp.RotatedRect,OpenCvSharp.RotatedRect)">Equality(RotatedRect, RotatedRect)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(RotatedRect left, RotatedRect right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.RotatedRect.html">RotatedRect</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.RotatedRect.html">RotatedRect</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_RotatedRect_op_Inequality_OpenCvSharp_RotatedRect_OpenCvSharp_RotatedRect_.md&amp;value=---%0Auid%3A%20OpenCvSharp.RotatedRect.op_Inequality(OpenCvSharp.RotatedRect%2COpenCvSharp.RotatedRect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/RotatedRect.cs/#L113">View Source</a>
+  </span>
+  <a id="OpenCvSharp_RotatedRect_op_Inequality_" data-uid="OpenCvSharp.RotatedRect.op_Inequality*"></a>
+  <h4 id="OpenCvSharp_RotatedRect_op_Inequality_OpenCvSharp_RotatedRect_OpenCvSharp_RotatedRect_" data-uid="OpenCvSharp.RotatedRect.op_Inequality(OpenCvSharp.RotatedRect,OpenCvSharp.RotatedRect)">Inequality(RotatedRect, RotatedRect)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(RotatedRect left, RotatedRect right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.RotatedRect.html">RotatedRect</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.RotatedRect.html">RotatedRect</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
 </article>
           </div>
           

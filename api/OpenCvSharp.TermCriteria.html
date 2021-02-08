@@ -76,14 +76,12 @@
   <div class="markdown level0 summary"><p>The class defining termination criteria for iterative algorithms.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="OpenCvSharp.TermCriteria.html">TermCriteria</a>&gt;</div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.ValueType.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.ValueType.GetHashCode()</span>
-    </div>
     <div>
       <span class="xref">System.ValueType.ToString()</span>
     </div>
@@ -101,25 +99,25 @@
   <h6><strong>Assembly</strong>: OpenCvSharp.dll</h6>
   <h5 id="OpenCvSharp_TermCriteria_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct TermCriteria</code></pre>
+    <pre><code class="lang-csharp hljs">public struct TermCriteria : IEquatable&lt;TermCriteria&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_TermCriteria__ctor_OpenCvSharp_CriteriaType_System_Int32_System_Double_.md&amp;value=---%0Auid%3A%20OpenCvSharp.TermCriteria.%23ctor(OpenCvSharp.CriteriaType%2CSystem.Int32%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_TermCriteria__ctor_OpenCvSharp_CriteriaTypes_System_Int32_System_Double_.md&amp;value=---%0Auid%3A%20OpenCvSharp.TermCriteria.%23ctor(OpenCvSharp.CriteriaTypes%2CSystem.Int32%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L31">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L33">View Source</a>
   </span>
   <a id="OpenCvSharp_TermCriteria__ctor_" data-uid="OpenCvSharp.TermCriteria.#ctor*"></a>
-  <h4 id="OpenCvSharp_TermCriteria__ctor_OpenCvSharp_CriteriaType_System_Int32_System_Double_" data-uid="OpenCvSharp.TermCriteria.#ctor(OpenCvSharp.CriteriaType,System.Int32,System.Double)">TermCriteria(CriteriaType, Int32, Double)</h4>
+  <h4 id="OpenCvSharp_TermCriteria__ctor_OpenCvSharp_CriteriaTypes_System_Int32_System_Double_" data-uid="OpenCvSharp.TermCriteria.#ctor(OpenCvSharp.CriteriaTypes,System.Int32,System.Double)">TermCriteria(CriteriaTypes, Int32, Double)</h4>
   <div class="markdown level1 summary"><p>full constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TermCriteria(CriteriaType type, int maxCount, double epsilon)</code></pre>
+    <pre><code class="lang-csharp hljs">public TermCriteria(CriteriaTypes type, int maxCount, double epsilon)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -132,7 +130,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenCvSharp.CriteriaType.html">CriteriaType</a></td>
+        <td><a class="xref" href="OpenCvSharp.CriteriaTypes.html">CriteriaTypes</a></td>
         <td><span class="parametername">type</span></td>
         <td></td>
       </tr>
@@ -155,7 +153,7 @@
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_TermCriteria_Epsilon.md&amp;value=---%0Auid%3A%20OpenCvSharp.TermCriteria.Epsilon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L23">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L25">View Source</a>
   </span>
   <h4 id="OpenCvSharp_TermCriteria_Epsilon" data-uid="OpenCvSharp.TermCriteria.Epsilon">Epsilon</h4>
   <div class="markdown level1 summary"><p>the desired accuracy</p>
@@ -185,7 +183,7 @@
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_TermCriteria_MaxCount.md&amp;value=---%0Auid%3A%20OpenCvSharp.TermCriteria.MaxCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L18">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L20">View Source</a>
   </span>
   <h4 id="OpenCvSharp_TermCriteria_MaxCount" data-uid="OpenCvSharp.TermCriteria.MaxCount">MaxCount</h4>
   <div class="markdown level1 summary"><p>the maximum number of iterations/elements</p>
@@ -215,7 +213,7 @@
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_TermCriteria_Type.md&amp;value=---%0Auid%3A%20OpenCvSharp.TermCriteria.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L13">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L15">View Source</a>
   </span>
   <h4 id="OpenCvSharp_TermCriteria_Type" data-uid="OpenCvSharp.TermCriteria.Type">Type</h4>
   <div class="markdown level1 summary"><p>the type of termination criteria: COUNT, EPS or COUNT + EPS</p>
@@ -223,7 +221,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly CriteriaType Type</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly CriteriaTypes Type</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -235,7 +233,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="OpenCvSharp.CriteriaType.html">CriteriaType</a></td>
+        <td><a class="xref" href="OpenCvSharp.CriteriaTypes.html">CriteriaTypes</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -247,7 +245,7 @@
     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_TermCriteria_Both_System_Int32_System_Double_.md&amp;value=---%0Auid%3A%20OpenCvSharp.TermCriteria.Both(System.Int32%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L43">View Source</a>
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L45">View Source</a>
   </span>
   <a id="OpenCvSharp_TermCriteria_Both_" data-uid="OpenCvSharp.TermCriteria.Both*"></a>
   <h4 id="OpenCvSharp_TermCriteria_Both_System_Int32_System_Double_" data-uid="OpenCvSharp.TermCriteria.Both(System.Int32,System.Double)">Both(Int32, Double)</h4>
@@ -295,6 +293,244 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_TermCriteria_Equals_OpenCvSharp_TermCriteria_.md&amp;value=---%0Auid%3A%20OpenCvSharp.TermCriteria.Equals(OpenCvSharp.TermCriteria)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L55">View Source</a>
+  </span>
+  <a id="OpenCvSharp_TermCriteria_Equals_" data-uid="OpenCvSharp.TermCriteria.Equals*"></a>
+  <h4 id="OpenCvSharp_TermCriteria_Equals_OpenCvSharp_TermCriteria_" data-uid="OpenCvSharp.TermCriteria.Equals(OpenCvSharp.TermCriteria)">Equals(TermCriteria)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(TermCriteria other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.TermCriteria.html">TermCriteria</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_TermCriteria_Equals_System_Object_.md&amp;value=---%0Auid%3A%20OpenCvSharp.TermCriteria.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L60">View Source</a>
+  </span>
+  <a id="OpenCvSharp_TermCriteria_Equals_" data-uid="OpenCvSharp.TermCriteria.Equals*"></a>
+  <h4 id="OpenCvSharp_TermCriteria_Equals_System_Object_" data-uid="OpenCvSharp.TermCriteria.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_TermCriteria_GetHashCode.md&amp;value=---%0Auid%3A%20OpenCvSharp.TermCriteria.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L65">View Source</a>
+  </span>
+  <a id="OpenCvSharp_TermCriteria_GetHashCode_" data-uid="OpenCvSharp.TermCriteria.GetHashCode*"></a>
+  <h4 id="OpenCvSharp_TermCriteria_GetHashCode" data-uid="OpenCvSharp.TermCriteria.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_TermCriteria_op_Equality_OpenCvSharp_TermCriteria_OpenCvSharp_TermCriteria_.md&amp;value=---%0Auid%3A%20OpenCvSharp.TermCriteria.op_Equality(OpenCvSharp.TermCriteria%2COpenCvSharp.TermCriteria)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L80">View Source</a>
+  </span>
+  <a id="OpenCvSharp_TermCriteria_op_Equality_" data-uid="OpenCvSharp.TermCriteria.op_Equality*"></a>
+  <h4 id="OpenCvSharp_TermCriteria_op_Equality_OpenCvSharp_TermCriteria_OpenCvSharp_TermCriteria_" data-uid="OpenCvSharp.TermCriteria.op_Equality(OpenCvSharp.TermCriteria,OpenCvSharp.TermCriteria)">Equality(TermCriteria, TermCriteria)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(TermCriteria left, TermCriteria right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.TermCriteria.html">TermCriteria</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.TermCriteria.html">TermCriteria</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_TermCriteria_op_Inequality_OpenCvSharp_TermCriteria_OpenCvSharp_TermCriteria_.md&amp;value=---%0Auid%3A%20OpenCvSharp.TermCriteria.op_Inequality(OpenCvSharp.TermCriteria%2COpenCvSharp.TermCriteria)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L85">View Source</a>
+  </span>
+  <a id="OpenCvSharp_TermCriteria_op_Inequality_" data-uid="OpenCvSharp.TermCriteria.op_Inequality*"></a>
+  <h4 id="OpenCvSharp_TermCriteria_op_Inequality_OpenCvSharp_TermCriteria_OpenCvSharp_TermCriteria_" data-uid="OpenCvSharp.TermCriteria.op_Inequality(OpenCvSharp.TermCriteria,OpenCvSharp.TermCriteria)">Inequality(TermCriteria, TermCriteria)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(TermCriteria left, TermCriteria right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.TermCriteria.html">TermCriteria</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.TermCriteria.html">TermCriteria</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
 </article>
           </div>
           
@@ -306,7 +542,7 @@
                     <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_TermCriteria.md&amp;value=---%0Auid%3A%20OpenCvSharp.TermCriteria%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/Struct/TermCriteria.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
