@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCvSharp.Algorithm.html",
-          "hash": "oCqt0X5U2Ed2i5OylfmTwQ=="
+          "hash": "7Tgf1jxTDkQqKqf9SbpTdA=="
         }
       },
       "is_incremental": false,
@@ -2265,7 +2265,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCvSharp.Internal.NativeMethods.html",
-          "hash": "muv6qW2aOGkPy9v0UXcddA=="
+          "hash": "Z+++Ffm+2UohYKUvCq3MLw=="
         }
       },
       "is_incremental": false,
@@ -3741,7 +3741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCvSharp.MatType.html",
-          "hash": "JOQ6GMA0Yd5XM1+jJ6f7FQ=="
+          "hash": "tdPkHsNyJtPSFxBPWnj1jQ=="
         }
       },
       "is_incremental": false,
@@ -4402,6 +4402,18 @@
         ".html": {
           "relative_path": "api/OpenCvSharp.RetrievalModes.html",
           "hash": "vrv3kmeQvYC2yz1wL3fp8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCvSharp.RidgeDetectionFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCvSharp.RidgeDetectionFilter.html",
+          "hash": "DmTjsiQYh6s56rRWzHKtEA=="
         }
       },
       "is_incremental": false,
@@ -6165,7 +6177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCvSharp.html",
-          "hash": "5hkAQ+yZi6YWc8IIdXl3rw=="
+          "hash": "ped4aCBrMy4h/8GmzSQJNg=="
         }
       },
       "is_incremental": false,
@@ -6189,7 +6201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "U6GcHjiF+9T4Wn9vCWl3/A=="
+          "hash": "W9A8+mJy8NmSabGZJZWw3A=="
         }
       },
       "is_incremental": false,
@@ -6264,7 +6276,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 514,
+          "total_file_count": 515,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
