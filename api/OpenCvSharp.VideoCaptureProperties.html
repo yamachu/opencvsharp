@@ -125,6 +125,11 @@ user can adjust refernce level using this feature</p>
         <td></td>
       </tr>
       <tr>
+        <td id="OpenCvSharp_VideoCaptureProperties_BitRate">BitRate</td>
+        <td><p>(read-only) Video bitrate in kbits/s</p>
+</td>
+      </tr>
+      <tr>
         <td id="OpenCvSharp_VideoCaptureProperties_Brightness">Brightness</td>
         <td><p>Brightness of image (only for cameras)</p>
 </td>
@@ -136,6 +141,11 @@ user can adjust refernce level using this feature</p>
       <tr>
         <td id="OpenCvSharp_VideoCaptureProperties_Channel">Channel</td>
         <td><p>Video input or Channel Number (only for those cameras that support)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_VideoCaptureProperties_CodecPixelFormat">CodecPixelFormat</td>
+        <td><p>(read-only) codec's pixel format. 4-character code - see VideoWriter::fourcc . Subset of <a href="https://github.com/FFmpeg/FFmpeg/blob/master/libavcodec/raw.c">AV_PIX_FMT_*</a> or -1 if unknown</p>
 </td>
       </tr>
       <tr>
@@ -415,6 +425,16 @@ sets this view point to its normal one (if the flag is &quot;off&quot;).</p>
       <tr>
         <td id="OpenCvSharp_VideoCaptureProperties_OPENNI2_Sync">OPENNI2_Sync</td>
         <td></td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_VideoCaptureProperties_OrientationAuto">OrientationAuto</td>
+        <td><p>if true - rotates output frames of CvCapture considering video file's metadata  (applicable for FFmpeg back-end only) (<a href="https://github.com/opencv/opencv/issues/15499">https://github.com/opencv/opencv/issues/15499</a>)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="OpenCvSharp_VideoCaptureProperties_OrientationMeta">OrientationMeta</td>
+        <td><p>(read-only) Frame rotation defined by stream meta (applicable for FFmpeg back-end only)</p>
+</td>
       </tr>
       <tr>
         <td id="OpenCvSharp_VideoCaptureProperties_Pan">Pan</td>
