@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace OpenCvSharp.LineDescriptor
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace OpenCvSharp.LineDescriptor
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.LineDescriptor">
+  
+  <h1 id="OpenCvSharp_LineDescriptor" data-uid="OpenCvSharp.LineDescriptor" class="text-break">Namespace OpenCvSharp.LineDescriptor
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="OpenCvSharp.LineDescriptor.KeyLine.html">KeyLine</a></h4>
+      <section><p>A class to represent a line</p>
+<p>As aformentioned, it is been necessary to design a class that fully stores the information needed to
+characterize completely a line and plot it on image it was extracted from, when required.</p>
+<p><em>KeyLine</em> class has been created for such goal; it is mainly inspired to Feature2d's KeyPoint class,
+since KeyLine shares some of* KeyPoint*'s fields, even if a part of them assumes a different
+meaning, when speaking about lines.In particular:</p>
+<ul>
+<li>the* class_id* field is used to gather lines extracted from different octaves which refer to
+same line inside original image (such lines and the one they represent in original image share
+the same* class_id* value)</li>
+<li>the* angle* field represents line's slope with respect to (positive) X axis</li>
+<li>the* pt* field represents line's midpoint</li>
+<li>the* response* field is computed as the ratio between the line's length and maximum between
+image's width and height</li>
+<li>the* size* field is the area of the smallest rectangle containing line</li>
+</ul>
+<p>Apart from fields inspired to KeyPoint class, KeyLines stores information about extremes of line in
+original image and in octave it was extracted from, about line's length and number of pixels it
+covers.</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.LineDescriptor.LSDParam.html">LSDParam</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

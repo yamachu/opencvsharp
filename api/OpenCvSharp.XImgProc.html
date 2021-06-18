@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace OpenCvSharp.XImgProc
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace OpenCvSharp.XImgProc
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.XImgProc">
+  
+  <h1 id="OpenCvSharp_XImgProc" data-uid="OpenCvSharp.XImgProc" class="text-break">Namespace OpenCvSharp.XImgProc
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.AdaptiveManifoldFilter.html">AdaptiveManifoldFilter</a></h4>
+      <section><p>Interface for Adaptive Manifold Filter realizations.</p>
+<p>Below listed optional parameters which may be set up with Algorithm::set function.</p>
+<ul>
+<li>member double sigma_s = 16.0
+Spatial standard deviation.</li>
+<li>member double sigma_r = 0.2
+Color space standard deviation.</li>
+<li>member int tree_height = -1
+Height of the manifold tree (default = -1 : automatically computed).</li>
+<li>member int num_pca_iterations = 1
+Number of iterations to computed the eigenvector.</li>
+<li>member bool adjust_outliers = false
+Specify adjust outliers using Eq. 9 or not.</li>
+<li>member bool use_RNG = true
+Specify use random number generator to compute eigenvector or not.</li>
+</ul>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.CvXImgProc.html">CvXImgProc</a></h4>
+      <section><p>cv::ximgproc functions</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.CvXImgProc.RL.html">CvXImgProc.RL</a></h4>
+      <section><p>run_length_morphology.hpp</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.CvXImgProc.Segmentation.html">CvXImgProc.Segmentation</a></h4>
+      <section><p>Strategy for the selective search segmentation algorithm.</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.DTFilter.html">DTFilter</a></h4>
+      <section><p>Interface for realizations of Domain Transform filter.</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.EdgeBoxes.html">EdgeBoxes</a></h4>
+      <section><p>Class implementing EdgeBoxes algorithm from @cite ZitnickECCV14edgeBoxes</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.FastBilateralSolverFilter.html">FastBilateralSolverFilter</a></h4>
+      <section><p>Interface for implementations of Fast Bilateral Solver.</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.FastGlobalSmootherFilter.html">FastGlobalSmootherFilter</a></h4>
+      <section><p>Interface for implementations of Fast Global Smoother filter.</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.FastLineDetector.html">FastLineDetector</a></h4>
+      <section><p>Class implementing the FLD (Fast Line Detector) algorithm described in @cite Lee14.</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.GuidedFilter.html">GuidedFilter</a></h4>
+      <section><p>Interface for realizations of Guided Filter.</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.RFFeatureGetter.html">RFFeatureGetter</a></h4>
+      <section><p>Helper class for training part of [P. Dollar and C. L. Zitnick. Structured Forests for Fast Edge Detection, 2013].</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.StructuredEdgeDetection.html">StructuredEdgeDetection</a></h4>
+      <section><p>Class implementing edge detection algorithm from @cite Dollar2013 :</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.SuperpixelLSC.html">SuperpixelLSC</a></h4>
+      <section><p>Class implementing the LSC (Linear Spectral Clustering) superpixels
+algorithm described in @cite LiCVPR2015LSC.</p>
+<p>LSC(Linear Spectral Clustering) produces compact and uniform superpixels with low
+computational costs.Basically, a normalized cuts formulation of the superpixel
+segmentation is adopted based on a similarity metric that measures the color
+similarity and space proximity between image pixels.LSC is of linear computational
+complexity and high memory efficiency and is able to preserve global properties of images.</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.SuperpixelSEEDS.html">SuperpixelSEEDS</a></h4>
+      <section><p>Class implementing the SEEDS (Superpixels Extracted via Energy-Driven Sampling) superpixels
+algorithm described in @cite VBRV14.</p>
+<p>The algorithm uses an efficient hill-climbing algorithm to optimize the superpixels' energy
+function that is based on color histograms and a boundary term, which is optional.The energy
+function encourages superpixels to be of the same color, and if the boundary term is activated, the
+superpixels have smooth boundaries and are of similar shape. In practice it starts from a regular
+grid of superpixels and moves the pixels or blocks of pixels at the boundaries to refine the
+solution.The algorithm runs in real-time using a single CPU.</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.SuperpixelSLIC.html">SuperpixelSLIC</a></h4>
+      <section><p>Class implementing the SLIC (Simple Linear Iterative Clustering) superpixels
+algorithm described in @cite Achanta2012.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.AngleRangeOption.html">AngleRangeOption</a></h4>
+      <section><p>Specifies the part of Hough space to calculate</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.EdgeAwareFiltersList.html">EdgeAwareFiltersList</a></h4>
+      <section><p>one form three modes DTF_NC, DTF_RF and DTF_IC which corresponds to three modes for
+filtering 2D signals in the article.</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.HoughDeskewOption.html">HoughDeskewOption</a></h4>
+      <section><p>Specifies to do or not to do skewing of Hough transform image</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.HoughOP.html">HoughOP</a></h4>
+      <section><p>Specifies binary operations.</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.LocalBinarizationMethods.html">LocalBinarizationMethods</a></h4>
+      <section><p>Specifies the binarization method to use in cv::ximgproc::niBlackThreshold</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.RulesOption.html">RulesOption</a></h4>
+      <section><p>Specifies the degree of rules validation.</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.SLICType.html">SLICType</a></h4>
+      <section><p>The algorithm variant to use for SuperpixelSLIC:
+SLIC segments image using a desired region_size, and in addition SLICO will optimize using adaptive compactness factor,
+while MSLIC will optimize using manifold methods resulting in more content-sensitive superpixels.</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.ThinningTypes.html">ThinningTypes</a></h4>
+      <section><p>thinning algorithm</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.XImgProc.WMFWeightType.html">WMFWeightType</a></h4>
+      <section><p>Specifies weight types of weighted median filter.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

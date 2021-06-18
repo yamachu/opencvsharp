@@ -1,0 +1,3564 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FileStorage
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FileStorage
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.FileStorage">
+  
+  
+  <h1 id="OpenCvSharp_FileStorage" data-uid="OpenCvSharp.FileStorage" class="text-break">Class FileStorage
+  </h1>
+  <div class="markdown level0 summary"><p>XML/YAML File Storage Class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="OpenCvSharp.DisposableObject.html">DisposableObject</a></div>
+    <div class="level2"><a class="xref" href="OpenCvSharp.DisposableCvObject.html">DisposableCvObject</a></div>
+    <div class="level3"><span class="xref">FileStorage</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="OpenCvSharp.ICvPtrHolder.html">ICvPtrHolder</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_ptr">DisposableCvObject.ptr</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_CvPtr">DisposableCvObject.CvPtr</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_DataHandle">DisposableObject.DataHandle</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsDisposed">DisposableObject.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsEnabledDispose">DisposableObject.IsEnabledDispose</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemory">DisposableObject.AllocatedMemory</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemorySize">DisposableObject.AllocatedMemorySize</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose">DisposableObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_DisposeManaged">DisposableObject.DisposeManaged()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocGCHandle_System_Object_">DisposableObject.AllocGCHandle(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocMemory_System_Int32_">DisposableObject.AllocMemory(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_NotifyMemoryPressure_System_Int64_">DisposableObject.NotifyMemoryPressure(Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_ThrowIfDisposed">DisposableObject.ThrowIfDisposed()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCvSharp.html">OpenCvSharp</a></h6>
+  <h6><strong>Assembly</strong>: OpenCvSharp.dll</h6>
+  <h5 id="OpenCvSharp_FileStorage_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FileStorage : DisposableCvObject, IDisposable, ICvPtrHolder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage__ctor.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L22">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage__ctor_" data-uid="OpenCvSharp.FileStorage.#ctor*"></a>
+  <h4 id="OpenCvSharp_FileStorage__ctor" data-uid="OpenCvSharp.FileStorage.#ctor">FileStorage()</h4>
+  <div class="markdown level1 summary"><p>Default constructor.
+You should call FileStorage::open() after initialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage__ctor_System_String_OpenCvSharp_FileStorage_Modes_System_String_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.%23ctor(System.String%2COpenCvSharp.FileStorage.Modes%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L41">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage__ctor_" data-uid="OpenCvSharp.FileStorage.#ctor*"></a>
+  <h4 id="OpenCvSharp_FileStorage__ctor_System_String_OpenCvSharp_FileStorage_Modes_System_String_" data-uid="OpenCvSharp.FileStorage.#ctor(System.String,OpenCvSharp.FileStorage.Modes,System.String)">FileStorage(String, FileStorage.Modes, String)</h4>
+  <div class="markdown level1 summary"><p>The full constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage(string source, FileStorage.Modes flags, string encoding = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>Name of the file to open or the text string to read the data from.
+Extension of the file (.xml or .yml/.yaml) determines its format
+(XML or YAML respectively). Also you can append .gz to work with
+compressed files, for example myHugeMatrix.xml.gz.
+If both FileStorage::WRITE and FileStorage::MEMORY flags are specified,
+source is used just to specify the output file format
+(e.g. mydata.xml, .yml etc.).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.Modes.html">FileStorage.Modes</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>Encoding of the file. Note that UTF-16 XML encoding is not supported
+currently and you should use 8-bit encoding instead of it.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_ElName.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.ElName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L89">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_ElName_" data-uid="OpenCvSharp.FileStorage.ElName*"></a>
+  <h4 id="OpenCvSharp_FileStorage_ElName" data-uid="OpenCvSharp.FileStorage.ElName">ElName</h4>
+  <div class="markdown level1 summary"><p>the currently written element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ElName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Item_System_String_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Item(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L68">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Item_" data-uid="OpenCvSharp.FileStorage.Item*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Item_System_String_" data-uid="OpenCvSharp.FileStorage.Item(System.String)">Item[String]</h4>
+  <div class="markdown level1 summary"><p>Returns the specified element of the top-level mapping</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileNode this[string nodeName] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">nodeName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileNode.html">FileNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_State.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.State%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L105">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_State_" data-uid="OpenCvSharp.FileStorage.State*"></a>
+  <h4 id="OpenCvSharp_FileStorage_State" data-uid="OpenCvSharp.FileStorage.State">State</h4>
+  <div class="markdown level1 summary"><p>the writer state</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage.States State { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.States.html">FileStorage.States</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_DMatch_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.DMatch)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L618">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_DMatch_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.DMatch)">Add(DMatch)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(DMatch val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.DMatch.html">DMatch</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_KeyPoint_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.KeyPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L605">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_KeyPoint_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.KeyPoint)">Add(KeyPoint)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(KeyPoint val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.KeyPoint.html">KeyPoint</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L560">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Mat_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Mat)">Add(Mat)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Mat val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Point_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Point)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L667">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Point_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Point)">Add(Point)</h4>
+  <div class="markdown level1 summary"><p>/Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Point val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Point.html">Point</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Point2d_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Point2d)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L693">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Point2d_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Point2d)">Add(Point2d)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Point2d val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Point2d.html">Point2d</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Point2f_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Point2f)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L680">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Point2f_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Point2f)">Add(Point2f)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Point2f val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Point2f.html">Point2f</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Point3d_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Point3d)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L732">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Point3d_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Point3d)">Add(Point3d)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Point3d val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Point3d.html">Point3d</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Point3f_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Point3f)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L719">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Point3f_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Point3f)">Add(Point3f)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Point3f val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Point3f.html">Point3f</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Point3i_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Point3i)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L706">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Point3i_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Point3i)">Add(Point3i)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Point3i val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Point3i.html">Point3i</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Range_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Range)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L592">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Range_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Range)">Add(Range)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Range val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Range.html">Range</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Rect_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Rect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L784">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Rect_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Rect)">Add(Rect)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Rect val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Rect.html">Rect</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Rect2d_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Rect2d)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L810">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Rect2d_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Rect2d)">Add(Rect2d)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Rect2d val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Rect2d.html">Rect2d</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Rect2f_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Rect2f)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L797">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Rect2f_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Rect2f)">Add(Rect2f)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Rect2f val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Rect2f.html">Rect2f</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Scalar_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Scalar)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L823">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Scalar_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Scalar)">Add(Scalar)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Scalar val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Scalar.html">Scalar</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Size_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Size)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L745">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Size_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Size)">Add(Size)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Size val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Size.html">Size</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Size2d_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Size2d)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L771">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Size2d_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Size2d)">Add(Size2d)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Size2d val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Size2d.html">Size2d</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Size2f_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Size2f)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L758">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Size2f_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Size2f)">Add(Size2f)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Size2f val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Size2f.html">Size2f</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_SparseMat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.SparseMat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L576">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_SparseMat_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.SparseMat)">Add(SparseMat)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(SparseMat val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.SparseMat.html">SparseMat</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec2b_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec2b)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L992">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec2b_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec2b)">Add(Vec2b)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec2b val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec2b.html">Vec2b</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec2d_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec2d)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L888">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec2d_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec2d)">Add(Vec2d)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec2d val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec2d.html">Vec2d</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec2f_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec2f)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L940">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec2f_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec2f)">Add(Vec2f)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec2f val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec2f.html">Vec2f</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec2i_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec2i)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L836">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec2i_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec2i)">Add(Vec2i)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec2i val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec2i.html">Vec2i</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec2s_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec2s)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L1044">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec2s_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec2s)">Add(Vec2s)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec2s val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec2s.html">Vec2s</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec2w_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec2w)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L1096">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec2w_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec2w)">Add(Vec2w)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec2w val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec2w.html">Vec2w</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec3b_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec3b)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L1005">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec3b_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec3b)">Add(Vec3b)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec3b val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec3b.html">Vec3b</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec3d_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec3d)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L901">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec3d_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec3d)">Add(Vec3d)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec3d val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec3d.html">Vec3d</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec3f_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec3f)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L953">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec3f_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec3f)">Add(Vec3f)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec3f val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec3f.html">Vec3f</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec3i_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec3i)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L849">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec3i_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec3i)">Add(Vec3i)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec3i val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec3i.html">Vec3i</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec3s_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec3s)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L1057">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec3s_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec3s)">Add(Vec3s)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec3s val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec3s.html">Vec3s</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec3w_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec3w)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L1109">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec3w_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec3w)">Add(Vec3w)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec3w val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec3w.html">Vec3w</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec4b_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec4b)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L1018">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec4b_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec4b)">Add(Vec4b)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec4b val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec4b.html">Vec4b</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec4d_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec4d)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L914">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec4d_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec4d)">Add(Vec4d)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec4d val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec4d.html">Vec4d</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec4f_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec4f)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L966">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec4f_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec4f)">Add(Vec4f)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec4f val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec4f.html">Vec4f</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec4i_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec4i)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L862">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec4i_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec4i)">Add(Vec4i)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec4i val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec4i.html">Vec4i</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec4s_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec4s)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L1070">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec4s_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec4s)">Add(Vec4s)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec4s val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec4s.html">Vec4s</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec4w_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec4w)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L1122">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec4w_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec4w)">Add(Vec4w)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec4w val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec4w.html">Vec4w</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec6b_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec6b)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L1031">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec6b_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec6b)">Add(Vec6b)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec6b val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec6b.html">Vec6b</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec6d_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec6d)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L927">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec6d_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec6d)">Add(Vec6d)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec6d val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec6d.html">Vec6d</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec6f_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec6f)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L979">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec6f_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec6f)">Add(Vec6f)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec6f val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec6f.html">Vec6f</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec6i_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec6i)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L875">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec6i_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec6i)">Add(Vec6i)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec6i val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec6i.html">Vec6i</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec6s_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec6s)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L1083">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec6s_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec6s)">Add(Vec6s)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec6s val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec6s.html">Vec6s</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec6w_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec6w)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L1135">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_OpenCvSharp_Vec6w_" data-uid="OpenCvSharp.FileStorage.Add(OpenCvSharp.Vec6w)">Add(Vec6w)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(Vec6w val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Vec6w.html">Vec6w</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_System_Collections_Generic_IEnumerable_OpenCvSharp_DMatch__.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(System.Collections.Generic.IEnumerable%7BOpenCvSharp.DMatch%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L649">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_System_Collections_Generic_IEnumerable_OpenCvSharp_DMatch__" data-uid="OpenCvSharp.FileStorage.Add(System.Collections.Generic.IEnumerable{OpenCvSharp.DMatch})">Add(IEnumerable&lt;DMatch&gt;)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(IEnumerable&lt;DMatch&gt; val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="OpenCvSharp.DMatch.html">DMatch</a>&gt;</td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_System_Collections_Generic_IEnumerable_OpenCvSharp_KeyPoint__.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(System.Collections.Generic.IEnumerable%7BOpenCvSharp.KeyPoint%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L631">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_System_Collections_Generic_IEnumerable_OpenCvSharp_KeyPoint__" data-uid="OpenCvSharp.FileStorage.Add(System.Collections.Generic.IEnumerable{OpenCvSharp.KeyPoint})">Add(IEnumerable&lt;KeyPoint&gt;)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(IEnumerable&lt;KeyPoint&gt; val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="OpenCvSharp.KeyPoint.html">KeyPoint</a>&gt;</td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_System_Double_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L547">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_System_Double_" data-uid="OpenCvSharp.FileStorage.Add(System.Double)">Add(Double)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(double val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L521">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_System_Int32_" data-uid="OpenCvSharp.FileStorage.Add(System.Int32)">Add(Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(int val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_System_Single_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L534">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_System_Single_" data-uid="OpenCvSharp.FileStorage.Add(System.Single)">Add(Single)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(float val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Add_System_String_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Add(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L506">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Add_" data-uid="OpenCvSharp.FileStorage.Add*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Add_System_String_" data-uid="OpenCvSharp.FileStorage.Add(System.String)">Add(String)</h4>
+  <div class="markdown level1 summary"><p>Writes data to a file storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileStorage Add(string val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.html">FileStorage</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_DisposeUnmanaged.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.DisposeUnmanaged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L52">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_DisposeUnmanaged_" data-uid="OpenCvSharp.FileStorage.DisposeUnmanaged*"></a>
+  <h4 id="OpenCvSharp_FileStorage_DisposeUnmanaged" data-uid="OpenCvSharp.FileStorage.DisposeUnmanaged">DisposeUnmanaged()</h4>
+  <div class="markdown level1 summary"><p>Releases unmanaged resources</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DisposeUnmanaged()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_DisposeUnmanaged">DisposableCvObject.DisposeUnmanaged()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_EndWriteStruct.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.EndWriteStruct%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L280">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_EndWriteStruct_" data-uid="OpenCvSharp.FileStorage.EndWriteStruct*"></a>
+  <h4 id="OpenCvSharp_FileStorage_EndWriteStruct" data-uid="OpenCvSharp.FileStorage.EndWriteStruct">EndWriteStruct()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndWriteStruct()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_GetDefaultObjectName_System_String_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.GetDefaultObjectName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L293">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_GetDefaultObjectName_" data-uid="OpenCvSharp.FileStorage.GetDefaultObjectName*"></a>
+  <h4 id="OpenCvSharp_FileStorage_GetDefaultObjectName_System_String_" data-uid="OpenCvSharp.FileStorage.GetDefaultObjectName(System.String)">GetDefaultObjectName(String)</h4>
+  <div class="markdown level1 summary"><p>Returns the normalized object name for the specified file name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetDefaultObjectName(string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_GetFirstTopLevelNode.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.GetFirstTopLevelNode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L192">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_GetFirstTopLevelNode_" data-uid="OpenCvSharp.FileStorage.GetFirstTopLevelNode*"></a>
+  <h4 id="OpenCvSharp_FileStorage_GetFirstTopLevelNode" data-uid="OpenCvSharp.FileStorage.GetFirstTopLevelNode">GetFirstTopLevelNode()</h4>
+  <div class="markdown level1 summary"><p>Returns the first element of the top-level mapping</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileNode GetFirstTopLevelNode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileNode.html">FileNode</a></td>
+        <td><p>The first element of the top-level mapping.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_IsOpened.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.IsOpened%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L149">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_IsOpened_" data-uid="OpenCvSharp.FileStorage.IsOpened*"></a>
+  <h4 id="OpenCvSharp_FileStorage_IsOpened" data-uid="OpenCvSharp.FileStorage.IsOpened">IsOpened()</h4>
+  <div class="markdown level1 summary"><p>Returns true if the object is associated with currently opened file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsOpened()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Open_System_String_OpenCvSharp_FileStorage_Modes_System_String_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Open(System.String%2COpenCvSharp.FileStorage.Modes%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L134">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Open_" data-uid="OpenCvSharp.FileStorage.Open*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Open_System_String_OpenCvSharp_FileStorage_Modes_System_String_" data-uid="OpenCvSharp.FileStorage.Open(System.String,OpenCvSharp.FileStorage.Modes,System.String)">Open(String, FileStorage.Modes, String)</h4>
+  <div class="markdown level1 summary"><p>operator that performs PCA. The previously stored data, if any, is released</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Open(string fileName, FileStorage.Modes flags, string encoding = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>Name of the file to open or the text string to read the data from.
+Extension of the file (.xml, .yml/.yaml or .json) determines its format (XML, YAML or JSON respectively).
+Also you can append .gz to work with compressed files, for example myHugeMatrix.xml.gz.
+If both FileStorage::WRITE and FileStorage::MEMORY flags are specified, source is used just to specify the output file format (e.g. mydata.xml, .yml etc.).
+A file name can also contain parameters. You can use this format, &quot;*?base64&quot; (e.g. &quot;file.json?base64&quot; (case sensitive)),
+as an alternative to FileStorage::BASE64 flag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileStorage.Modes.html">FileStorage.Modes</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td><p>Mode of operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>Encoding of the file. Note that UTF-16 XML encoding is not supported
+currently and you should use 8-bit encoding instead of it.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Release.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Release%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L161">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Release_" data-uid="OpenCvSharp.FileStorage.Release*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Release" data-uid="OpenCvSharp.FileStorage.Release">Release()</h4>
+  <div class="markdown level1 summary"><p>Closes the file and releases all the memory buffers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Release()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_ReleaseAndGetString.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.ReleaseAndGetString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L171">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_ReleaseAndGetString_" data-uid="OpenCvSharp.FileStorage.ReleaseAndGetString*"></a>
+  <h4 id="OpenCvSharp_FileStorage_ReleaseAndGetString" data-uid="OpenCvSharp.FileStorage.ReleaseAndGetString">ReleaseAndGetString()</h4>
+  <div class="markdown level1 summary"><p>Closes the file, releases all the memory buffers and returns the text string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ReleaseAndGetString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Root_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Root(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L211">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Root_" data-uid="OpenCvSharp.FileStorage.Root*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Root_System_Int32_" data-uid="OpenCvSharp.FileStorage.Root(System.Int32)">Root(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the top-level mapping. YAML supports multiple streams</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileNode Root(int streamIdx = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">streamIdx</span></td>
+        <td><p>Zero-based index of the stream. In most cases there is only one stream in the file.
+However, YAML supports multiple streams and so there can be several.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.FileNode.html">FileNode</a></td>
+        <td><p>The top-level mapping.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_StartWriteStruct_System_String_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.StartWriteStruct(System.String%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L269">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_StartWriteStruct_" data-uid="OpenCvSharp.FileStorage.StartWriteStruct*"></a>
+  <h4 id="OpenCvSharp_FileStorage_StartWriteStruct_System_String_System_Int32_System_String_" data-uid="OpenCvSharp.FileStorage.StartWriteStruct(System.String,System.Int32,System.String)">StartWriteStruct(String, Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartWriteStruct(string name, int flags, string typeName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">typeName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Write_System_String_OpenCvSharp_Mat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Write(System.String%2COpenCvSharp.Mat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L377">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Write_" data-uid="OpenCvSharp.FileStorage.Write*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Write_System_String_OpenCvSharp_Mat_" data-uid="OpenCvSharp.FileStorage.Write(System.String,OpenCvSharp.Mat)">Write(String, Mat)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(string name, Mat value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.Mat.html">Mat</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Write_System_String_OpenCvSharp_SparseMat_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Write(System.String%2COpenCvSharp.SparseMat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L396">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Write_" data-uid="OpenCvSharp.FileStorage.Write*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Write_System_String_OpenCvSharp_SparseMat_" data-uid="OpenCvSharp.FileStorage.Write(System.String,OpenCvSharp.SparseMat)">Write(String, SparseMat)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(string name, SparseMat value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.SparseMat.html">SparseMat</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Write_System_String_System_Collections_Generic_IEnumerable_OpenCvSharp_DMatch__.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Write(System.String%2CSystem.Collections.Generic.IEnumerable%7BOpenCvSharp.DMatch%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L434">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Write_" data-uid="OpenCvSharp.FileStorage.Write*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Write_System_String_System_Collections_Generic_IEnumerable_OpenCvSharp_DMatch__" data-uid="OpenCvSharp.FileStorage.Write(System.String,System.Collections.Generic.IEnumerable{OpenCvSharp.DMatch})">Write(String, IEnumerable&lt;DMatch&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(string name, IEnumerable&lt;DMatch&gt; value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="OpenCvSharp.DMatch.html">DMatch</a>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Write_System_String_System_Collections_Generic_IEnumerable_OpenCvSharp_KeyPoint__.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Write(System.String%2CSystem.Collections.Generic.IEnumerable%7BOpenCvSharp.KeyPoint%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L415">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Write_" data-uid="OpenCvSharp.FileStorage.Write*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Write_System_String_System_Collections_Generic_IEnumerable_OpenCvSharp_KeyPoint__" data-uid="OpenCvSharp.FileStorage.Write(System.String,System.Collections.Generic.IEnumerable{OpenCvSharp.KeyPoint})">Write(String, IEnumerable&lt;KeyPoint&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(string name, IEnumerable&lt;KeyPoint&gt; value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="OpenCvSharp.KeyPoint.html">KeyPoint</a>&gt;</td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Write_System_String_System_Double_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Write(System.String%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L343">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Write_" data-uid="OpenCvSharp.FileStorage.Write*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Write_System_String_System_Double_" data-uid="OpenCvSharp.FileStorage.Write(System.String,System.Double)">Write(String, Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(string name, double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Write_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Write(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L311">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Write_" data-uid="OpenCvSharp.FileStorage.Write*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Write_System_String_System_Int32_" data-uid="OpenCvSharp.FileStorage.Write(System.String,System.Int32)">Write(String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(string name, int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Write_System_String_System_Single_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Write(System.String%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L327">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Write_" data-uid="OpenCvSharp.FileStorage.Write*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Write_System_String_System_Single_" data-uid="OpenCvSharp.FileStorage.Write(System.String,System.Single)">Write(String, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(string name, float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_Write_System_String_System_String_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.Write(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L359">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_Write_" data-uid="OpenCvSharp.FileStorage.Write*"></a>
+  <h4 id="OpenCvSharp_FileStorage_Write_System_String_System_String_" data-uid="OpenCvSharp.FileStorage.Write(System.String,System.String)">Write(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(string name, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_WriteComment_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.WriteComment(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L251">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_WriteComment_" data-uid="OpenCvSharp.FileStorage.WriteComment*"></a>
+  <h4 id="OpenCvSharp_FileStorage_WriteComment_System_String_System_Boolean_" data-uid="OpenCvSharp.FileStorage.WriteComment(System.String,System.Boolean)">WriteComment(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Writes a comment.
+The function writes a comment into file storage. The comments are skipped when the storage is read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteComment(string comment, bool append = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">comment</span></td>
+        <td><p>The written comment, single-line or multi-line</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">append</span></td>
+        <td><p>If true, the function tries to put the comment at the end of current line.
+Else if the comment is multi-line, or if it does not fit at the end of the current line, the comment starts a new line.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_WriteRaw_System_String_System_IntPtr_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.WriteRaw(System.String%2CSystem.IntPtr%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L230">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_WriteRaw_" data-uid="OpenCvSharp.FileStorage.WriteRaw*"></a>
+  <h4 id="OpenCvSharp_FileStorage_WriteRaw_System_String_System_IntPtr_System_Int32_" data-uid="OpenCvSharp.FileStorage.WriteRaw(System.String,System.IntPtr,System.Int32)">WriteRaw(String, IntPtr, Int32)</h4>
+  <div class="markdown level1 summary"><p>Writes one or more numbers of the specified format to the currently written structure</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteRaw(string fmt, IntPtr vec, int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fmt</span></td>
+        <td><p>Specification of each array element, see @ref format_spec &quot;format specification&quot;</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">vec</span></td>
+        <td><p>Pointer to the written array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">len</span></td>
+        <td><p>Number of the uchar elements to write.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_WriteScalar_System_Double_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.WriteScalar(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L476">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_WriteScalar_" data-uid="OpenCvSharp.FileStorage.WriteScalar*"></a>
+  <h4 id="OpenCvSharp_FileStorage_WriteScalar_System_Double_" data-uid="OpenCvSharp.FileStorage.WriteScalar(System.Double)">WriteScalar(Double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteScalar(double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_WriteScalar_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.WriteScalar(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L452">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_WriteScalar_" data-uid="OpenCvSharp.FileStorage.WriteScalar*"></a>
+  <h4 id="OpenCvSharp_FileStorage_WriteScalar_System_Int32_" data-uid="OpenCvSharp.FileStorage.WriteScalar(System.Int32)">WriteScalar(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteScalar(int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_WriteScalar_System_Single_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.WriteScalar(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L464">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_WriteScalar_" data-uid="OpenCvSharp.FileStorage.WriteScalar*"></a>
+  <h4 id="OpenCvSharp_FileStorage_WriteScalar_System_Single_" data-uid="OpenCvSharp.FileStorage.WriteScalar(System.Single)">WriteScalar(Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteScalar(float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage_WriteScalar_System_String_.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage.WriteScalar(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L488">View Source</a>
+  </span>
+  <a id="OpenCvSharp_FileStorage_WriteScalar_" data-uid="OpenCvSharp.FileStorage.WriteScalar*"></a>
+  <h4 id="OpenCvSharp_FileStorage_WriteScalar_System_String_" data-uid="OpenCvSharp.FileStorage.WriteScalar(System.String)">WriteScalar(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteScalar(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="OpenCvSharp.ICvPtrHolder.html">ICvPtrHolder</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_FileStorage.md&amp;value=---%0Auid%3A%20OpenCvSharp.FileStorage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/core/FileStorage.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

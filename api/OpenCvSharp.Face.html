@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace OpenCvSharp.Face
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace OpenCvSharp.Face
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.Face">
+  
+  <h1 id="OpenCvSharp_Face" data-uid="OpenCvSharp.Face" class="text-break">Namespace OpenCvSharp.Face
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="OpenCvSharp.Face.BasicFaceRecognizer.html">BasicFaceRecognizer</a></h4>
+      <section><p>base for two FaceRecognizer classes</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.Face.EigenFaceRecognizer.html">EigenFaceRecognizer</a></h4>
+      <section><p>Training and prediction must be done on grayscale images, use cvtColor to convert between the
+color spaces.</p>
+<ul>
+<li>**THE EIGENFACES METHOD MAKES THE ASSUMPTION, THAT THE TRAINING AND TEST IMAGES ARE OF EQUAL SIZE.
+** (caps-lock, because I got so many mails asking for this). You have to make sure your
+input data has the correct shape, else a meaningful exception is thrown.Use resize to resize the images.</li>
+<li>This model does not support updating.</li>
+</ul>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.Face.Facemark.html">Facemark</a></h4>
+      <section><p>Abstract base class for all facemark models.</p>
+<p>All facemark models in OpenCV are derived from the abstract base class Facemark, which
+provides a unified access to all facemark algorithms in OpenCV.
+To utilize this API in your program, please take a look at the @ref tutorial_table_of_content_facemark</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.Face.FacemarkAAM.html">FacemarkAAM</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenCvSharp.Face.FacemarkAAM.Params.html">FacemarkAAM.Params</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenCvSharp.Face.FacemarkLBF.html">FacemarkLBF</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenCvSharp.Face.FacemarkLBF.Params.html">FacemarkLBF.Params</a></h4>
+      <section></section>
+      <h4><a class="xref" href="OpenCvSharp.Face.FaceRecognizer.html">FaceRecognizer</a></h4>
+      <section><p>Abstract base class for all face recognition models.
+All face recognition models in OpenCV are derived from the abstract base class FaceRecognizer, which
+provides a unified access to all face recongition algorithms in OpenCV.</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.Face.FisherFaceRecognizer.html">FisherFaceRecognizer</a></h4>
+      <section><p>Training and prediction must be done on grayscale images, use cvtColor to convert between the color spaces.</p>
+<ul>
+<li>**THE FISHERFACES METHOD MAKES THE ASSUMPTION, THAT THE TRAINING AND TEST IMAGES ARE OF EQUAL SIZE.
+** (caps-lock, because I got so many mails asking for this). You have to make sure your input data
+has the correct shape, else a meaningful exception is thrown.Use resize to resize the images.</li>
+<li>This model does not support updating.</li>
+</ul>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.Face.LBPHFaceRecognizer.html">LBPHFaceRecognizer</a></h4>
+      <section><p>The Circular Local Binary Patterns (used in training and prediction) expect the data given as
+grayscale images, use cvtColor to convert between the color spaces.
+This model supports updating.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

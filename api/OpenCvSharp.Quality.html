@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace OpenCvSharp.Quality
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace OpenCvSharp.Quality
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.Quality">
+  
+  <h1 id="OpenCvSharp_Quality" data-uid="OpenCvSharp.Quality" class="text-break">Namespace OpenCvSharp.Quality
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="OpenCvSharp.Quality.QualityBase.html">QualityBase</a></h4>
+      <section><p>Quality Base Class</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.Quality.QualityBRISQUE.html">QualityBRISQUE</a></h4>
+      <section><p>BRISQUE (Blind/Referenceless Image Spatial Quality Evaluator) is a No Reference Image Quality Assessment (NR-IQA) algorithm.
+BRISQUE computes a score based on extracting Natural Scene Statistics(<a href="https://en.wikipedia.org/wiki/Scene_statistics">https://en.wikipedia.org/wiki/Scene_statistics</a>)
+and calculating feature vectors. See Mittal et al. @cite Mittal2 for original paper and original implementation @cite Mittal2_software.
+A trained model is provided in the /samples/ directory and is trained on the LIVE-R2 database @cite Sheikh as in the original implementation.
+When evaluated against the TID2008 database @cite Ponomarenko, the SROCC is -0.8424 versus the SROCC of -0.8354 in the original implementation.
+C++ code for the BRISQUE LIVE-R2 trainer and TID2008 evaluator are also provided in the /samples/ directory.</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.Quality.QualityGMSD.html">QualityGMSD</a></h4>
+      <section><p>Full reference GMSD algorithm</p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.Quality.QualityMSE.html">QualityMSE</a></h4>
+      <section><p>Full reference mean square error algorithm  <a href="https://en.wikipedia.org/wiki/Mean_squared_error">https://en.wikipedia.org/wiki/Mean_squared_error</a></p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.Quality.QualityPSNR.html">QualityPSNR</a></h4>
+      <section><p>Full reference peak signal to noise ratio (PSNR) algorithm  <a href="https://en.wikipedia.org/wiki/Peak_signal-to-noise_ratio">https://en.wikipedia.org/wiki/Peak_signal-to-noise_ratio</a></p>
+</section>
+      <h4><a class="xref" href="OpenCvSharp.Quality.QualitySSIM.html">QualitySSIM</a></h4>
+      <section><p>Full reference structural similarity algorithm  <a href="https://en.wikipedia.org/wiki/Structural_similarity">https://en.wikipedia.org/wiki/Structural_similarity</a></p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

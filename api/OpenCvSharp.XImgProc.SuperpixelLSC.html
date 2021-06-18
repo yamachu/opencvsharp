@@ -1,0 +1,544 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SuperpixelLSC
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SuperpixelLSC
+   ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC">
+  
+  
+  <h1 id="OpenCvSharp_XImgProc_SuperpixelLSC" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC" class="text-break">Class SuperpixelLSC
+  </h1>
+  <div class="markdown level0 summary"><p>Class implementing the LSC (Linear Spectral Clustering) superpixels
+algorithm described in @cite LiCVPR2015LSC.</p>
+<p>LSC(Linear Spectral Clustering) produces compact and uniform superpixels with low
+computational costs.Basically, a normalized cuts formulation of the superpixel
+segmentation is adopted based on a similarity metric that measures the color
+similarity and space proximity between image pixels.LSC is of linear computational
+complexity and high memory efficiency and is able to preserve global properties of images.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="OpenCvSharp.DisposableObject.html">DisposableObject</a></div>
+    <div class="level2"><a class="xref" href="OpenCvSharp.DisposableCvObject.html">DisposableCvObject</a></div>
+    <div class="level3"><a class="xref" href="OpenCvSharp.Algorithm.html">Algorithm</a></div>
+    <div class="level4"><span class="xref">SuperpixelLSC</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+    <div><a class="xref" href="OpenCvSharp.ICvPtrHolder.html">ICvPtrHolder</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Write_OpenCvSharp_FileStorage_">Algorithm.Write(FileStorage)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Read_OpenCvSharp_FileNode_">Algorithm.Read(FileNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Empty">Algorithm.Empty</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_Save_System_String_">Algorithm.Save(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.Algorithm.html#OpenCvSharp_Algorithm_GetDefaultName">Algorithm.GetDefaultName()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_ptr">DisposableCvObject.ptr</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_DisposeUnmanaged">DisposableCvObject.DisposeUnmanaged()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableCvObject.html#OpenCvSharp_DisposableCvObject_CvPtr">DisposableCvObject.CvPtr</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_DataHandle">DisposableObject.DataHandle</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsDisposed">DisposableObject.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_IsEnabledDispose">DisposableObject.IsEnabledDispose</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemory">DisposableObject.AllocatedMemory</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocatedMemorySize">DisposableObject.AllocatedMemorySize</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose">DisposableObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_Dispose_System_Boolean_">DisposableObject.Dispose(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocGCHandle_System_Object_">DisposableObject.AllocGCHandle(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_AllocMemory_System_Int32_">DisposableObject.AllocMemory(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_NotifyMemoryPressure_System_Int64_">DisposableObject.NotifyMemoryPressure(Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_ThrowIfDisposed">DisposableObject.ThrowIfDisposed()</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenCvSharp.XImgProc.html">OpenCvSharp.XImgProc</a></h6>
+  <h6><strong>Assembly</strong>: OpenCvSharp.dll</h6>
+  <h5 id="OpenCvSharp_XImgProc_SuperpixelLSC_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SuperpixelLSC : Algorithm, IDisposable, ICvPtrHolder</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_XImgProc_SuperpixelLSC__ctor_System_IntPtr_.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.SuperpixelLSC.%23ctor(System.IntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/ximgproc/Superpixel/SuperpixelLSC.cs/#L25">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_SuperpixelLSC__ctor_" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC.#ctor*"></a>
+  <h4 id="OpenCvSharp_XImgProc_SuperpixelLSC__ctor_System_IntPtr_" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC.#ctor(System.IntPtr)">SuperpixelLSC(IntPtr)</h4>
+  <div class="markdown level1 summary"><p>Creates instance by raw pointer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SuperpixelLSC(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_XImgProc_SuperpixelLSC_Create_OpenCvSharp_InputArray_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.SuperpixelLSC.Create(OpenCvSharp.InputArray%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/ximgproc/Superpixel/SuperpixelLSC.cs/#L54">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_SuperpixelLSC_Create_" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC.Create*"></a>
+  <h4 id="OpenCvSharp_XImgProc_SuperpixelLSC_Create_OpenCvSharp_InputArray_System_Int32_System_Single_" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC.Create(OpenCvSharp.InputArray,System.Int32,System.Single)">Create(InputArray, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Class implementing the LSC (Linear Spectral Clustering) superpixels.</p>
+<p>The function initializes a SuperpixelLSC object for the input image. It sets the parameters of
+superpixel algorithm, which are: region_size and ruler.It preallocate some buffers for future
+computing iterations over the given image.An example of LSC is illustrated in the following picture.
+For enhanced results it is recommended for color images to preprocess image with little gaussian blur
+with a small 3 x 3 kernel and additional conversion into CieLAB color space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SuperpixelLSC Create(InputArray image, int regionSize = 10, float ratio = 0.075F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.InputArray.html">InputArray</a></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>image Image to segment</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">regionSize</span></td>
+        <td><p>Chooses an average superpixel size measured in pixels</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">ratio</span></td>
+        <td><p>Chooses the enforcement of superpixel compactness factor of superpixel</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.XImgProc.SuperpixelLSC.html">SuperpixelLSC</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_XImgProc_SuperpixelLSC_DisposeManaged.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.SuperpixelLSC.DisposeManaged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/ximgproc/Superpixel/SuperpixelLSC.cs/#L34">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_SuperpixelLSC_DisposeManaged_" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC.DisposeManaged*"></a>
+  <h4 id="OpenCvSharp_XImgProc_SuperpixelLSC_DisposeManaged" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC.DisposeManaged">DisposeManaged()</h4>
+  <div class="markdown level1 summary"><p>Releases managed resources</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DisposeManaged()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="OpenCvSharp.DisposableObject.html#OpenCvSharp_DisposableObject_DisposeManaged">DisposableObject.DisposeManaged()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_XImgProc_SuperpixelLSC_EnforceLabelConnectivity_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.SuperpixelLSC.EnforceLabelConnectivity(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/ximgproc/Superpixel/SuperpixelLSC.cs/#L156">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_SuperpixelLSC_EnforceLabelConnectivity_" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC.EnforceLabelConnectivity*"></a>
+  <h4 id="OpenCvSharp_XImgProc_SuperpixelLSC_EnforceLabelConnectivity_System_Int32_" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC.EnforceLabelConnectivity(System.Int32)">EnforceLabelConnectivity(Int32)</h4>
+  <div class="markdown level1 summary"><p>Enforce label connectivity.
+The function merge component that is too small, assigning the previously found adjacent label
+to this component.Calling this function may change the final number of superpixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void EnforceLabelConnectivity(int minElementSize = 20)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minElementSize</span></td>
+        <td><p>The minimum element size in percents that should be absorbed into a bigger
+superpixel.Given resulted average superpixel size valid value should be in 0-100 range, 25 means
+that less then a quarter sized superpixel should be absorbed, this is default.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_XImgProc_SuperpixelLSC_GetLabelContourMask_OpenCvSharp_OutputArray_System_Boolean_.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.SuperpixelLSC.GetLabelContourMask(OpenCvSharp.OutputArray%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/ximgproc/Superpixel/SuperpixelLSC.cs/#L134">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_SuperpixelLSC_GetLabelContourMask_" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC.GetLabelContourMask*"></a>
+  <h4 id="OpenCvSharp_XImgProc_SuperpixelLSC_GetLabelContourMask_OpenCvSharp_OutputArray_System_Boolean_" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC.GetLabelContourMask(OpenCvSharp.OutputArray,System.Boolean)">GetLabelContourMask(OutputArray, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Returns the mask of the superpixel segmentation stored in SuperpixelLSC object.
+The function return the boundaries of the superpixel segmentation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GetLabelContourMask(OutputArray image, bool thickLine = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+        <td><span class="parametername">image</span></td>
+        <td><p>Return: CV_8U1 image mask where -1 indicates that the pixel is a superpixel border, and 0 otherwise.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">thickLine</span></td>
+        <td><p>If false, the border is only one pixel wide, otherwise all pixels at the border are masked.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_XImgProc_SuperpixelLSC_GetLabels_OpenCvSharp_OutputArray_.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.SuperpixelLSC.GetLabels(OpenCvSharp.OutputArray)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/ximgproc/Superpixel/SuperpixelLSC.cs/#L114">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_SuperpixelLSC_GetLabels_" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC.GetLabels*"></a>
+  <h4 id="OpenCvSharp_XImgProc_SuperpixelLSC_GetLabels_OpenCvSharp_OutputArray_" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC.GetLabels(OpenCvSharp.OutputArray)">GetLabels(OutputArray)</h4>
+  <div class="markdown level1 summary"><p>Returns the segmentation labeling of the image.
+Each label represents a superpixel, and each pixel is assigned to one superpixel label.</p>
+<p>The function returns an image with the labels of the superpixel segmentation.The labels are in
+the range [0, getNumberOfSuperpixels()].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GetLabels(OutputArray labelsOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenCvSharp.OutputArray.html">OutputArray</a></td>
+        <td><span class="parametername">labelsOut</span></td>
+        <td><p>Return: A CV_32SC1 integer array containing the labels of the superpixel
+segmentation.The labels are in the range[0, getNumberOfSuperpixels()].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_XImgProc_SuperpixelLSC_GetNumberOfSuperpixels.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.SuperpixelLSC.GetNumberOfSuperpixels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/ximgproc/Superpixel/SuperpixelLSC.cs/#L73">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_SuperpixelLSC_GetNumberOfSuperpixels_" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC.GetNumberOfSuperpixels*"></a>
+  <h4 id="OpenCvSharp_XImgProc_SuperpixelLSC_GetNumberOfSuperpixels" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC.GetNumberOfSuperpixels">GetNumberOfSuperpixels()</h4>
+  <div class="markdown level1 summary"><p>Calculates the actual amount of superpixels on a given segmentation computed and stored in SuperpixelLSC object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetNumberOfSuperpixels()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_XImgProc_SuperpixelLSC_Iterate_System_Int32_.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.SuperpixelLSC.Iterate(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/ximgproc/Superpixel/SuperpixelLSC.cs/#L96">View Source</a>
+  </span>
+  <a id="OpenCvSharp_XImgProc_SuperpixelLSC_Iterate_" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC.Iterate*"></a>
+  <h4 id="OpenCvSharp_XImgProc_SuperpixelLSC_Iterate_System_Int32_" data-uid="OpenCvSharp.XImgProc.SuperpixelLSC.Iterate(System.Int32)">Iterate(Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculates the superpixel segmentation on a given image with the initialized
+parameters in the SuperpixelLSC object.</p>
+<p>This function can be called again without the need of initializing the algorithm with
+createSuperpixelLSC(). This save the computational cost of allocating memory for all the
+structures of the algorithm.</p>
+<p>The function computes the superpixels segmentation of an image with the parameters initialized
+with the function createSuperpixelLSC(). The algorithms starts from a grid of superpixels and
+then refines the boundaries by proposing updates of edges boundaries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Iterate(int numIterations = 10)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numIterations</span></td>
+        <td><p>Number of iterations. Higher number improves the result.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="OpenCvSharp.ICvPtrHolder.html">ICvPtrHolder</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/shimat/opencvsharp/new/master/apiSpec/new?filename=OpenCvSharp_XImgProc_SuperpixelLSC.md&amp;value=---%0Auid%3A%20OpenCvSharp.XImgProc.SuperpixelLSC%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/shimat/opencvsharp/blob/master/src/OpenCvSharp/Modules/ximgproc/Superpixel/SuperpixelLSC.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
