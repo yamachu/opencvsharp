@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CvXImgProc.RL
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -127,7 +127,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CreateRLEImage(IEnumerable&lt;Point3i&gt; runs, OutputArray res, Size? size = default(Size? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CreateRLEImage(IEnumerable&lt;Point3i&gt; runs, OutputArray res, Size? size = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -174,7 +174,7 @@ means that the size is computed from the extension of the input)</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Dilate(InputArray rlSrc, OutputArray rlDest, InputArray rlKernel, Point? anchor = default(Point? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Dilate(InputArray rlSrc, OutputArray rlDest, InputArray rlKernel, Point? anchor = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -226,7 +226,7 @@ means that the size is computed from the extension of the input)</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Erode(InputArray rlSrc, OutputArray rlDest, InputArray rlKernel, bool bBoundaryOn = true, Point? anchor = default(Point? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Erode(InputArray rlSrc, OutputArray rlDest, InputArray rlKernel, bool bBoundaryOn = true, Point? anchor = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -390,7 +390,7 @@ is usually the element center.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void MorphologyEx(InputArray rlSrc, OutputArray rlDest, MorphTypes op, InputArray rlKernel, bool bBoundaryOnForErosion = true, Point? anchor = default(Point? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void MorphologyEx(InputArray rlSrc, OutputArray rlDest, MorphTypes op, InputArray rlKernel, bool bBoundaryOnForErosion = true, Point? anchor = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

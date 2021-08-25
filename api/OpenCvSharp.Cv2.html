@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Cv2
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -1802,7 +1802,7 @@ dst(i,j) = weights1(i,j)*src1(i,j) + weights2(i,j)*src2(i,j)</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Blur(InputArray src, OutputArray dst, Size ksize, Point? anchor = default(Point? ), BorderTypes borderType = BorderTypes.Reflect101)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Blur(InputArray src, OutputArray dst, Size ksize, Point? anchor = null, BorderTypes borderType = BorderTypes.Reflect101)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2072,7 +2072,7 @@ When borderType==BORDER_CONSTANT, the function always returns -1, regardless</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void BoxFilter(InputArray src, OutputArray dst, MatType ddepth, Size ksize, Point? anchor = default(Point? ), bool normalize = true, BorderTypes borderType = BorderTypes.Reflect101)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void BoxFilter(InputArray src, OutputArray dst, MatType ddepth, Size ksize, Point? anchor = null, bool normalize = true, BorderTypes borderType = BorderTypes.Reflect101)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2489,7 +2489,7 @@ You can pass false to force data copying.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CalcCovarMatrix(InputArray samples, OutputArray covar, InputOutputArray mean, CovarFlags flags, MatType? ctype = default(MatType? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CalcCovarMatrix(InputArray samples, OutputArray covar, InputOutputArray mean, CovarFlags flags, MatType? ctype = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2547,7 +2547,7 @@ You can pass false to force data copying.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CalcCovarMatrix(Mat[] samples, Mat covar, Mat mean, CovarFlags flags, MatType? ctype = default(MatType? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CalcCovarMatrix(Mat[] samples, Mat covar, Mat mean, CovarFlags flags, MatType? ctype = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2846,7 +2846,7 @@ for polyN=7, a good value would be polySigma=1.5.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CalcOpticalFlowPyrLK(InputArray prevImg, InputArray nextImg, InputArray prevPts, InputOutputArray nextPts, OutputArray status, OutputArray err, Size? winSize = default(Size? ), int maxLevel = 3, TermCriteria? criteria = default(TermCriteria? ), OpticalFlowFlags flags = OpticalFlowFlags.None, double minEigThreshold = 0.0001)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CalcOpticalFlowPyrLK(InputArray prevImg, InputArray nextImg, InputArray prevPts, InputOutputArray nextPts, OutputArray status, OutputArray err, Size? winSize = null, int maxLevel = 3, TermCriteria? criteria = null, OpticalFlowFlags flags = OpticalFlowFlags.None, double minEigThreshold = 0.0001)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2929,7 +2929,7 @@ for polyN=7, a good value would be polySigma=1.5.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CalcOpticalFlowPyrLK(InputArray prevImg, InputArray nextImg, Point2f[] prevPts, ref Point2f[] nextPts, out byte[] status, out float[] err, Size? winSize = default(Size? ), int maxLevel = 3, TermCriteria? criteria = default(TermCriteria? ), OpticalFlowFlags flags = OpticalFlowFlags.None, double minEigThreshold = 0.0001)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CalcOpticalFlowPyrLK(InputArray prevImg, InputArray nextImg, Point2f[] prevPts, ref Point2f[] nextPts, out byte[] status, out float[] err, Size? winSize = null, int maxLevel = 3, TermCriteria? criteria = null, OpticalFlowFlags flags = OpticalFlowFlags.None, double minEigThreshold = 0.0001)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3012,7 +3012,7 @@ for polyN=7, a good value would be polySigma=1.5.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double CalibrateCamera(IEnumerable&lt;Mat&gt; objectPoints, IEnumerable&lt;Mat&gt; imagePoints, Size imageSize, InputOutputArray cameraMatrix, InputOutputArray distCoeffs, out Mat[] rvecs, out Mat[] tvecs, CalibrationFlags flags = CalibrationFlags.None, TermCriteria? criteria = default(TermCriteria? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static double CalibrateCamera(IEnumerable&lt;Mat&gt; objectPoints, IEnumerable&lt;Mat&gt; imagePoints, Size imageSize, InputOutputArray cameraMatrix, InputOutputArray distCoeffs, out Mat[] rvecs, out Mat[] tvecs, CalibrationFlags flags = CalibrationFlags.None, TermCriteria? criteria = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3120,7 +3120,7 @@ calibration pattern in the k-th pattern view (k=0.. M -1)</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double CalibrateCamera(IEnumerable&lt;IEnumerable&lt;Point3f&gt;&gt; objectPoints, IEnumerable&lt;IEnumerable&lt;Point2f&gt;&gt; imagePoints, Size imageSize, double[, ] cameraMatrix, double[] distCoeffs, out Vec3d[] rvecs, out Vec3d[] tvecs, CalibrationFlags flags = CalibrationFlags.None, TermCriteria? criteria = default(TermCriteria? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static double CalibrateCamera(IEnumerable&lt;IEnumerable&lt;Point3f&gt;&gt; objectPoints, IEnumerable&lt;IEnumerable&lt;Point2f&gt;&gt; imagePoints, Size imageSize, double[, ] cameraMatrix, double[] distCoeffs, out Vec3d[] rvecs, out Vec3d[] tvecs, CalibrationFlags flags = CalibrationFlags.None, TermCriteria? criteria = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -6968,7 +6968,7 @@ That is, to get the floating-point value of the depth will be fixpt_depth/256.0.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CopyMakeBorder(InputArray src, OutputArray dst, int top, int bottom, int left, int right, BorderTypes borderType, Scalar? value = default(Scalar? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CopyMakeBorder(InputArray src, OutputArray dst, int top, int bottom, int left, int right, BorderTypes borderType, Scalar? value = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -7512,7 +7512,7 @@ or when the corner position moves by less than criteria.epsilon on some iteratio
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static CLAHE CreateCLAHE(double clipLimit = 40, Size? tileGridSize = default(Size? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static CLAHE CreateCLAHE(double clipLimit = 40, Size? tileGridSize = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -9038,7 +9038,7 @@ or convolution using DFT</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Dilate(InputArray src, OutputArray dst, InputArray element, Point? anchor = default(Point? ), int iterations = 1, BorderTypes borderType = BorderTypes.Constant, Scalar? borderValue = default(Scalar? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Dilate(InputArray src, OutputArray dst, InputArray element, Point? anchor = null, int iterations = 1, BorderTypes borderType = BorderTypes.Constant, Scalar? borderValue = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -9450,7 +9450,7 @@ the parameter is forced to 3 because a 3x3 mask gives the same result as 5x5 or 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DrawContours(InputOutputArray image, IEnumerable&lt;Mat&gt; contours, int contourIdx, Scalar color, int thickness = 1, LineTypes lineType = LineTypes.Link8, Mat hierarchy = null, int maxLevel = 2147483647, Point? offset = default(Point? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void DrawContours(InputOutputArray image, IEnumerable&lt;Mat&gt; contours, int contourIdx, Scalar color, int thickness = 1, LineTypes lineType = LineTypes.Link8, Mat hierarchy = null, int maxLevel = 2147483647, Point? offset = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -9536,7 +9536,7 @@ when there is hierarchy available.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DrawContours(InputOutputArray image, IEnumerable&lt;IEnumerable&lt;Point&gt;&gt; contours, int contourIdx, Scalar color, int thickness = 1, LineTypes lineType = LineTypes.Link8, IEnumerable&lt;HierarchyIndex&gt; hierarchy = null, int maxLevel = 2147483647, Point? offset = default(Point? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void DrawContours(InputOutputArray image, IEnumerable&lt;IEnumerable&lt;Point&gt;&gt; contours, int contourIdx, Scalar color, int thickness = 1, LineTypes lineType = LineTypes.Link8, IEnumerable&lt;HierarchyIndex&gt; hierarchy = null, int maxLevel = 2147483647, Point? offset = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -9699,7 +9699,7 @@ OX is drawn in red, OY in green and OZ in blue.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DrawKeypoints(InputArray image, IEnumerable&lt;KeyPoint&gt; keypoints, InputOutputArray outImage, Scalar? color = default(Scalar? ), DrawMatchesFlags flags = DrawMatchesFlags.Default)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void DrawKeypoints(InputArray image, IEnumerable&lt;KeyPoint&gt; keypoints, InputOutputArray outImage, Scalar? color = null, DrawMatchesFlags flags = DrawMatchesFlags.Default)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -9829,7 +9829,7 @@ marker types are supported, see #MarkerTypes for more information.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DrawMatches(Mat img1, IEnumerable&lt;KeyPoint&gt; keypoints1, Mat img2, IEnumerable&lt;KeyPoint&gt; keypoints2, IEnumerable&lt;DMatch&gt; matches1To2, Mat outImg, Scalar? matchColor = default(Scalar? ), Scalar? singlePointColor = default(Scalar? ), IEnumerable&lt;byte&gt; matchesMask = null, DrawMatchesFlags flags = DrawMatchesFlags.Default)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void DrawMatches(Mat img1, IEnumerable&lt;KeyPoint&gt; keypoints1, Mat img2, IEnumerable&lt;KeyPoint&gt; keypoints2, IEnumerable&lt;DMatch&gt; matches1To2, Mat outImg, Scalar? matchColor = null, Scalar? singlePointColor = null, IEnumerable&lt;byte&gt; matchesMask = null, DrawMatchesFlags flags = DrawMatchesFlags.Default)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -9921,7 +9921,7 @@ have the matches. If singlePointColor==Scalar::all(-1) , the color is generated 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void DrawMatchesKnn(Mat img1, IEnumerable&lt;KeyPoint&gt; keypoints1, Mat img2, IEnumerable&lt;KeyPoint&gt; keypoints2, IEnumerable&lt;IEnumerable&lt;DMatch&gt;&gt; matches1To2, Mat outImg, Scalar? matchColor = default(Scalar? ), Scalar? singlePointColor = default(Scalar? ), IEnumerable&lt;IEnumerable&lt;byte&gt;&gt; matchesMask = null, DrawMatchesFlags flags = DrawMatchesFlags.Default)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void DrawMatchesKnn(Mat img1, IEnumerable&lt;KeyPoint&gt; keypoints1, Mat img2, IEnumerable&lt;KeyPoint&gt; keypoints2, IEnumerable&lt;IEnumerable&lt;DMatch&gt;&gt; matches1To2, Mat outImg, Scalar? matchColor = null, Scalar? singlePointColor = null, IEnumerable&lt;IEnumerable&lt;byte&gt;&gt; matchesMask = null, DrawMatchesFlags flags = DrawMatchesFlags.Default)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -10786,7 +10786,7 @@ to j-th point of signature2.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Erode(InputArray src, OutputArray dst, InputArray element, Point? anchor = default(Point? ), int iterations = 1, BorderTypes borderType = BorderTypes.Constant, Scalar? borderValue = default(Scalar? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Erode(InputArray src, OutputArray dst, InputArray element, Point? anchor = null, int iterations = 1, BorderTypes borderType = BorderTypes.Constant, Scalar? borderValue = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -12011,7 +12011,7 @@ Should be odd. Affect performance linearly: greater searchWindowsSize - greater 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void FillPoly(InputOutputArray img, InputArray pts, Scalar color, LineTypes lineType = LineTypes.Link8, int shift = 0, Point? offset = default(Point? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void FillPoly(InputOutputArray img, InputArray pts, Scalar color, LineTypes lineType = LineTypes.Link8, int shift = 0, Point? offset = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -12074,7 +12074,7 @@ Should be odd. Affect performance linearly: greater searchWindowsSize - greater 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void FillPoly(Mat img, IEnumerable&lt;IEnumerable&lt;Point&gt;&gt; pts, Scalar color, LineTypes lineType = LineTypes.Link8, int shift = 0, Point? offset = default(Point? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void FillPoly(Mat img, IEnumerable&lt;IEnumerable&lt;Point&gt;&gt; pts, Scalar color, LineTypes lineType = LineTypes.Link8, int shift = 0, Point? offset = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -12137,7 +12137,7 @@ Should be odd. Affect performance linearly: greater searchWindowsSize - greater 
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Filter2D(InputArray src, OutputArray dst, MatType ddepth, InputArray kernel, Point? anchor = default(Point? ), double delta = 0, BorderTypes borderType = BorderTypes.Reflect101)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Filter2D(InputArray src, OutputArray dst, MatType ddepth, InputArray kernel, Point? anchor = null, double delta = 0, BorderTypes borderType = BorderTypes.Reflect101)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -12873,7 +12873,7 @@ Otherwise, if the function fails to find all the corners or reorder them, it ret
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void FindContours(InputArray image, out Mat[] contours, OutputArray hierarchy, RetrievalModes mode, ContourApproximationModes method, Point? offset = default(Point? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void FindContours(InputArray image, out Mat[] contours, OutputArray hierarchy, RetrievalModes mode, ContourApproximationModes method, Point? offset = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -12944,7 +12944,7 @@ This is useful if the contours are extracted from the image ROI and then they sh
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void FindContours(InputArray image, out Point[][] contours, out HierarchyIndex[] hierarchy, RetrievalModes mode, ContourApproximationModes method, Point? offset = default(Point? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void FindContours(InputArray image, out Point[][] contours, out HierarchyIndex[] hierarchy, RetrievalModes mode, ContourApproximationModes method, Point? offset = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -13015,7 +13015,7 @@ This is useful if the contours are extracted from the image ROI and then they sh
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Point[][] FindContoursAsArray(InputArray image, RetrievalModes mode, ContourApproximationModes method, Point? offset = default(Point? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static Point[][] FindContoursAsArray(InputArray image, RetrievalModes mode, ContourApproximationModes method, Point? offset = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -13086,7 +13086,7 @@ This is useful if the contours are extracted from the image ROI and then they sh
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Mat&lt;Point&gt;[] FindContoursAsMat(InputArray image, RetrievalModes mode, ContourApproximationModes method, Point? offset = default(Point? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static Mat&lt;Point&gt;[] FindContoursAsMat(InputArray image, RetrievalModes mode, ContourApproximationModes method, Point? offset = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -13878,7 +13878,7 @@ Default values are shown in the declaration above.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double FindTransformECC(InputArray templateImage, InputArray inputImage, InputOutputArray warpMatrix, MotionTypes motionType = MotionTypes.Affine, TermCriteria? criteria = default(TermCriteria? ), InputArray inputMask = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double FindTransformECC(InputArray templateImage, InputArray inputImage, InputOutputArray warpMatrix, MotionTypes motionType = MotionTypes.Affine, TermCriteria? criteria = null, InputArray inputMask = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -14922,7 +14922,7 @@ in multiple calls to the function to make sure the filled area does not overlap.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FloodFill(InputOutputArray image, InputOutputArray mask, Point seedPoint, Scalar newVal, out Rect rect, Scalar? loDiff = default(Scalar? ), Scalar? upDiff = default(Scalar? ), FloodFillFlags flags = FloodFillFlags.Link4)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int FloodFill(InputOutputArray image, InputOutputArray mask, Point seedPoint, Scalar newVal, out Rect rect, Scalar? loDiff = null, Scalar? upDiff = null, FloodFillFlags flags = FloodFillFlags.Link4)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -15089,7 +15089,7 @@ second variant of the function. See the details below.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int FloodFill(InputOutputArray image, Point seedPoint, Scalar newVal, out Rect rect, Scalar? loDiff = default(Scalar? ), Scalar? upDiff = default(Scalar? ), FloodFillFlags flags = FloodFillFlags.Link4)</code></pre>
+    <pre><code class="lang-csharp hljs">public static int FloodFill(InputOutputArray image, Point seedPoint, Scalar newVal, out Rect rect, Scalar? loDiff = null, Scalar? upDiff = null, FloodFillFlags flags = FloodFillFlags.Link4)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -15591,7 +15591,7 @@ a preferable solution for measuringexecution time.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Mat GetDefaultNewCameraMatrix(InputArray cameraMatrix, Size? imgSize = default(Size? ), bool centerPrincipalPoint = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Mat GetDefaultNewCameraMatrix(InputArray cameraMatrix, Size? imgSize = null, bool centerPrincipalPoint = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -15655,7 +15655,7 @@ The parameter indicates whether this location should be at the image center or n
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void GetDerivKernels(OutputArray kx, OutputArray ky, int dx, int dy, int ksize, bool normalize = false, MatType? ktype = default(MatType? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void GetDerivKernels(OutputArray kx, OutputArray ky, int dx, int dy, int ksize, bool normalize = false, MatType? ktype = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -15879,7 +15879,7 @@ and wish to preserve all the fractional bits, you may want to set normalize = fa
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Mat GetGaussianKernel(int ksize, double sigma, MatType? ktype = default(MatType? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static Mat GetGaussianKernel(int ksize, double sigma, MatType? ktype = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -17849,7 +17849,7 @@ Note that the result can be refined with further calls with mode==GC_INIT_WITH_M
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void GroupRectanglesMeanshift(IList&lt;Rect&gt; rectList, out double[] foundWeights, out double[] foundScales, double detectThreshold = 0, Size? winDetSize = default(Size? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void GroupRectanglesMeanshift(IList&lt;Rect&gt; rectList, out double[] foundWeights, out double[] foundScales, double detectThreshold = 0, Size? winDetSize = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -23030,7 +23030,7 @@ up to the third order of a polygon or rasterized shape.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void MorphologyEx(InputArray src, OutputArray dst, MorphTypes op, InputArray element, Point? anchor = default(Point? ), int iterations = 1, BorderTypes borderType = BorderTypes.Constant, Scalar? borderValue = default(Scalar? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void MorphologyEx(InputArray src, OutputArray dst, MorphTypes op, InputArray element, Point? anchor = null, int iterations = 1, BorderTypes borderType = BorderTypes.Constant, Scalar? borderValue = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -25273,7 +25273,7 @@ Otherwise, it is at the top-left corner.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void PyrDown(InputArray src, OutputArray dst, Size? dstSize = default(Size? ), BorderTypes borderType = BorderTypes.Reflect101)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void PyrDown(InputArray src, OutputArray dst, Size? dstSize = null, BorderTypes borderType = BorderTypes.Reflect101)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -25324,7 +25324,7 @@ Otherwise, it is at the top-left corner.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void PyrMeanShiftFiltering(InputArray src, OutputArray dst, double sp, double sr, int maxLevel = 1, TermCriteria? termcrit = default(TermCriteria? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void PyrMeanShiftFiltering(InputArray src, OutputArray dst, double sp, double sr, int maxLevel = 1, TermCriteria? termcrit = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -25388,7 +25388,7 @@ Otherwise, it is at the top-left corner.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void PyrUp(InputArray src, OutputArray dst, Size? dstSize = default(Size? ), BorderTypes borderType = BorderTypes.Reflect101)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void PyrUp(InputArray src, OutputArray dst, Size? dstSize = null, BorderTypes borderType = BorderTypes.Reflect101)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -26501,7 +26501,7 @@ the same type as the source matrix, otherwise, its type will be CV_MAKE_TYPE(CV_
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Remap(InputArray src, OutputArray dst, InputArray map1, InputArray map2, InterpolationFlags interpolation = InterpolationFlags.Linear, BorderTypes borderMode = BorderTypes.Constant, Scalar? borderValue = default(Scalar? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Remap(InputArray src, OutputArray dst, InputArray map1, InputArray map2, InterpolationFlags interpolation = InterpolationFlags.Linear, BorderTypes borderMode = BorderTypes.Constant, Scalar? borderValue = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -27972,7 +27972,7 @@ selection rectangle will correspond to the initial mouse position.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SepFilter2D(InputArray src, OutputArray dst, MatType ddepth, InputArray kernelX, InputArray kernelY, Point? anchor = default(Point? ), double delta = 0, BorderTypes borderType = BorderTypes.Reflect101)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SepFilter2D(InputArray src, OutputArray dst, MatType ddepth, InputArray kernelX, InputArray kernelY, Point? anchor = null, double delta = 0, BorderTypes borderType = BorderTypes.Reflect101)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -28099,7 +28099,7 @@ which can make debugging more convenient.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetIdentity(InputOutputArray mtx, Scalar? s = default(Scalar? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetIdentity(InputOutputArray mtx, Scalar? s = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -29553,7 +29553,7 @@ variance and standard deviation around the neighborhood of a pixel.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SqrBoxFilter(InputArray src, OutputArray dst, int ddepth, Size ksize, Point? anchor = default(Point? ), bool normalize = true, BorderTypes borderType = BorderTypes.Reflect101)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SqrBoxFilter(InputArray src, OutputArray dst, int ddepth, Size ksize, Point? anchor = null, bool normalize = true, BorderTypes borderType = BorderTypes.Reflect101)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -29686,7 +29686,7 @@ variance and standard deviation around the neighborhood of a pixel.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double StereoCalibrate(IEnumerable&lt;InputArray&gt; objectPoints, IEnumerable&lt;InputArray&gt; imagePoints1, IEnumerable&lt;InputArray&gt; imagePoints2, InputOutputArray cameraMatrix1, InputOutputArray distCoeffs1, InputOutputArray cameraMatrix2, InputOutputArray distCoeffs2, Size imageSize, OutputArray R, OutputArray T, OutputArray E, OutputArray F, CalibrationFlags flags = CalibrationFlags.FixIntrinsic, TermCriteria? criteria = default(TermCriteria? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static double StereoCalibrate(IEnumerable&lt;InputArray&gt; objectPoints, IEnumerable&lt;InputArray&gt; imagePoints1, IEnumerable&lt;InputArray&gt; imagePoints2, InputOutputArray cameraMatrix1, InputOutputArray distCoeffs1, InputOutputArray cameraMatrix2, InputOutputArray distCoeffs2, Size imageSize, OutputArray R, OutputArray T, OutputArray E, OutputArray F, CalibrationFlags flags = CalibrationFlags.FixIntrinsic, TermCriteria? criteria = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -29814,7 +29814,7 @@ The output vector length depends on the flags.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double StereoCalibrate(IEnumerable&lt;IEnumerable&lt;Point3f&gt;&gt; objectPoints, IEnumerable&lt;IEnumerable&lt;Point2f&gt;&gt; imagePoints1, IEnumerable&lt;IEnumerable&lt;Point2f&gt;&gt; imagePoints2, double[, ] cameraMatrix1, double[] distCoeffs1, double[, ] cameraMatrix2, double[] distCoeffs2, Size imageSize, OutputArray R, OutputArray T, OutputArray E, OutputArray F, CalibrationFlags flags = CalibrationFlags.FixIntrinsic, TermCriteria? criteria = default(TermCriteria? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static double StereoCalibrate(IEnumerable&lt;IEnumerable&lt;Point3f&gt;&gt; objectPoints, IEnumerable&lt;IEnumerable&lt;Point2f&gt;&gt; imagePoints1, IEnumerable&lt;IEnumerable&lt;Point2f&gt;&gt; imagePoints2, double[, ] cameraMatrix1, double[] distCoeffs1, double[, ] cameraMatrix2, double[] distCoeffs2, Size imageSize, OutputArray R, OutputArray T, OutputArray E, OutputArray F, CalibrationFlags flags = CalibrationFlags.FixIntrinsic, TermCriteria? criteria = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -30081,7 +30081,7 @@ Otherwise, they are likely to be smaller.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void StereoRectify(InputArray cameraMatrix1, InputArray distCoeffs1, InputArray cameraMatrix2, InputArray distCoeffs2, Size imageSize, InputArray R, InputArray T, OutputArray R1, OutputArray R2, OutputArray P1, OutputArray P2, OutputArray Q, StereoRectificationFlags flags = StereoRectificationFlags.ZeroDisparity, double alpha = -1, Size? newImageSize = default(Size? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void StereoRectify(InputArray cameraMatrix1, InputArray distCoeffs1, InputArray cameraMatrix2, InputArray distCoeffs2, Size imageSize, InputArray R, InputArray T, OutputArray R1, OutputArray R2, OutputArray P1, OutputArray P2, OutputArray Q, StereoRectificationFlags flags = StereoRectificationFlags.ZeroDisparity, double alpha = -1, Size? newImageSize = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -30345,7 +30345,7 @@ Otherwise, they are likely to be smaller.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void StereoRectify(double[, ] cameraMatrix1, double[] distCoeffs1, double[, ] cameraMatrix2, double[] distCoeffs2, Size imageSize, double[, ] R, double[] T, out double[, ] R1, out double[, ] R2, out double[, ] P1, out double[, ] P2, out double[, ] Q, StereoRectificationFlags flags = StereoRectificationFlags.ZeroDisparity, double alpha = -1, Size? newImageSize = default(Size? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void StereoRectify(double[, ] cameraMatrix1, double[] distCoeffs1, double[, ] cameraMatrix2, double[] distCoeffs2, Size imageSize, double[, ] R, double[] T, out double[, ] R1, out double[, ] R2, out double[, ] P1, out double[, ] P2, out double[, ] Q, StereoRectificationFlags flags = StereoRectificationFlags.ZeroDisparity, double alpha = -1, Size? newImageSize = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -31577,7 +31577,7 @@ the identity new camera matrix is used.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void UndistortPointsIter(InputArray src, OutputArray dst, InputArray cameraMatrix, InputArray distCoeffs, InputArray r = null, InputArray p = null, TermCriteria? termCriteria = default(TermCriteria? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void UndistortPointsIter(InputArray src, OutputArray dst, InputArray cameraMatrix, InputArray distCoeffs, InputArray r = null, InputArray p = null, TermCriteria? termCriteria = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -31925,7 +31925,7 @@ Key code is implementation specific and depends on used backend: QT/GTK/Win32/et
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WarpAffine(InputArray src, OutputArray dst, InputArray m, Size dsize, InterpolationFlags flags = InterpolationFlags.Linear, BorderTypes borderMode = BorderTypes.Constant, Scalar? borderValue = default(Scalar? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WarpAffine(InputArray src, OutputArray dst, InputArray m, Size dsize, InterpolationFlags flags = InterpolationFlags.Linear, BorderTypes borderMode = BorderTypes.Constant, Scalar? borderValue = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -31998,7 +31998,7 @@ in the source image are not modified by the function.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WarpPerspective(InputArray src, OutputArray dst, InputArray m, Size dsize, InterpolationFlags flags = InterpolationFlags.Linear, BorderTypes borderMode = BorderTypes.Constant, Scalar? borderValue = default(Scalar? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WarpPerspective(InputArray src, OutputArray dst, InputArray m, Size dsize, InterpolationFlags flags = InterpolationFlags.Linear, BorderTypes borderMode = BorderTypes.Constant, Scalar? borderValue = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -32069,7 +32069,7 @@ and the optional flag WARP_INVERSE_MAP, that sets M as the inverse transformatio
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void WarpPerspective(InputArray src, OutputArray dst, float[, ] m, Size dsize, InterpolationFlags flags = InterpolationFlags.Linear, BorderTypes borderMode = BorderTypes.Constant, Scalar? borderValue = default(Scalar? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public static void WarpPerspective(InputArray src, OutputArray dst, float[, ] m, Size dsize, InterpolationFlags flags = InterpolationFlags.Linear, BorderTypes borderMode = BorderTypes.Constant, Scalar? borderValue = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

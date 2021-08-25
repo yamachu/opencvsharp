@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class SparseMat
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -870,7 +870,7 @@ the old matrix is released (using release()) and the new one is allocated.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T? Find&lt;T&gt;(int i0, int i1, int i2, long? hashVal = default(long? ))
+    <pre><code class="lang-csharp hljs">public T? Find&lt;T&gt;(int i0, int i1, int i2, long? hashVal = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -953,7 +953,7 @@ the old matrix is released (using release()) and the new one is allocated.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T? Find&lt;T&gt;(int i0, int i1, long? hashVal = default(long? ))
+    <pre><code class="lang-csharp hljs">public T? Find&lt;T&gt;(int i0, int i1, long? hashVal = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1030,7 +1030,7 @@ the old matrix is released (using release()) and the new one is allocated.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T? Find&lt;T&gt;(int i0, long? hashVal = default(long? ))
+    <pre><code class="lang-csharp hljs">public T? Find&lt;T&gt;(int i0, long? hashVal = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1101,7 +1101,7 @@ the old matrix is released (using release()) and the new one is allocated.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T? Find&lt;T&gt;(int[] idx, long? hashVal = default(long? ))
+    <pre><code class="lang-csharp hljs">public T? Find&lt;T&gt;(int[] idx, long? hashVal = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1220,7 +1220,7 @@ the old matrix is released (using release()) and the new one is allocated.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;(int i0, int i1, int i2, long? hashVal = default(long? ))
+    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;(int i0, int i1, int i2, long? hashVal = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1304,7 +1304,7 @@ the old matrix is released (using release()) and the new one is allocated.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;(int i0, int i1, long? hashVal = default(long? ))
+    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;(int i0, int i1, long? hashVal = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1382,7 +1382,7 @@ the old matrix is released (using release()) and the new one is allocated.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;(int i0, long? hashVal = default(long? ))
+    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;(int i0, long? hashVal = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1454,7 +1454,7 @@ the old matrix is released (using release()) and the new one is allocated.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;(int[] idx, long? hashVal = default(long? ))
+    <pre><code class="lang-csharp hljs">public T Get&lt;T&gt;(int[] idx, long? hashVal = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1819,7 +1819,7 @@ The indexer has getters/setters to access each matrix element.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IntPtr Ptr(int i0, bool createMissing, long? hashVal = default(long? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public IntPtr Ptr(int i0, bool createMissing, long? hashVal = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1880,7 +1880,7 @@ The indexer has getters/setters to access each matrix element.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IntPtr Ptr(int i0, int i1, bool createMissing, long? hashVal = default(long? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public IntPtr Ptr(int i0, int i1, bool createMissing, long? hashVal = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1947,7 +1947,7 @@ The indexer has getters/setters to access each matrix element.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IntPtr Ptr(int i0, int i1, int i2, bool createMissing, long? hashVal = default(long? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public IntPtr Ptr(int i0, int i1, int i2, bool createMissing, long? hashVal = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2020,7 +2020,7 @@ The indexer has getters/setters to access each matrix element.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IntPtr Ptr(int[] idx, bool createMissing, long? hashVal = default(long? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public IntPtr Ptr(int[] idx, bool createMissing, long? hashVal = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2145,7 +2145,7 @@ The indexer has getters/setters to access each matrix element.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Set&lt;T&gt;(int i0, T value, long? hashVal = default(long? ))
+    <pre><code class="lang-csharp hljs">public void Set&lt;T&gt;(int i0, T value, long? hashVal = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2205,7 +2205,7 @@ The indexer has getters/setters to access each matrix element.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Set&lt;T&gt;(int i0, int i1, T value, long? hashVal = default(long? ))
+    <pre><code class="lang-csharp hljs">public void Set&lt;T&gt;(int i0, int i1, T value, long? hashVal = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2272,7 +2272,7 @@ The indexer has getters/setters to access each matrix element.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Set&lt;T&gt;(int i0, int i1, int i2, T value, long? hashVal = default(long? ))
+    <pre><code class="lang-csharp hljs">public void Set&lt;T&gt;(int i0, int i1, int i2, T value, long? hashVal = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2345,7 +2345,7 @@ The indexer has getters/setters to access each matrix element.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Set&lt;T&gt;(int[] idx, T value, long? hashVal = default(long? ))
+    <pre><code class="lang-csharp hljs">public void Set&lt;T&gt;(int[] idx, T value, long? hashVal = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2549,7 +2549,7 @@ The indexer has getters/setters to access each matrix element.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Value&lt;T&gt;(int i0, int i1, int i2, long? hashVal = default(long? ))
+    <pre><code class="lang-csharp hljs">public T Value&lt;T&gt;(int i0, int i1, int i2, long? hashVal = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2632,7 +2632,7 @@ The indexer has getters/setters to access each matrix element.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Value&lt;T&gt;(int i0, int i1, long? hashVal = default(long? ))
+    <pre><code class="lang-csharp hljs">public T Value&lt;T&gt;(int i0, int i1, long? hashVal = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2709,7 +2709,7 @@ The indexer has getters/setters to access each matrix element.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Value&lt;T&gt;(int i0, long? hashVal = default(long? ))
+    <pre><code class="lang-csharp hljs">public T Value&lt;T&gt;(int i0, long? hashVal = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -2780,7 +2780,7 @@ The indexer has getters/setters to access each matrix element.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T Value&lt;T&gt;(int[] idx, long? hashVal = default(long? ))
+    <pre><code class="lang-csharp hljs">public T Value&lt;T&gt;(int[] idx, long? hashVal = null)
     where T : struct</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

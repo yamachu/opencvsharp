@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class HOGDescriptor
    ">
-    <meta name="generator" content="docfx 2.58.0.0">
+    <meta name="generator" content="docfx 2.58.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -192,7 +192,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HOGDescriptor(Size? winSize = default(Size? ), Size? blockSize = default(Size? ), Size? blockStride = default(Size? ), Size? cellSize = default(Size? ), int nbins = 9, int derivAperture = 1, double winSigma = -1, HistogramNormType histogramNormType = HistogramNormType.L2Hys, double l2HysThreshold = 0.2, bool gammaCorrection = true, int nlevels = 64)</code></pre>
+    <pre><code class="lang-csharp hljs">public HOGDescriptor(Size? winSize = null, Size? blockSize = null, Size? blockStride = null, Size? cellSize = null, int nbins = 9, int derivAperture = 1, double winSigma = -1, HistogramNormType histogramNormType = HistogramNormType.L2Hys, double l2HysThreshold = 0.2, bool gammaCorrection = true, int nlevels = 64)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -844,7 +844,7 @@ To use these coeffs the detection window size should be (48,96)</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual float[] Compute(Mat img, Size? winStride = default(Size? ), Size? padding = default(Size? ), Point[] locations = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual float[] Compute(Mat img, Size? winStride = null, Size? padding = null, Point[] locations = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -912,7 +912,7 @@ To use these coeffs the detection window size should be (48,96)</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual void ComputeGradient(Mat img, Mat grad, Mat angleOfs, Size? paddingTL = default(Size? ), Size? paddingBR = default(Size? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void ComputeGradient(Mat img, Mat grad, Mat angleOfs, Size? paddingTL = null, Size? paddingBR = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -970,7 +970,7 @@ To use these coeffs the detection window size should be (48,96)</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Point[] Detect(Mat img, double hitThreshold = 0, Size? winStride = default(Size? ), Size? padding = default(Size? ), Point[] searchLocations = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Point[] Detect(Mat img, double hitThreshold = 0, Size? winStride = null, Size? padding = null, Point[] searchLocations = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1045,7 +1045,7 @@ But if the free coefficient is omitted (which is allowed), you can specify it ma
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Point[] Detect(Mat img, out double[] weights, double hitThreshold = 0, Size? winStride = default(Size? ), Size? padding = default(Size? ), Point[] searchLocations = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Point[] Detect(Mat img, out double[] weights, double hitThreshold = 0, Size? winStride = null, Size? padding = null, Point[] searchLocations = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1125,7 +1125,7 @@ But if the free coefficient is omitted (which is allowed), you can specify it ma
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Rect[] DetectMultiScale(Mat img, double hitThreshold = 0, Size? winStride = default(Size? ), Size? padding = default(Size? ), double scale = 1.05, int groupThreshold = 2)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Rect[] DetectMultiScale(Mat img, double hitThreshold = 0, Size? winStride = null, Size? padding = null, double scale = 1.05, int groupThreshold = 2)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1206,7 +1206,7 @@ When detected, some objects can be covered by many rectangles. 0 means not to pe
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual Rect[] DetectMultiScale(Mat img, out double[] foundWeights, double hitThreshold = 0, Size? winStride = default(Size? ), Size? padding = default(Size? ), double scale = 1.05, int groupThreshold = 2)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual Rect[] DetectMultiScale(Mat img, out double[] foundWeights, double hitThreshold = 0, Size? winStride = null, Size? padding = null, double scale = 1.05, int groupThreshold = 2)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1351,7 +1351,7 @@ in the detector coefficients (as the last free coefficient). But if the free coe
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void DetectROI(Mat img, Point[] locations, out Point[] foundLocations, out double[] confidences, double hitThreshold = 0, Size? winStride = default(Size? ), Size? padding = default(Size? ))</code></pre>
+    <pre><code class="lang-csharp hljs">public void DetectROI(Mat img, Point[] locations, out Point[] foundLocations, out double[] confidences, double hitThreshold = 0, Size? winStride = null, Size? padding = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
