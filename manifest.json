@@ -969,7 +969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCvSharp.DisposableCvObject.html",
-          "hash": "xpteXOpZoC6+tdnrJ2t6UMS61yR8ehlQsshhLS99yQI="
+          "hash": "/ocAoB0sqau6/imS+lVkxCaiiAWEdnv0oDcS6OoDaUc="
         }
       },
       "is_incremental": false,
@@ -2289,7 +2289,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCvSharp.Internal.NativeMethods.html",
-          "hash": "C2+EDOXlge3ZLGD1ugQ71NS8GPXecOkQoojL8AcY8AE="
+          "hash": "uh0rQiUAVKXykgI4WfH3eHH2fGQdW1w6pOBAifm24hw="
         }
       },
       "is_incremental": false,
@@ -4541,6 +4541,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenCvSharp.Segmentation.IntelligentScissorsMB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCvSharp.Segmentation.IntelligentScissorsMB.html",
+          "hash": "6fM+ZJc3R1JdAwzG9TZdM3CPZc2qHvNv1TutWnilPdA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenCvSharp.Segmentation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenCvSharp.Segmentation.html",
+          "hash": "seQKGv7X7JFzi/+XABgLIPAtHGhVl//NbQD3wA4RwrQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenCvSharp.ShapeContextDistanceExtractor.yml",
       "output": {
         ".html": {
@@ -5181,7 +5205,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCvSharp.UMat.html",
-          "hash": "FR94bPqwRPLP6nqf1GGcoZl/N24aZhRfLNCkPE3JRjI="
+          "hash": "dZNqPMBC9t1EKZlsTDLvagIev9rnk5ZpySTZ2SJ+NeY="
         }
       },
       "is_incremental": false,
@@ -5601,7 +5625,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenCvSharp.Window.html",
-          "hash": "0DFnEin5XkYoCS6Wr75q5q/Xnk9FuxWdpTJWW+PK+ck="
+          "hash": "QfXr2k3nvD/YUM4nDQOOfwtI4aIQgBb7LprrkvrlM/Q="
         }
       },
       "is_incremental": false,
@@ -6273,7 +6297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "7vrM1mEddEbkbU3p4CCiePeiSFCzkj49TaRKrPsQiNI="
+          "hash": "fgvC6qHfmdRtsH/7Fo4Je28lNXOtgkjx17aIJceOP4c="
         }
       },
       "is_incremental": false,
@@ -6348,7 +6372,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 521,
+          "total_file_count": 523,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
