@@ -97,6 +97,9 @@
     <ClCompile Include="xphoto.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="structured_light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bgsegm.h">
@@ -368,6 +371,9 @@
     </ClInclude>
     <ClInclude Include="imgproc_Segmentation.h">
       <Filter>Header Files\imgproc</Filter>
+    </ClInclude>
+    <ClInclude Include="structured_light.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

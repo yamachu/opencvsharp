@@ -52,6 +52,7 @@
 #include <opencv2/line_descriptor.hpp>
 #include <opencv2/optflow.hpp>
 #include <opencv2/quality.hpp>
+#include <opencv2/structured_light.hpp>
 #include <opencv2/tracking.hpp>
 #include <opencv2/xfeatures2d.hpp>
 #include <opencv2/ximgproc.hpp>

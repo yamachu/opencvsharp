@@ -449,5 +449,29 @@ namespace OpenCvSharp.Internal
         public static extern void vector_vector_KeyLine_delete(IntPtr vector);
 #endif
         #endregion
+        #region vector<cv::Mat>
+
+        [DllImport(DllExtern, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+        public static extern IntPtr vector_vector_Mat_new1();
+
+        [DllImport(DllExtern, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+        public static extern IntPtr vector_vector_Mat_new2(IntPtr[] ary, nuint size1, nuint[] size2List);
+
+        [DllImport(DllExtern, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+        public static extern nuint vector_vector_Mat_getSize1(IntPtr vec);
+
+        [DllImport(DllExtern, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+        public static extern void vector_vector_Mat_getSize2(IntPtr vec, [In, Out] nuint[] size);
+
+        [DllImport(DllExtern, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+        public static extern void vector_vector_Mat_assignToArray(IntPtr vec, int i, IntPtr[] arr);
+
+        [DllImport(DllExtern, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+        public static extern IntPtr vector_vector_Mat_getAt(IntPtr vec, nuint i, nuint j);
+
+        [DllImport(DllExtern, CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+        public static extern void vector_vector_Mat_delete(IntPtr vec);
+        
+        #endregion
     }
 }

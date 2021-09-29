@@ -1,4 +1,5 @@
 ﻿using OpenCvSharp.Internal.Vectors;
+using System.Linq;
 using Xunit;
 
 namespace OpenCvSharp.Tests
@@ -44,6 +45,70 @@ namespace OpenCvSharp.Tests
             foreach (var mat in mats)
             {
                 mat.Dispose();
+            }
+        }
+        
+        [Fact]
+        public void VectorOfVectorMatCreate1()
+        {
+            using var vec = new VectorOfVectorMat();
+        }
+
+        [Fact]
+        public void VectorOfVectorMatCreate2()
+        {
+            Mat[][] src = new[]
+            {
+                new[]{ 
+                    new Mat(1, 1, MatType.CV_8UC1, Scalar.All(1)), 
+                    new Mat(1, 1, MatType.CV_8UC1, Scalar.All(2)),
+                    new Mat(1, 1, MatType.CV_8UC1, Scalar.All(3)), 
+                },
+                new[]{ 
+                    new Mat(1, 1, MatType.CV_8UC1, Scalar.All(4)), 
+                    new Mat(1, 1, MatType.CV_8UC1, Scalar.All(5)), 
+                },
+            };
+
+            using var vec = new VectorOfVectorMat(src);
+
+            {
+                using var m00 = vec.GetAt(0, 0);
+                Assert.Equal(1, m00.Get<byte>(0, 0));
+                using var m01 = vec.GetAt(0, 1);
+                Assert.Equal(2, m01.Get<byte>(0, 0));
+                using var m02 = vec.GetAt(0, 2);
+                Assert.Equal(3, m02.Get<byte>(0, 0));
+                using var m10 = vec.GetAt(1, 0);
+                Assert.Equal(4, m10.Get<byte>(0, 0));
+                using var m11 = vec.GetAt(1, 1);
+                Assert.Equal(5, m11.Get<byte>(0, 0));
+            }
+
+            var array = vec.ToArray();
+            try
+            {
+                Assert.Equal(2, array.Length);
+                Assert.Equal(3, array[0].Length);
+                Assert.Equal(2, array[1].Length);
+                
+                using var m00 = array[0][0];
+                Assert.Equal(1, m00.Get<byte>(0, 0));
+                using var m01 = array[0][1];
+                Assert.Equal(2, m01.Get<byte>(0, 0));
+                using var m02 = array[0][2];
+                Assert.Equal(3, m02.Get<byte>(0, 0));
+                using var m10 = array[1][0];
+                Assert.Equal(4, m10.Get<byte>(0, 0));
+                using var m11 = array[1][1];
+                Assert.Equal(5, m11.Get<byte>(0, 0));
+            }
+            finally
+            {
+                foreach (var m in array.SelectMany(mm => mm))
+                {
+                    m.Dispose();
+                }
             }
         }
     }

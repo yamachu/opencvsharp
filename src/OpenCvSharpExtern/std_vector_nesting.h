@@ -288,3 +288,60 @@ CVAPI(void) vector_vector_KeyLine_delete(std::vector<std::vector<cv::line_descri
 }
 #endif
 #pragma endregion
+
+#pragma region vector<Mat>
+
+CVAPI(std::vector<std::vector<cv::Mat> >*) vector_vector_Mat_new1()
+{
+    return new std::vector<std::vector<cv::Mat> >;
+}
+
+CVAPI(std::vector<std::vector<cv::Mat> >*) vector_vector_Mat_new2(cv::Mat** ary, size_t size1, size_t* size2List)
+{
+    auto ret = new std::vector<std::vector<cv::Mat> >(size1);
+    for (size_t i = 0, offset = 0; i < size1; i++)
+    {
+        auto size2 = size2List[i];
+        std::vector<cv::Mat> elem(size2);
+        for (size_t j = 0; j < size2; j++)
+        {
+            elem[j] = *ary[offset++];
+        }
+        ret->at(i) = elem;
+    }
+    return ret;
+}
+
+CVAPI(size_t) vector_vector_Mat_getSize1(std::vector<std::vector<cv::Mat> >* vec)
+{
+    return vec->size();
+}
+
+CVAPI(void) vector_vector_Mat_getSize2(std::vector<std::vector<cv::Mat> >* vec, size_t* sizes)
+{
+    for (size_t i = 0; i < vec->size(); i++)
+    {
+        sizes[i] = vec->at(i).size();
+    }
+}
+
+CVAPI(cv::Mat*) vector_vector_Mat_getAt(std::vector<std::vector<cv::Mat> >* vec, size_t i, size_t j)
+{
+    return &(vec->at(i).at(j));
+}
+
+CVAPI(void) vector_vector_Mat_assignToArray(std::vector<std::vector<cv::Mat> >* vec, int i, cv::Mat** arr)
+{
+    const auto &v = vec->at(i);
+    for (size_t j = 0; j < v.size(); j++)
+    {
+        (v.at(j)).assignTo(*(arr[j]));
+    }
+}
+
+CVAPI(void) vector_vector_Mat_delete(std::vector<std::vector<cv::Mat> >* vec)
+{
+    delete vec;
+}
+
+#pragma endregion

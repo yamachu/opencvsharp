@@ -30,7 +30,7 @@ namespace OpenCvSharp.Internal.Util
             for (var i = 0; i < array.Length; i++)
             {
                 var elem = array[i];
-                if (elem == null/* || elem.Length == 0*/)
+                if (elem is null/* || elem.Length == 0*/)
                     throw new ArgumentException($"array[{i}] is not valid array object.");
                 
                 // メモリ確保
@@ -44,6 +44,86 @@ namespace OpenCvSharp.Internal.Util
         /// </summary>
         /// <param name="enumerable"></param>
         public ArrayAddress2(IEnumerable<IEnumerable<T>> enumerable)
+            : this(enumerable.Select(x => x.ToArray()).ToArray())
+        {
+        }
+
+        /// <summary>
+        /// Releases unmanaged resources
+        /// </summary>
+        protected override void DisposeUnmanaged()
+        {
+            foreach (var h in gch)
+            {
+                if (h.IsAllocated)
+                {
+                    h.Free();
+                }
+            }
+            base.DisposeUnmanaged();
+        }
+
+        /// <summary>
+        /// </summary>
+        public IntPtr[] GetPointer()
+        {
+            return ptr;
+        }
+
+        /// <summary> 
+        /// </summary>
+        public int GetDim1Length() => array.Length;
+
+        /// <summary> 
+        /// </summary>
+        public int[] GetDim2Lengths()
+        {
+            var lengths = new int[array.Length];
+            for (var i = 0; i < array.Length; i++)
+            {
+                lengths[i] = array[i].Length;
+            }
+            return lengths;
+        }
+    }
+
+    /// <summary>
+    /// Class to get address of specified jagged array 
+    /// </summary>
+    public class MatArrayAddress2 : DisposableObject
+    {
+        private readonly Mat[][] array;
+        private readonly GCHandle[] gch;
+        private readonly IntPtr[] ptr;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="array"></param>
+        public MatArrayAddress2(Mat[][] array)
+        {
+            this.array = array ?? throw new ArgumentNullException(nameof(array));
+
+            // T[][]をIntPtr[]に変換する
+            ptr = new IntPtr[array.Length];
+            gch = new GCHandle[array.Length];
+            for (var i = 0; i < array.Length; i++)
+            {
+                var elem = array[i];
+                if (elem is null)
+                    throw new ArgumentException($"array[{i}] is not valid array object.");
+                
+                // メモリ確保
+                //gch[i] = GCHandle.Alloc(elem, GCHandleType.Pinned);
+                //ptr[i] = elem.cv
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="enumerable"></param>
+        public MatArrayAddress2(IEnumerable<IEnumerable<Mat>> enumerable)
             : this(enumerable.Select(x => x.ToArray()).ToArray())
         {
         }
